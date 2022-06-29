@@ -2,13 +2,33 @@
 ## Introdução
 O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organizar as atividades em ordem cronológica.
 
-## Gráfico de Gantt
+<!-- ## Gráfico de Gantt -->
 
-![](https://i.imgur.com/yBwt7cZ.png)
+<!-- ![](https://i.imgur.com/yBwt7cZ.png) -->
 
-## Histórico de Versões
-|Data|Versão|Alteração|Autor|
-|----|------|---------|-----|
-| 16/03/2022 | 0.1 |Criação do documento de Gerenciamento de Tempo| João Baraky |
-| 16/03/2022 | 0.2 |Corrige imagem do roadmap| João Baraky |
-| 04/05/2022 | 1.0 |Atualiza cronograma do roadmap para última entrega| João Baraky |
+## Planejamento das Iterações do Projeto
+| Ciclos   | Entrega                         | Data Início | Data Fim   |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 1  | Definição do Produto            | 27/06/2022  | 03/07/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 2  | Levantamento de Requisitos      | 04/07/2022  | 10/07/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 3  | Análise e Design                | 11/07/2022  | 17/07/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 4  | Análise e Design                | 18/07/2022  | 24/07/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 5  | Implementação                   | 25/07/2022  | 31/07/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 6  | Implementação                   | 01/08/2022  | 07/08/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 7  | Implementação                   | 08/08/2022  | 14/08/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 8  | Implementação e entrega do MVP1 | 15/08/2022  | 21/08/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 9  | Implementação                   | 22/08/2022  | 28/08/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 10 | Implementação                   | 29/08/2022  | 05/09/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 11 | Implantação                     | 06/09/2022  | 12/09/2022 |<br>
+| -------- | ------------------------------- | ----------- | ---------- |<br>
+| Ciclo 12 | Implantação e entrega do MVP2   | 13/09/2022  | 19/09/2022 |<br>
