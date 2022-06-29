@@ -1,15 +1,19 @@
-# Documento de Visão/Incremento
+# Visão do Produto
 
 ## Histórico de Versões
-| Versão | Data       | Modificação                                     | Autor(es)       |
-| ------ | ---------- | ----------------------------------------------- | --------------- |
-| 1.0    | 00/00/2022 | Criação do documento                            | Augusto Camargo |
-| 1.1    | 00/00/2022 | Atualização do documento                        | Augusto Camargo |
-| 2.0    | 00/00/2022 | Atualização do documento e adição da introdução | Augusto Camargo |
+| Versão | Data       | Modificação                                            | Autor(es)          |<br>
+| ------ | ---------- | ------------------------------------------------------ | ------------------ |<br>
+|        |            |                                                        | Alexia, Ana        |<br>
+| 1.0    | 27/06/2022 | Versão Inicial do Relatório                            | Andre, Augusto,    |<br>
+|        |            |                                                        | Davi               |<br>
+| ------ | ---------- | ------------------------------------------------------ | ------------------ |<br>
 
 ## Introdução
-xxxxxxxxxxxxxxx
-## Cronograma
+        A aplicação web CapitaC será de extrema importância para a obtenção de informações de clientes, e através dessas informações o nosso projeto tem como objetivo criar uma base estrutural para a filtragem e procura de possíveis parceiros comerciais, e também servir como fonte de planejamento para a área de marketing da Capital Atacadista. 
+
+        O sistema será direcionado para os funcionários da empresa Capital Atacadista, considerando inicialmente três tipos de usuários, o motoboy, que coletará os dados, o atendente de telemarketing, que consome os dados, e o gerente que tem acesso a todos anteriores e a relatórios feitos dos dados coletados e utilizados. O cliente do produto é a empresa Capital Atacadista, que é representada pelo diretor  Geraldo Corrêa.
+
+<!-- ## Cronograma
 
 ### 00/00/2022
 xxxxxxxxxxxxxxxxxxxx
@@ -23,13 +27,13 @@ xxxxxxxxxxxxxxxxxxxxx
 ### 00/00/2022
 xxxxxxxxxxxxxxxxxxxxxxx
 
-## Mural Lean Inception
+## Mural Lean Inception -->
 
-<iframe src='https://app.mural.co/embed/fe8ce76a-744e-47a9-997f-dc816d1b55e3'
+<!-- <iframe src='https://app.mural.co/embed/fe8ce76a-744e-47a9-997f-dc816d1b55e3'
         width='100%'
         height='480px'
         style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'
         sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox'>
-</iframe>
+</iframe> -->
 
 <!--[Link para o mural Lean Inception](https://app.mural.co/embed/fe8ce76a-744e-47a9-997f-dc816d1b55e3)-->
