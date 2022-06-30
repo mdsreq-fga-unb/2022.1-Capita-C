@@ -13,7 +13,7 @@ theme:
 
   logo: stylesheets/assets/images/logo-horizont.png
 
-  favicon: stylesheets/assets/favicon.ico
+  favicon: stylesheets/assets/favicon.png
 
   icon:
     repo: fontawesome/brands/github

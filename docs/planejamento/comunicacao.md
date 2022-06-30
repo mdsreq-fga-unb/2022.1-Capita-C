@@ -4,11 +4,12 @@ O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organiz
 
 ## Matriz de comunicação
 
-| Descrição                                                              | Envolvidos        | Periodicidade| Produtos Gerados                             |
-| ---------------------------------------------------------------------- | ----------------- | ------- | ------------------------------------------------- |
-| Acompanhamento das Atividades em Andamento                             | Equipe do Projeto | Semanal | Ata de reunião e relatório de situação do projeto |
-| Acompanhamento dos Riscos, Compromissos, Ações Pendentes e indicadores | Equipe do Projeto | Semanal | Ata de reunião e relatório de situação do projeto |
-| Reunião com o cliente                          | Equipe do Projeto de Requisitos e Cliente | Semanal | Relatório de Satisfação                           |
+| Descrição                                                              | Envolvidos                                | Periodicidade | Produtos Gerados                                  |
+| ---------------------------------------------------------------------- | ----------------------------------------- | ------------- | ------------------------------------------------- |
+| Acompanhamento das Atividades em Andamento                             | Equipe do Projeto                         | Semanal       | Ata de reunião e relatório de situação do projeto |
+| Atualização do Andamento do Projeto                                    | Equipe e Professor                        | 2x na Semana  | Feedback para a equipe                            |
+| Acompanhamento dos Riscos, Compromissos, Ações Pendentes e indicadores | Equipe do Projeto                         | Semanal       | Ata de reunião e relatório de situação do projeto |
+| Reunião com o cliente                                                  | Equipe do Projeto de Requisitos e Cliente | Semanal       | Relatório de Satisfação                           |
 
 
 ## Ferramentas
@@ -26,6 +27,6 @@ O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organiz
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                    | Autor                                                         |
-| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
-| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| Data       | Versão | Descrição      | Autor                                                                                                       |
+| ---------- | ------ | -------------- | ----------------------------------------------------------------------------------------------------------- |
+| 30/07/2021 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
