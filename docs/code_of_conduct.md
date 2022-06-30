@@ -1,12 +1,5 @@
 ## Código de Conduta
 
-**Histórico de Revisão**
-
-| Data       | Versão | Descrição                    | Autor                                                         |
-| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
-| 30/08/2021 | 0.1    | Versão inicial               | [Augusto Camargo](https://github.com/augustocrmg)             |
-| 05/04/2021 | 0.2    | Criando histórico de revisão | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-
 ### Compromisso
 O projeto comporta diferentes pessoas trabalhando simultâneamente para contribuir com a sociedade. Nosso compromisso é garantir a qualidade do produto, respeito e harmonia entre os contribuidores.
 
