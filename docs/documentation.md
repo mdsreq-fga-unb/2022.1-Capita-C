@@ -1,6 +1,7 @@
 <h1>Intro</h1>
 
-**Wiki destinada ao trabalho realizado nas disciplinas de REQ e MDS da Universidade de Brasilia.**
+**Wiki destinada ao trabalho realizado nas disciplinas de REQ e MDS da
+Universidade de Brasilia.**
 
 ## Equipe 2022.1
 
@@ -33,7 +34,8 @@
     <tr>
       <td>Carlos Eduardo Mendes de Mesquita</td>
       <td>cmendesdemesquita@gmail.com</td>
-      <td><a href="https://github.com/CarlosEduardoMendesdeMesquita"> CarlosEduardoMendesdeMesquita</a></td>
+      <td><a href="https://github.com/CarlosEduardoMendesdeMesquita">
+          CarlosEduardoMendesdeMesquita</a></td>
       <td>MDS</td>
       <td>19/0085584</td>
     </tr>
@@ -69,7 +71,8 @@
     <tr>
       <td>Arthur Ferreira Rodrigues</td>
       <td>fr.arthur.fr@gmail.com</td>
-      <td><a href="https://github.com/ArthurFerreiraRodrigues"> ArthurFerreiraRodrigues</a></td>
+      <td><a href="https://github.com/ArthurFerreiraRodrigues">
+          ArthurFerreiraRodrigues</a></td>
       <td>REQ</td>
       <td>20/0056981</td>
     </tr>
@@ -100,11 +103,12 @@
 <br>
 
 <section id="home" class="promo section offset-header">
-    <div class="container text-center" >
-        <div class="btns" style = "font-size: 20px; justify-content: space-between;">
-            <a class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a>
-            <a class="btn btn-cta-primary" href="./planejamento/tempo">Gerenciamento de Tempo</a>
-            <a class="btn btn-cta-primary" href="./planejamento/comunicacao">Comunicação</a>
-        </div>
+  <div class="container text-center">
+    <div class="btns" style="font-size: 20px; justify-content: space-between;display:flex;">
+      <div><a class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a></div>
+      <div><a class="btn btn-cta-primary" href="./planejamento/tempo">Gerenciamento
+          de Tempo</a></div>
+      <div><a class="btn btn-cta-primary" href="./planejamento/comunicacao">Comunicação</a></div>
     </div>
+  </div>
 </section>
