@@ -1,25 +1,5 @@
 # Visão do Produto
 
-## Histórico de Versões
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Versão</th>
-      <th scope="col">Data</th>
-      <th scope="col">Modificação</th>
-      <th scope="col">Autor(es)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1.0</td>
-      <td>27/06/2022</td>
-      <td>Versão Inicial do Relatório</td>
-      <td>Alexia, Ana, Andre, Augusto, Davi</td>
-    </tr>
-  </tbody>
-</table>
-
 ## Introdução
 
 <p> A aplicação web CapitaC será de extrema importância para a obtenção de informações de clientes, e através dessas informações o nosso projeto tem como objetivo criar uma base estrutural para a filtragem e procura de possíveis parceiros comerciais, e também servir como fonte de planejamento para a área de marketing da Capital Atacadista. </p>
@@ -50,3 +30,23 @@ xxxxxxxxxxxxxxxxxxxxxxx
 </iframe> -->
 
 <!--[Link para o mural Lean Inception](https://app.mural.co/embed/fe8ce76a-744e-47a9-997f-dc816d1b55e3)-->
+
+**Histórico de Versões**
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Versão</th>
+      <th scope="col">Data</th>
+      <th scope="col">Modificação</th>
+      <th scope="col">Autor(es)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>27/06/2022</td>
+      <td>Versão Inicial do Relatório</td>
+      <td>Alexia, Ana, Andre, Augusto, Davi</td>
+    </tr>
+  </tbody>
+</table>

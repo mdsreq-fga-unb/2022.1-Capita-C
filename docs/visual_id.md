@@ -1,35 +1,5 @@
 <h1 style="text-align: center">Identidade Visual</h1>
 
-**Histórico de Revisão**
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Data</th>
-            <th scope="col">Versão</th>
-            <th scope="col">Descrição</th>
-            <th scope="col">Autor</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- AINDA EM MOCK -->
-        <tr>
-            <td>01/01/2020</td>
-            <td>1.0.0</td>
-            <td>Primeira versão</td>
-            <td href="https://github.com/ÃrthurFerreiraRodrigues">Arthur
-                Ferreira</td>
-        </tr>
-        <tr>
-            <td>01/01/2020</td>
-            <td>1.0.1</td>
-            <td>Segunda versão</td>
-            <td href="https://github.com/ÃrthurFerreiraRodrigues">Arthur
-                Ferreira</td>
-        </tr>
-    </tbody>
-</table>
-
-
 ## Cores:
 
 ![Paleta de cores](./imagens/color_pallete.jpeg)
