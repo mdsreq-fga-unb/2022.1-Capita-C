@@ -8,22 +8,19 @@ edit_uri: ""
 extra_css:
   - stylesheets/extra.css
 
-# theme:
-#   name: material
+theme:
+  name: material
 
-#   logo: stylesheets/assets/logo.png
+  logo: stylesheets/assets/images/logo-horizont.png
 
-#   favicon: stylesheets/assets/logo.png
+  favicon: stylesheets/assets/favicon.ico
 
-#   icon:
-#     repo: fontawesome/brands/github
+  icon:
+    repo: fontawesome/brands/github
 
-#   features:
-#     - navigation.tabs
-#     - navigation.top
-  
-extra_css:
-  - stylesheets/extra.css
+  features:
+    - navigation.tabs
+    - navigation.top
   
 extra:
   social:
@@ -40,7 +37,7 @@ nav:
     - Comunicacao: planejamento/comunicacao.md
     - Custos: planejamento/custos.md
     - Riscos: planejamento/riscos.md
-    - Tempo: planejamento/tempo.md    
+    - Tempo: planejamento/ciclos.md    
   - Políticas do Repositório: 
     - Como contribuir: contributing.md
     - Código de conduta: code_of_conduct.md
