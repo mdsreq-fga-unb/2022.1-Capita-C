@@ -1,0 +1,46 @@
+site_name: Documentação
+
+repo_name: mdsreq-fga-unb/2022.1-Monitoramento-de-Obras
+repo_url: https://github.com/mdsreq-fga-unb/2022.1-Monitoramento-de-Obras
+
+edit_uri: ""
+
+extra_css:
+  - stylesheets/extra.css
+
+# theme:
+#   name: material
+
+#   logo: stylesheets/assets/logo.png
+
+#   favicon: stylesheets/assets/logo.png
+
+#   icon:
+#     repo: fontawesome/brands/github
+
+#   features:
+#     - navigation.tabs
+#     - navigation.top
+  
+extra_css:
+  - stylesheets/extra.css
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mdsreq-fga-unb/2022.1-Monitoramento-de-Obras
+
+nav:
+  - Artefatos:
+    - Início: documentation.md
+    - Documento de arquitetura: doc_arquitetura.md
+    - Documento de visão: doc_visao.md
+    - Identidade Visual: visual_id.md
+  - Planejamento:
+    - Comunicacao: planejamento/comunicacao.md
+    - Custos: planejamento/custos.md
+    - Riscos: planejamento/riscos.md
+    - Tempo: planejamento/tempo.md    
+  - Políticas do Repositório: 
+    - Como contribuir: contributing.md
+    - Código de conduta: code_of_conduct.md
