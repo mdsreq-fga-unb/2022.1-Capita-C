@@ -6,29 +6,107 @@
 ****
 
 ### REQ
-| Membro                       | E-mail                          | Github                                                                | Papel | Matricula |
-| ---------------------------- | ------------------------------- | --------------------------------------------------------------------- | ----- | --------- |
-| Andre Correa Da Silva        | andre.correa.silva203@gmail.com | [dartmol203](https://github.com/dartmol203)                           | REQ   | 200014447 |
-| Arthur Ferreira Rodrigues    | fr.arthur.fr@gmail.com          | [ArthurFerreiraRodrigues](https://github.com/ArthurFerreiraRodrigues) | REQ   | 200056981 |
-| Augusto Durães Camargo       | augusto.duraes33@gmail.com      | [augustocrmg](https://github.com/augustocrmg)                         | REQ   | 190084731 |
-| Carlos Eduardo Miranda Roriz | ceduardo.roriz@gmail.com        | [caduroriz](https://github.com/caduroriz)                             | REQ   | 190011424 |
-| Gabriel Luiz De Souza Gomes  | gabriel.luiz77888@gmail.com     | [ggomesbr](https://github.com/ggomesbr)                               | REQ   | 190013354 |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Membro</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Github</th>
+      <th scope="col">Pepel</th>
+      <th scope="col">Matrícula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Andre Correa Da Silva</td>
+      <td>andre.correa.silva203@gmail.com</td>
+      <td href="https://github.com/dartmol203">dartmol203</td>
+      <td>REQ</td>
+      <td>20/0014447</td>
+    </tr>
+    <tr>
+      <td>Arthur Ferreira Rodrigues</td>
+      <td>fr.arthur.fr@gmail.com</td>
+      <td href="https://github.com/ArthurFerreiraRodrigues">ArthurFerreiraRodrigues</td>
+      <td>REQ</td>
+      <td>20/0056981</td>
+    </tr>
+    <tr>
+      <td>Augusto Durães Camargo</td>
+      <td>augusto.duraes33@gmail.com</td>
+      <td href="https://github.com/augustocrmg">augustocrmg</td>
+      <td>REQ</td>
+      <td>19/0084731</td>
+    </tr>
+    <tr>
+      <td>Carlos Eduardo Miranda Roriz</td>
+      <td>ceduardo.roriz@gmail.com</td>
+      <td href="https://github.com/caduroriz">caduroriz</td>
+      <td>REQ</td>
+      <td>19/0011424</td>
+    </tr>
+    <tr>
+      <td>Gabriel Luiz De Souza Gomes</td>
+      <td>gabriel.luiz77888@gmail.com</td>
+      <td href="https://github.com/ggomesbr">ggomesbr</td>
+      <td>REQ</td>
+      <td>19/0013354</td>
+    </tr>
+  </tbody>
+</table>
 
 ### MDS
-| Membro                            | E-mail                        | Github                                                                            | Papel | Matricula |
-| --------------------------------- | ----------------------------- | --------------------------------------------------------------------------------- | ----- | --------- |
-| Alexia Naara da Silva Cardoso     | alexiasilvacardosoo@gmail.com | [alexianaa](https://github.com/alexianaa)                                         | MDS   | 202045007 |
-| Ana Caroline Campos Rocha         | sqscamposuni@gmail.com        | [anaaroch](https://github.com/anaaroch)                                           | MDS   | 190083930 |
-| Carlos Eduardo Mendes de Mesquita | cmendesdemesquita@gmail.com   | [CarlosEduardoMendesdeMesquita](https://github.com/CarlosEduardoMendesdeMesquita) | MDS   | 190085584 |
-| Davi Gonçalves Akegawa Pierre     | davi.pierre123@gmail.com      | [DaviPierre](https://github.com/DaviPierre)                                       | MDS   | 190105071 |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Membro</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Github</th>
+      <th scope="col">Pepel</th>
+      <th scope="col">Matrícula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alexia Naara da Silva Cardoso</td>
+      <td>alexiasilvacardosoo@gmail.com</td>
+      <td href="https://github.com/alexianaa">alexianaa</td>
+      <td>MDS</td>
+      <td>20/2045007</td>
+    </tr>
+    <tr>
+      <td>Ana Caroline Campos Rocha</td>
+      <td>sqscamposuni@gmail.com</td>
+      <td href="https://github.com/anaaroch">anaaroch</td>
+      <td>MDS</td>
+      <td>19/0083930</td>
+    </tr>
+    <tr>
+      <td>Carlos Eduardo Mendes de Mesquita</td>
+      <td>cmendesdemesquita@gmail.com</td>
+      <td href="https://github.com/CarlosEduardoMendesdeMesquita">CarlosEduardoMendesdeMesquita</td>
+      <td>MDS</td>
+      <td>19/0085584</td>
+    </tr>
+    <tr>
+      <td>Davi Gonçalves Akegawa Pierre</td>
+      <td>davi.pierre123@gmail.com</td>
+      <td href="https://github.com/DaviPierre">DaviPierre</td>
+      <td>MDS</td>
+      <td>19/0105071</td>
+    </tr>
+  </tbody>
+</table>
 
+
+<br>
 
 <section id="home" class="promo section offset-header">
-    <div class="container text-center">
+    <div class="container text-center" style = "justify-content: space-between;">
         <div class="btns">
-            <a class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a>
-            <a class="btn btn-cta-primary" href="tempo">Gerenciamento de Tempo</a>
-            <a class="btn btn-cta-primary" href="comunicacao">Comunicação</a>
+            <a style = "font-size: 20px;" class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a>
+            <a class="btn btn-cta-primary" href="/planejamento/tempo">Gerenciamento de Tempo</a>
+            <a class="btn btn-cta-primary" href="/planejamento/comunicacao">Comunicação</a>
         </div>
     </div>
 </section>
