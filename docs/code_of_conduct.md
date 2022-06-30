@@ -1,10 +1,10 @@
 ## Código de Conduta
 
 ### Compromisso
-O projeto comporta diferentes pessoas trabalhando simultâneamente para contribuir com a sociedade. Nosso compromisso é garantir a qualidade do produto, respeito e harmonia entre os contribuidores.
+<p style="text-align: justify" > O projeto comporta diferentes pessoas trabalhando simultâneamente para contribuir com a sociedade. Nosso compromisso é garantir a qualidade do produto, respeito e harmonia entre os contribuidores. </p>
 
 ### Códigos
-Padrões adotados para manter um ambiente agradável:
+<p style="text-align: justify" > Padrões adotados para manter um ambiente agradável: </p>
 <ul>
     <li>Seja amigável e respeitoso</li>
     <li>Tenha compromisso com o projeto</li>
@@ -14,7 +14,7 @@ Padrões adotados para manter um ambiente agradável:
     <li>Mantenha uma conduta profissional</li>
 </ul>
 
-Não será aceito:
+<p style="text-align: justify" > Não será aceito:</p>
 <ul>
     <li>Insultos</li>
     <li>Comunicação ofensiva</li>
@@ -22,3 +22,10 @@ Não será aceito:
     <li>Intolerância</li>
     <li>Desrespeito com as pessoas e a ordem</li>
 </ul>
+
+
+**Histórico de Versões**
+
+| Data       | Versão | Descrição                    | Autor                                                         |
+| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
+| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch)                   |

@@ -1,6 +1,6 @@
 # Gerenciamento de Tempo
 ## Introdução
-O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organizar as atividades em ordem cronológica.
+<p style="text-align: justify" > O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organizar as atividades em ordem cronológica.</p>
 
 ## Processo de Desenvolvimento de Software
   <p style="text-align: justify"> Para decidir o processo de desenvolvimento de software do projeto usamos a ideia de Sommerville (2018), que propõe que a decisão deve ser tomada a partir das respostas às perguntas de três naturezas: técnicas, humanas e organizacionais. </p>
