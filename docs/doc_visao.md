@@ -46,7 +46,7 @@ xxxxxxxxxxxxxxxxxxxxxxx
       <td>1.0</td>
       <td>27/06/2022</td>
       <td>Versão Inicial do Relatório</td>
-      <td>Alexia, Ana, Andre, Augusto, Davi</td>
+      <td>Alexia, Ana Caroline, Andre, Augusto, Davi</td>
     </tr>
   </tbody>
 </table>

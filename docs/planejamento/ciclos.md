@@ -2,10 +2,6 @@
 ## Introdução
 O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organizar as atividades em ordem cronológica.
 
-<!-- ## Gráfico de Gantt -->
-
-<!-- ![](https://i.imgur.com/yBwt7cZ.png) -->
-
 ## Planejamento das Iterações do Projeto
 <table class="table">
   <thead>
@@ -88,6 +84,26 @@ O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organiz
         <td>Implantação e entrega do MVP2</td>
         <td>23/09/2022</td>
         <td>19/09/2022</td>
+    </tr>
+  </tbody>
+</table>
+
+**Histórico de Versões**
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Versão</th>
+      <th scope="col">Data</th>
+      <th scope="col">Modificação</th>
+      <th scope="col">Autor(es)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>30/06/2022</td>
+      <td>Criação do Documento</td>
+      <td>Ana Caroline</td>
     </tr>
   </tbody>
 </table>
