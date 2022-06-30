@@ -1,17 +1,10 @@
 # Visão do Produto
 
-## Histórico de Versões
-| Versão | Data       | Modificação                                            | Autor(es)          |<br>
-| ------ | ---------- | ------------------------------------------------------ | ------------------ |<br>
-|        |            |                                                        | Alexia, Ana        |<br>
-| 1.0    | 27/06/2022 | Versão Inicial do Relatório                            | Andre, Augusto,    |<br>
-|        |            |                                                        | Davi               |<br>
-| ------ | ---------- | ------------------------------------------------------ | ------------------ |<br>
-
 ## Introdução
-        A aplicação web CapitaC será de extrema importância para a obtenção de informações de clientes, e através dessas informações o nosso projeto tem como objetivo criar uma base estrutural para a filtragem e procura de possíveis parceiros comerciais, e também servir como fonte de planejamento para a área de marketing da Capital Atacadista. 
 
-        O sistema será direcionado para os funcionários da empresa Capital Atacadista, considerando inicialmente três tipos de usuários, o motoboy, que coletará os dados, o atendente de telemarketing, que consome os dados, e o gerente que tem acesso a todos anteriores e a relatórios feitos dos dados coletados e utilizados. O cliente do produto é a empresa Capital Atacadista, que é representada pelo diretor  Geraldo Corrêa.
+<p> A aplicação web CapitaC será de extrema importância para a obtenção de informações de clientes, e através dessas informações o nosso projeto tem como objetivo criar uma base estrutural para a filtragem e procura de possíveis parceiros comerciais, e também servir como fonte de planejamento para a área de marketing da Capital Atacadista. </p>
+
+<p> O sistema será direcionado para os funcionários da empresa Capital Atacadista, considerando inicialmente três tipos de usuários, o motoboy, que coletará os dados, o atendente de telemarketing, que consome os dados, e o gerente que tem acesso a todos anteriores e a relatórios feitos dos dados coletados e utilizados. O cliente do produto é a empresa Capital Atacadista, que é representada pelo diretor Geraldo Corrêa. </p>
 
 <!-- ## Cronograma
 
@@ -37,3 +30,23 @@ xxxxxxxxxxxxxxxxxxxxxxx
 </iframe> -->
 
 <!--[Link para o mural Lean Inception](https://app.mural.co/embed/fe8ce76a-744e-47a9-997f-dc816d1b55e3)-->
+
+**Histórico de Versões**
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Versão</th>
+      <th scope="col">Data</th>
+      <th scope="col">Modificação</th>
+      <th scope="col">Autor(es)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.0</td>
+      <td>27/06/2022</td>
+      <td>Versão Inicial do Relatório</td>
+      <td>Alexia, Ana Caroline, Andre, Augusto, Davi</td>
+    </tr>
+  </tbody>
+</table>
