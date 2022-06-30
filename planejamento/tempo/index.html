@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tempo - Documentação</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Documentação</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../documentation/" class="dropdown-item">Início</a>
+</li>
+                                    
+<li>
+    <a href="../../doc_arquitetura/" class="dropdown-item">Documento de arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="../../doc_visao/" class="dropdown-item">Documento de visão</a>
+</li>
+                                    
+<li>
+    <a href="../../visual_id/" class="dropdown-item">Identidade Visual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Planejamento <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../comunicacao/" class="dropdown-item">Comunicacao</a>
+</li>
+                                    
+<li>
+    <a href="../custos/" class="dropdown-item">Custos</a>
+</li>
+                                    
+<li>
+    <a href="../riscos/" class="dropdown-item">Riscos</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Tempo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Políticas do Repositório <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../contributing/" class="dropdown-item">Como contribuir</a>
+</li>
+                                    
+<li>
+    <a href="../../code_of_conduct/" class="dropdown-item">Código de conduta</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../riscos/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../contributing/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/mdsreq-fga-unb/2022.1-Monitoramento-de-Obras" class="nav-link">mdsreq-fga-unb/2022.1-Monitoramento-de-Obras</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#gerenciamento-de-tempo" class="nav-link">Gerenciamento de Tempo</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introducao" class="nav-link">Introdução</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#planejamento-das-iteracoes-do-projeto" class="nav-link">Planejamento das Iterações do Projeto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="gerenciamento-de-tempo">Gerenciamento de Tempo</h1>
+<h2 id="introducao">Introdução</h2>
+<p>O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organizar as atividades em ordem cronológica.</p>
+<!-- ## Gráfico de Gantt -->
+
+<!-- ![](https://i.imgur.com/yBwt7cZ.png) -->
+
+<h2 id="planejamento-das-iteracoes-do-projeto">Planejamento das Iterações do Projeto</h2>
+<table class="table">
+  <thead>
+    <tr>
+        <th scope="col">Ciclos</th>
+        <th scope="col">Entrega</th>
+        <th scope="col">Data Início</th>
+        <th scope="col">Data Fim</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <th scope="row">Ciclo 1</th>
+        <td>Definição do Produto</td>
+        <td>27/06/2022</td>
+        <td>03/07/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 2</th>
+        <td>Levantamento de Requisitos</td>
+        <td>04/07/2022</td>
+        <td>10/07/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 3</th>
+        <td>Análise e Design</td>
+        <td>11/07/2022</td>
+        <td>17/07/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 4</th>
+        <td>Análise e Design</td>
+        <td>18/07/2022</td>
+        <td>24/07/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 5</th>
+        <td>Implementação</td>
+        <td>25/07/2022</td>
+        <td>31/07/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 6</th>
+        <td>Implementação</td>
+        <td>01/08/2022</td>
+        <td>07/08/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 7</th>
+        <td>Implementação</td>
+        <td>08/08/2022</td>
+        <td>14/08/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 8</th>
+        <td>Implementação e entrega do MVP1</td>
+        <td>15/08/2022</td>
+        <td>21/08/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 9</th>
+        <td>Implementação</td>
+        <td>22/08/2022</td>
+        <td>28/08/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 10</th>
+        <td>Implementação</td>
+        <td>29/08/2022</td>
+        <td>05/09/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 11</th>
+        <td>Implantação</td>
+        <td>06/09/2022</td>
+        <td>12/09/2022</td>
+    </tr>
+    <tr>
+        <th scope="row">Ciclo 12</th>
+        <td>Implantação e entrega do MVP2</td>
+        <td>23/09/2022</td>
+        <td>19/09/2022</td>
+    </tr>
+  </tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

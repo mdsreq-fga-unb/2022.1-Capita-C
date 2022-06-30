@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>jQuery.scrollTo - Documentação</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../extra.css" rel="stylesheet">
+
+        <script src="../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">Documentação</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../documentation/" class="dropdown-item">Início</a>
+</li>
+                                    
+<li>
+    <a href="../../../../doc_arquitetura/" class="dropdown-item">Documento de arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="../../../../doc_visao/" class="dropdown-item">Documento de visão</a>
+</li>
+                                    
+<li>
+    <a href="../../../../visual_id/" class="dropdown-item">Identidade Visual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Planejamento <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../planejamento/comunicacao/" class="dropdown-item">Comunicacao</a>
+</li>
+                                    
+<li>
+    <a href="../../../../planejamento/custos/" class="dropdown-item">Custos</a>
+</li>
+                                    
+<li>
+    <a href="../../../../planejamento/riscos/" class="dropdown-item">Riscos</a>
+</li>
+                                    
+<li>
+    <a href="../../../../planejamento/tempo/" class="dropdown-item">Tempo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Políticas do Repositório <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../contributing/" class="dropdown-item">Como contribuir</a>
+</li>
+                                    
+<li>
+    <a href="../../../../code_of_conduct/" class="dropdown-item">Código de conduta</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/mdsreq-fga-unb/2022.1-Monitoramento-de-Obras" class="nav-link">mdsreq-fga-unb/2022.1-Monitoramento-de-Obras</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#jqueryscrollto" class="nav-link">jQuery.scrollTo</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#installation" class="nav-link">Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20" class="nav-link">2.0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#usage" class="nav-link">Usage</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#demo" class="nav-link">Demo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#complementary-plugins" class="nav-link">Complementary plugins</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#license" class="nav-link">License</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="jqueryscrollto">jQuery.scrollTo</h1>
+<p>Lightweight, cross-browser and highly customizable animated scrolling with jQuery</p>
+<p><a href="http://flattr.com/thing/2081384/fleslerjquery-scrollTo-on-GitHub"><img alt="" src="http://api.flattr.com/button/flattr-badge-large.png" /></a>
+<a href="http://badge.fury.io/gh/flesler%2Fjquery.scrollTo"><img alt="GitHub version" src="https://badge.fury.io/gh/flesler%2Fjquery.scrollTo.svg" /></a>
+<a href="http://libscore.com/#jQuery.fn.scrollTo"><img alt="libscore" src="http://img.shields.io/badge/libscore-31656-brightgreen.svg?style=flat-square" /></a></p>
+<h2 id="installation">Installation</h2>
+<p>The plugin requires jQuery 1.8 or higher.</p>
+<p>Via <a href="https://github.com/flesler/jquery.scrollTo/blob/master/bower.json">bower</a>:</p>
+<pre><code class="language-bash">bower install jquery.scrollTo
+</code></pre>
+<p>Via <a href="https://www.npmjs.com/package/jquery.scrollto">npm</a>:</p>
+<pre><code class="language-bash">npm install jquery.scrollto
+</code></pre>
+<p>Via <a href="https://packagist.org/packages/flesler/jquery.scrollTo">packagist</a>:</p>
+<pre><code class="language-php">php composer.phar require --prefer-dist flesler/jquery.scrollto &quot;*&quot;
+</code></pre>
+<h3 id="using-a-public-cdn">Using a public CDN</h3>
+<p>CDN provided by <a href="http://www.jsdelivr.com/#!jquery.scrollto">jsdelivr</a></p>
+<pre><code class="language-html">&lt;script src=&quot;//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>CDN provided by <a href="https://cdnjs.com/libraries/jquery-scrollTo">cdnjs</a></p>
+<pre><code class="language-html">&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h3 id="downloading-manually">Downloading Manually</h3>
+<p>If you want the latest stable version, get the latest release from the <a href="https://github.com/flesler/jquery.scrollTo/releases">releases page</a>.</p>
+<h2 id="20">2.0</h2>
+<p>Version 2.0 has been recently released. It is mostly backwards compatible, if you have any issue first check <a href="https://github.com/flesler/jquery.scrollTo/wiki/Migrating-to-2.0">this link</a>.
+If your problem is not solved then go ahead and <a href="https://github.com/flesler/jquery.scrollTo/issues/new">report the issue</a>.</p>
+<h2 id="usage">Usage</h2>
+<p>jQuery.scrollTo's signature is designed to resemble <a href="http://api.jquery.com/animate/">$().animate()</a>.</p>
+<pre><code class="language-js">$(element).scrollTo(target[,duration][,settings]);
+</code></pre>
+<h3 id="element"><em>element</em></h3>
+<p>This must be a scrollable element, to scroll the whole window use <code>$(window)</code>.</p>
+<h3 id="target"><em>target</em></h3>
+<p>This defines the position to where <code>element</code> must be scrolled. The plugin supports all these formats:
+ * A number with a fixed position: <code>250</code>
+ * A string with a fixed position with px: <code>"250px"</code>
+ * A string with a percentage (of container's size): <code>"50%"</code>
+ * A string with a relative step: <code>"+=50px"</code>
+ * An object with <code>left</code> and <code>top</code> containining any of the aforementioned: <code>{left:250, top:"50px"}</code>
+ * The string <code>"max"</code> to scroll to the end.
+ * A string selector that will be relative to the element to scroll: <code>".section:eq(2)"</code>
+ * A DOM element, probably a child of the element to scroll: <code>document.getElementById("top")</code>
+ * A jQuery object with a DOM element: <code>$("#top")</code></p>
+<h3 id="settings"><em>settings</em></h3>
+<p>The <code>duration</code> parameter is a shortcut to the setting with the same name.
+These are the supported settings:
+ * <strong>axis</strong>: The axes to animate: <code>xy</code> (default), <code>x</code>, <code>y</code>, <code>yx</code>
+ * <strong>interrupt</strong>: If <code>true</code> will cancel the animation if the user scrolls. Default is <code>false</code>
+ * <strong>limit</strong>: If <code>true</code> the plugin will not scroll beyond the container's size. Default is <code>true</code>
+ * <strong>margin</strong>: If <code>true</code>, subtracts the margin and border of the <code>target</code> element. Default is <code>false</code>
+ * <strong>offset</strong>: Added to the final position, can be a number or an object with <code>left</code> and <code>top</code>
+ * <strong>over</strong>: Adds a % of the <code>target</code> dimensions: <code>{left:0.5, top:0.5}</code>
+ * <strong>queue</strong>: If <code>true</code> will scroll one <code>axis</code> and then the other. Default is <code>false</code>
+ * <strong>onAfter(target, settings)</strong>: A callback triggered when the animation ends (jQuery's <code>complete()</code>)
+ * <strong>onAfterFirst(target, settings)</strong>: A callback triggered after the first axis scrolls when queueing</p>
+<p>You can add any setting supported by <a href="http://api.jquery.com/animate/#animate-properties-options">$().animate()</a> as well:</p>
+<ul>
+<li><strong>duration</strong>: Duration of the animation, default is <code>0</code> which makes it instantaneous</li>
+<li><strong>easing</strong>: Name of an easing equation, you must register the easing function: <code>swing</code></li>
+<li><strong>fail()</strong>: A callback triggered when the animation is stopped (f.e via <code>interrupt</code>)</li>
+<li><strong>step()</strong>: A callback triggered for every animated property on every frame</li>
+<li><strong>progress()</strong>: A callback triggered on every frame</li>
+<li>And more, check jQuery's <a href="http://api.jquery.com/animate/#animate-properties-options">documentation</a></li>
+</ul>
+<h3 id="window-shorthand">window shorthand</h3>
+<p>You can use <code>$.scrollTo(...)</code> as a shorthand for <code>$(window).scrollTo(...)</code>.</p>
+<h3 id="changing-the-default-settings">Changing the default settings</h3>
+<p>As with most plugins, the default settings are exposed so they can be changed.</p>
+<pre><code class="language-js">$.extend($.scrollTo.defaults, {
+  axis: 'y',
+  duration: 800
+});
+</code></pre>
+<h3 id="stopping-the-animation">Stopping the animation</h3>
+<p>jQuery.scrollTo ends up creating ordinary animations which can be stopped by calling <a href="http://api.jquery.com/stop/">$().stop()</a> or <a href="http://api.jquery.com/finish/">$().finish()</a> on the same element you called <code>$().scrollTo()</code>, including the <code>window</code>.
+Remember you can pass a <code>fail()</code> callback to be called when the animation is stopped.</p>
+<h3 id="onafter-and-requestanimationframe">onAfter and requestAnimationFrame</h3>
+<p>jQuery.scrollTo has a <code>onAfter</code> callback for work that runs after the animation finishes. It will be called before the <code>scroll</code> event fires. To combat this you can use  <a href="http://caniuse.com/#feat=requestanimationframe">requestAnimationFrame</a> to do work on the next tick. It is available in many browsers, but you may want to <a href="https://github.com/chrisdickinson/raf">polyfill</a> for the few it does not support.</p>
+<pre><code class="language-js">$.scrollTo(100, {
+  onAfter: function() {
+    requestAnimationFrame(function() {
+        $(&quot;.result&quot;).addClass(&quot;selected&quot;);
+    });
+  }
+});
+</code></pre>
+<h2 id="demo">Demo</h2>
+<p>Check the <a href="http://demos.flesler.com/jquery/scrollTo/">demo</a> to see every option in action.</p>
+<h2 id="complementary-plugins">Complementary plugins</h2>
+<p>There are two plugins, also created by me that depend on jQuery.scrollTo and aim to simplify certain use cases.</p>
+<h3 id="jquerylocalscroll"><a href="https://github.com/flesler/jquery.localScroll">jQuery.localScroll</a></h3>
+<p>This plugin makes it very easy to implement anchor navigation.
+If you don't want to include another plugin, you can try using something like <a href="https://gist.github.com/flesler/3f3e1166690108abf747">this minimalistic gist</a>.</p>
+<h3 id="jqueryserialscroll"><a href="https://github.com/flesler/jquery.serialScroll">jQuery.serialScroll</a></h3>
+<p>This plugin simplifies the creation of scrolling slideshows.</p>
+<h2 id="license">License</h2>
+<p>(The MIT License)</p>
+<p>Copyright (c) 2007 Ariel Flesler <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#102;&#108;&#101;&#115;&#108;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#97;&#102;&#108;&#101;&#115;&#108;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js" defer></script>
+        <script src="../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

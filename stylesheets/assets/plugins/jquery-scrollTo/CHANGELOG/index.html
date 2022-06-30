@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Changelog - Documentação</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../../../../extra.css" rel="stylesheet">
+
+        <script src="../../../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">Documentação</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Artefatos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../documentation/" class="dropdown-item">Início</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../doc_arquitetura/" class="dropdown-item">Documento de arquitetura</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../doc_visao/" class="dropdown-item">Documento de visão</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../visual_id/" class="dropdown-item">Identidade Visual</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Planejamento <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../planejamento/comunicacao/" class="dropdown-item">Comunicacao</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../planejamento/custos/" class="dropdown-item">Custos</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../planejamento/riscos/" class="dropdown-item">Riscos</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../planejamento/tempo/" class="dropdown-item">Tempo</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Políticas do Repositório <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../../contributing/" class="dropdown-item">Como contribuir</a>
+</li>
+                                    
+<li>
+    <a href="../../../../../code_of_conduct/" class="dropdown-item">Código de conduta</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/mdsreq-fga-unb/2022.1-Monitoramento-de-Obras" class="nav-link">mdsreq-fga-unb/2022.1-Monitoramento-de-Obras</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#changelog" class="nav-link">Changelog</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#212" class="nav-link">2.1.2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#211" class="nav-link">2.1.1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#210" class="nav-link">2.1.0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#201" class="nav-link">2.0.1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#200" class="nav-link">2.0.0</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1414" class="nav-link">1.4.14</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1413" class="nav-link">1.4.13</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1412" class="nav-link">1.4.12</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1411" class="nav-link">1.4.11</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1410" class="nav-link">1.4.10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#149" class="nav-link">1.4.9</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#148" class="nav-link">1.4.8</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#147" class="nav-link">1.4.7</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#146" class="nav-link">1.4.6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#145" class="nav-link">1.4.5</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#144" class="nav-link">1.4.4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#1431" class="nav-link">1.4.3.1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#143" class="nav-link">1.4.3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#142" class="nav-link">1.4.2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#141" class="nav-link">1.4.1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#14" class="nav-link">1.4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#133" class="nav-link">1.3.3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#132" class="nav-link">1.3.2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#131" class="nav-link">1.3.1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#13" class="nav-link">1.3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#12" class="nav-link">1.2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="changelog">Changelog</h1>
+<h2 id="212">2.1.2</h2>
+<h3 id="fix">Fix</h3>
+<ul>
+<li>Plugin won't break if an empty jQuery object is passed, it's now consistent with selector target #121</li>
+</ul>
+<h3 id="docs">Docs</h3>
+<ul>
+<li>Converted the CHANGELOG to Markdown</li>
+</ul>
+<h2 id="211">2.1.1</h2>
+<h3 id="fix_1">Fix</h3>
+<ul>
+<li>Slight change so define function is not minified (#91)</li>
+</ul>
+<h2 id="210">2.1.0</h2>
+<h3 id="enhancement">Enhancement</h3>
+<ul>
+<li>Avoid animating a needless axis</li>
+</ul>
+<h3 id="feature">Feature</h3>
+<ul>
+<li>Implemented interrupt setting, if true will stop animating on user (manual) scroll (#67)</li>
+</ul>
+<h2 id="201">2.0.1</h2>
+<h3 id="fix_2">Fix</h3>
+<ul>
+<li>Fixed "queue" setting conflicts with $().animate(), forced to always get there as true</li>
+</ul>
+<h2 id="200">2.0.0</h2>
+<h3 id="feature_1">Feature</h3>
+<ul>
+<li>All settings are passed to jQuery.animate() meaning it now supports even more settings</li>
+</ul>
+<h3 id="enhancement_1">Enhancement</h3>
+<ul>
+<li>$(window)._scrollable() is no longer needed, the element is always the window</li>
+<li>Delegating to jQuery the get/set of element/window scroll positions.</li>
+</ul>
+<h3 id="compat">Compat</h3>
+<ul>
+<li>Dropped support for $.scrollTo.window() and $(window)._scrollable()</li>
+</ul>
+<h3 id="fix_3">Fix</h3>
+<ul>
+<li>Now works consistently on Chrome 40</li>
+<li>Now works correctly on Windows Phone</li>
+<li>Now works correctly on Android Browsers</li>
+<li>Now works correctly on iOS Browsers</li>
+</ul>
+<h2 id="1414">1.4.14</h2>
+<h3 id="misc">Misc</h3>
+<ul>
+<li>Internal both() function will handle nulls correctly</li>
+</ul>
+<h2 id="1413">1.4.13</h2>
+<h3 id="misc_1">Misc</h3>
+<ul>
+<li>Support for CommonJS / NPM added by durango</li>
+</ul>
+<h2 id="1412">1.4.12</h2>
+<h3 id="fix_4">Fix</h3>
+<ul>
+<li>Fixed selector matching body fails on window scrolling</li>
+</ul>
+<h2 id="1411">1.4.11</h2>
+<h3 id="misc_2">Misc</h3>
+<ul>
+<li>Reverted changes from 1.4.10</li>
+</ul>
+<h2 id="1410">1.4.10</h2>
+<h3 id="enhancement_2">Enhancement</h3>
+<ul>
+<li>Giving the plugin an AMD module id so it can be required (f.e by localScroll)</li>
+</ul>
+<h2 id="149">1.4.9</h2>
+<h3 id="enhancement_3">Enhancement</h3>
+<ul>
+<li>"offset" setting can now be a function as well (#60)</li>
+</ul>
+<h2 id="148">1.4.8</h2>
+<h3 id="enhancement_4">Enhancement</h3>
+<ul>
+<li>Added support for AMD</li>
+</ul>
+<h2 id="147">1.4.7</h2>
+<h3 id="misc_3">Misc</h3>
+<ul>
+<li>Changed spacing</li>
+<li>Changed licensing to MIT</li>
+<li>Repo is compliant with official jquery plugins repository</li>
+</ul>
+<h2 id="146">1.4.6</h2>
+<h3 id="fix_5">Fix</h3>
+<ul>
+<li>Fixed first argument of onAfter and onAfterFirst was original target and should be "parsed" target</li>
+</ul>
+<h2 id="145">1.4.5</h2>
+<h3 id="fix_6">Fix</h3>
+<ul>
+<li>Fixed passing a negative scroll value crashes</li>
+</ul>
+<h2 id="144">1.4.4</h2>
+<h3 id="change">Change</h3>
+<ul>
+<li>Re-released as 1.4.4 to avoid issues with bower</li>
+</ul>
+<h2 id="1431">1.4.3.1</h2>
+<h3 id="fix_7">Fix</h3>
+<ul>
+<li>Fixed $.scrollTo(0) broken on 1.4.3</li>
+</ul>
+<h2 id="143">1.4.3</h2>
+<h3 id="enhancement_5">Enhancement</h3>
+<ul>
+<li>Limit calculations can be disabled by setting the option 'limit' to false.</li>
+<li>Null target or unmatching selector don't break and fail silently</li>
+</ul>
+<h3 id="misc_4">Misc</h3>
+<ul>
+<li>Removed support for the deprecated setting 'speed'</li>
+</ul>
+<h3 id="fix_8">Fix</h3>
+<ul>
+<li>Removed $.browser.webkit so the plugin works with jQuery +1.8</li>
+</ul>
+<h2 id="142">1.4.2</h2>
+<h3 id="feature_2">Feature</h3>
+<ul>
+<li>The plugin support percentages as target ('50%' or {top:'50%', left:'45%'})</li>
+<li>Exposed the max() calculation as $.scrollTo.max</li>
+</ul>
+<h3 id="enhancement_6">Enhancement</h3>
+<ul>
+<li>Renamed $.fn.scrollable to $.fn._scrollable to avoid conflicts with other plugins</li>
+</ul>
+<h3 id="fix_9">Fix</h3>
+<ul>
+<li>Fixing max calculations for regular DOM elements</li>
+</ul>
+<h2 id="141">1.4.1</h2>
+<h3 id="feature_3">Feature</h3>
+<ul>
+<li>The target can be 'max' to scroll to the end while keeping it elegant.</li>
+</ul>
+<h3 id="enhancement_7">Enhancement</h3>
+<ul>
+<li>Default duration is 0 for jquery +1.3. Means sync animation</li>
+<li>The plugin works on all major browsers, on compat &amp; quirks modes, including iframes.</li>
+<li>In addition to window/document, if html or body are received, the plugin will choose the right one.</li>
+</ul>
+<h3 id="fix_10">Fix</h3>
+<ul>
+<li>The plugin accepts floating numbers, Thanks Ramin</li>
+<li>Using jQuery.nodeName where necessary so that this works on xml+xhtml</li>
+<li>The max() internal function wasn't completely accurate, now it is 98% (except for IE on quirks mode and it's not too noticeable).</li>
+</ul>
+<h2 id="14">1.4</h2>
+<h3 id="fix_11">Fix</h3>
+<ul>
+<li>Fixed the problem when scrolling the window to absolute positioned elements on Safari.</li>
+<li>Fixed the problem on Opera 9.5 when scrolling the window. That it always scrolls to 0.</li>
+</ul>
+<h3 id="feature_4">Feature</h3>
+<ul>
+<li>Added the settings object as 2nd argument to the onAfter callback.</li>
+<li>The 3rd argument of scrollTo can be just a function and it's used as the onAfter.</li>
+<li>Added full support for iframes (even max scroll calculation).</li>
+<li>Instead of $.scrollTo, $(window).scrollTo() and $(document).scrollTo() can be used.</li>
+<li>Added $().scrollable() that returns the real element to scroll, f.e: $(window).scrollable() == ###body|html], works for iframes</li>
+</ul>
+<h3 id="enhancement_8">Enhancement</h3>
+<ul>
+<li>Cleaned the code a bit, specially the comments</li>
+</ul>
+<h2 id="133">1.3.3</h2>
+<h3 id="change_1">Change</h3>
+<ul>
+<li>Changed the licensing from GPL to GPL+MIT.</li>
+</ul>
+<h2 id="132">1.3.2</h2>
+<h3 id="enhancement_9">Enhancement</h3>
+<ul>
+<li>Small improvements to make the code shorter.</li>
+</ul>
+<h3 id="change_2">Change</h3>
+<ul>
+<li>Removed the last argument received by onAfter as it was the same as the 'this' but jqueryfied.</li>
+</ul>
+<h2 id="131">1.3.1</h2>
+<h3 id="feature_5">Feature</h3>
+<ul>
+<li>Exposed $.scrollTo.window() to get the element that needs to be animated, to scroll the window.</li>
+<li>Added option 'over'.</li>
+</ul>
+<h3 id="enhancement_10">Enhancement</h3>
+<ul>
+<li>Made the code as short as possible.</li>
+</ul>
+<h3 id="change_3">Change</h3>
+<ul>
+<li>Changed the arguments received by onAfter</li>
+</ul>
+<h2 id="13">1.3</h2>
+<h3 id="enhancement_11">Enhancement</h3>
+<ul>
+<li>Added semicolon to the start, for safe file concatenation</li>
+<li>Added a limit check, values below 0 or over the maximum are fixed.</li>
+<li>Now it should work faster, only one of html or body go through all the processing, instead of both for all browsers.</li>
+</ul>
+<h3 id="fix_12">Fix</h3>
+<ul>
+<li>Fixed the behavior for Opera, which seemed to react to both changes on <html> and <body>.</li>
+<li>The border is also reduced, when 'margin' is set to true.</li>
+</ul>
+<h3 id="change_4">Change</h3>
+<ul>
+<li>The option speed has been renamed to duration.</li>
+</ul>
+<h3 id="feature_6">Feature</h3>
+<ul>
+<li>The duration can be specified with a number as 2nd argument, and the rest of the settings as the third ( like $().animate )</li>
+<li>Remade the demo</li>
+</ul>
+<h4 id="124">1.2.4</h4>
+<h3 id="enhancement_12">Enhancement</h3>
+<ul>
+<li>The target can be in the form of { top:x, left:y } allowing different position for each axis.</li>
+</ul>
+<h3 id="feature_7">Feature</h3>
+<ul>
+<li>The option 'offset' has been added, to scroll behind or past the target. Can be a number(both axes) or { top:x, left:y }.</li>
+</ul>
+<h4 id="123">1.2.3</h4>
+<h3 id="feature_8">Feature</h3>
+<ul>
+<li>Exposed the defaults.</li>
+</ul>
+<h3 id="enhancement_13">Enhancement</h3>
+<ul>
+<li>Made the callback functions receive more parameters.</li>
+</ul>
+<h4 id="122">1.2.2</h4>
+<h3 id="fix_13">Fix</h3>
+<ul>
+<li>Fixed a bug, I didn't have to add the scrolled amount if it was body or html.</li>
+</ul>
+<h2 id="12">1.2</h2>
+<h3 id="change_5">Change</h3>
+<ul>
+<li>The option 'onafter' is now called 'onAfter'.</li>
+</ul>
+<h3 id="feature_9">Feature</h3>
+<ul>
+<li>Two axes can be scrolled together, this is set with the option 'axis'.</li>
+<li>In case 2 axes are chosen, the scrolling can be queued: one scrolls, and then the other.</li>
+<li>There's an intermediary event, 'onAfterFirst' called in case the axes are queued, after the first ends.</li>
+<li>If the option 'margin' is set to true, the plugin will take in account, the margin of the target(no use if target is a value).</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js" defer></script>
+        <script src="../../../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
