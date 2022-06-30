@@ -103,8 +103,8 @@
     <div class="container text-center" >
         <div class="btns" style = "font-size: 20px; justify-content: space-between;">
             <a class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a>
-            <a class="btn btn-cta-primary" href="./planejamento/tempo.md">Gerenciamento de Tempo</a>
-            <a class="btn btn-cta-primary" href="./planejamento/comunicacao.md">Comunicação</a>
+            <a class="btn btn-cta-primary" href="./planejamento/tempo">Gerenciamento de Tempo</a>
+            <a class="btn btn-cta-primary" href="./planejamento/comunicacao">Comunicação</a>
         </div>
     </div>
 </section>
