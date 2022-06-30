@@ -5,16 +5,20 @@ O projeto comporta diferentes pessoas trabalhando simultâneamente para contribu
 
 ### Códigos
 Padrões adotados para manter um ambiente agradável:
-* Seja amigável e respeitoso
-* Tenha compromisso com o projeto
-* Busque ajudar os outros sempre que possível
-* Seja paciente: toda dúvida é importante
-* Seja comunicativo
-* Mantenha uma conduta profissional
+<ul>
+    <li>Seja amigável e respeitoso</li>
+    <li>Tenha compromisso com o projeto</li>
+    <li>Busque ajudar os outros sempre que possível</li>
+    <li>Seja paciente: toda dúvida é importante</li>
+    <li>Seja comunicativo</li>
+    <li>Mantenha uma conduta profissional</li>
+</ul>
 
 Não será aceito:
-* Insultos
-* Comunicação ofensiva
-* Comentários impróprios
-* Intolerância
-* Desrespeito com as pessoas e a ordem
+<ul>
+    <li>Insultos</li>
+    <li>Comunicação ofensiva</li>
+    <li>Comentários impróprios</li>
+    <li>Intolerância</li>
+    <li>Desrespeito com as pessoas e a ordem</li>
+</ul>

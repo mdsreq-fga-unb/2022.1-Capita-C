@@ -1,37 +1,11 @@
-<h1>Intro</h1>
+## Introdução
 
-**Wiki destinada ao trabalho realizado nas disciplinas de REQ e MDS da
-Universidade de Brasilia.**
+<p style="text-align: justify" > A aplicação web Capita-C será de extrema importância para a obtenção de informações de clientes, e através dessas informações o nosso projeto tem como objetivo criar uma base estrutural para a filtragem e procura de possíveis parceiros comerciais, e também servir como fonte de planejamento para a área de marketing da Capital Atacadista. </p>
 
-<section id="home" class="promo section offset-header">
-  <div class="container text-center">
-    <div class="btns" style="font-size: 20px; justify-content: space-between;display:flex;">
-      <div><a class="btn btn-cta-primary" href="./planejamento/comunicacao">Plano de Comunicação</a></div>
-      <div><a class="btn btn-cta-primary" href="./planejamento/riscos">Riscos</a></div>
-      <div><a class="btn btn-cta-primary" href="doc_visao">Visão do Produto</a></div>
-      <div><a class="btn btn-cta-primary" href="doc_visao">Visão do Projeto</a></div>
-    </div>
-  </div>
-</section>
-
-<br>
+<p style="text-align: justify" > O sistema será direcionado para os funcionários da empresa Capital Atacadista, considerando inicialmente três tipos de usuários, o motoboy, que coletará os dados, o atendente de telemarketing, que consome os dados, e o gerente que tem acesso a todos anteriores e a relatórios feitos dos dados coletados e utilizados. O cliente do produto é a empresa Capital Atacadista, que é representada pelo diretor Geraldo Corrêa. </p>
 
 **Histórico de Versões**
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Versão</th>
-      <th scope="col">Data</th>
-      <th scope="col">Modificação</th>
-      <th scope="col">Autor(es)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1.0</td>
-      <td>30/06/2022</td>
-      <td>Criação do Documento</td>
-      <td>Ana Caroline</td>
-    </tr>
-  </tbody>
-</table>
+
+| Data       | Versão | Descrição                    | Autor                                                         |
+| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
+| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
