@@ -32,6 +32,7 @@ nav:
     - Início: documentation.md
     - Documento de Arquitetura: doc_arquitetura.md
     - Documento de Visão: doc_visao.md
+    - Organização do Projeto: doc_org_proj.md
     - Identidade Visual: visual_id.md
     # - Planejamento:
     - Plano de Comunicação: planejamento/comunicacao.md
