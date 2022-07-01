@@ -34,6 +34,6 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                    | Autor                                                         |
-| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
-| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch)                   |
+| Data       | Versão | Descrição      | Autor                                       |
+| ---------- | ------ | -------------- | ------------------------------------------- |
+| 30/06/2021 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) |

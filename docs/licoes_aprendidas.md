@@ -21,3 +21,9 @@
 # Depoimentos
 
 <p>...<p>
+
+**Histórico de Versões**
+
+| Data       | Versão | Descrição      | Autor                                             |
+| ---------- | ------ | -------------- | ------------------------------------------------- |
+| 01/07/2022 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |

@@ -20,6 +20,6 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                    | Autor                                                         |
-| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
-| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| Data       | Versão | Descrição      | Autor                                                                                                       |
+| ---------- | ------ | -------------- | ----------------------------------------------------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |

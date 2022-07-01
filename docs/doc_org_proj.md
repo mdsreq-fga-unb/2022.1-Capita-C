@@ -41,3 +41,10 @@
 | Atualização do andamento do projeto                                                                                     | Equipe de MDS<br><br>Equipe de Requisitos<br><br> Professor             | Duas vezes por semana | Feedback para a equipe                                   |
 | Comunicação geral com a equipe                                                                                          | Equipe de MDS  <br><br>           Equipe de Requisitos                  | Sempre que necessário | Feedback da equipe                                       |
 | Reunião com o cliente                                                                                                   | Equipe de requisitos<br><br>Cliente                                     | Semanal               | Relatório de satisfação                                  |
+
+
+**Histórico de Versões**
+
+| Data       | Versão | Descrição      | Autor                                             |
+| ---------- | ------ | -------------- | ------------------------------------------------- |
+| 01/07/2021 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |
