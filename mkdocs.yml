@@ -38,7 +38,8 @@ nav:
     - Plano de Comunicação: planejamento/comunicacao.md
     - Custos: planejamento/custos.md
     - Riscos: planejamento/riscos.md
-    - Ciclos: planejamento/ciclos.md    
+    - Ciclos: planejamento/ciclos.md  
+    - Lições aprendidas: doc_licoes_aprendidas.md
     # - Políticas do Repositório: 
     - Como contribuir: contributing.md
     - Código de conduta: code_of_conduct.md
