@@ -37,6 +37,7 @@ A Fim de auxiliar na definição da visão do produto e definição do MVP optam
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                       |
-| ---------- | ------ | -------------- | ------------------------------------------- |
-| 01/08/2022 | 0.1    | Versão inicial | [Gabriel Luiz](https://github.com/ggomesbr) |
+| Data       | Versão | Descrição              | Autor                                         |
+| ---------- | ------ | ---------------------- | --------------------------------------------- |
+| 01/07/2022 | 0.1    | Versão inicial         | [Gabriel Luiz](https://github.com/ggomesbr)   |
+| 01/07/2022 | 0.1.1  | Correçâo na formatação | [André corrêa](https://github.com/dartmol203) |
