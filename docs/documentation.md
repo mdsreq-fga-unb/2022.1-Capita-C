@@ -14,4 +14,4 @@
 
 | Data       | Versão | Descrição      | Autor                                                                                                       |
 | ---------- | ------ | -------------- | ----------------------------------------------------------------------------------------------------------- |
-| 30/06/2021 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 30/06/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |

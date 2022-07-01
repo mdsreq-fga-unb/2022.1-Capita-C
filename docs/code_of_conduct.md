@@ -28,4 +28,4 @@
 
 | Data       | Versão | Descrição      | Autor                                       |
 | ---------- | ------ | -------------- | ------------------------------------------- |
-| 30/06/2021 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) |
+| 30/06/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) |
