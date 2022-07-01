@@ -36,6 +36,7 @@ nav:
     - Identidade Visual: visual_id.md
     # - Planejamento:
     - Plano de Comunicação: planejamento/comunicacao.md
+    - Processo de Engenharia de Requisitos: planejamento/processoER.md
     # - Custos: planejamento/custos.md
     - Riscos: planejamento/riscos.md
     - Ciclos: planejamento/ciclos.md  
