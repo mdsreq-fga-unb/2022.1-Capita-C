@@ -32,6 +32,7 @@ jobs:
       - name: Installing mkdocs
         run: pip3 install mkdocs mkdocs-material
 
+      - run: git pull
       # Building mkdocs
       - name: Building mkdocs
         run: mkdocs build && ls
