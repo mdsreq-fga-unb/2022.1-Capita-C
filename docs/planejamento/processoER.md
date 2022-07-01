@@ -1,10 +1,10 @@
- # Processo de Engenharia de Requisitos
+# Processo de Engenharia de Requisitos
 
- <p style="text-align: justify" > Diante de conversas com o cliente e em conjunto com a equipe de MDS, foi escolhido seguir a abordagem ágil, com um conjunto de atividades, descritas a seguir, que combinem tanto com a visão do cliente quanto com as características da equipe.
+<p style="text-align: justify" > Diante de conversas com o cliente e em conjunto com a equipe de MDS, foi escolhido seguir a abordagem ágil, com um conjunto de atividades, descritas a seguir, que combinem tanto com a visão do cliente quanto com as características da equipe.
 A Fim de auxiliar na definição da visão do produto e definição do MVP optamos por realizar o workshop colaborativo Lean Inception, esse que, além dos produtos citados anteriormente, produz artefatos interessantes que auxiliam nas etapas da engenharia de requisitos, entre eles, a definição de personas, uma lista de funcionalidades priorizada, entre outros.
  </p>
 
- ## Elicitação de Requisitos
+## Elicitação de Requisitos
 
 | Atividade                              | Método                 | Ferramenta                                      | Entrega                                                                                             |
 | -------------------------------------- | ---------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
