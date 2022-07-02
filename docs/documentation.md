@@ -1,7 +1,7 @@
 ## Links
 
 <ul>
-<li><a href ="https://docs.google.com/document/d/1n-d4r2Zwrzenlw3aubcmky1mOE7VW1I7/edit?usp=sharing&ouid=109654675348340629162&rtpof=true&sd=true"> Visão do Produto e Projeto</a></li>
+<li><a href ="https://docs.google.com/document/d/1n-d4r2Zwrzenlw3aubcmky1mOE7VW1I7/edit?usp=sharing&ouid=109654675348340629162&rtpof=true&sd=true"> Vídeo de apresentação</a></li>
 </ul>
 
 ## Introdução
