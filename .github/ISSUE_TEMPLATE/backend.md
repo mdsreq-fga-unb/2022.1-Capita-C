@@ -1,6 +1,6 @@
 ---
 name: BackEnd
-about: Template de Issue para tarefas do BackEnd
+about: Tarefas do BackEnd
 title: Back - Funcionalidade - (Nome da atividade)
 labels: ''
 assignees: ''

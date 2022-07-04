@@ -1,6 +1,6 @@
 ---
 name: FrontEnd
-about: Template de Issue para tarefas do FrontEnd
+about: Tarefas do FrontEnd
 title: Front - Funcionalidade - (Nome da atividade)
 labels: ''
 assignees: ''
