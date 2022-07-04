@@ -1,8 +1,8 @@
 ---
 name: GitPages
-about: Template de Issue para desenvolvimento do GitPages
+about: Template de Issue para desenvolvimento do GitPages.
 title: GitPages - (Documento Analisado)
-labels: documentation
+labels: documentation, GitPages
 assignees: ''
 
 ---
@@ -12,5 +12,3 @@ assignees: ''
 
 **Fonte**
 <!-- De onde que deve ser tirado esse conteúdo -->
-
-

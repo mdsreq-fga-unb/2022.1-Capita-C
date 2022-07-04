@@ -2,7 +2,7 @@
 name: Arquitetura
 about: Issues que envolvem a arquitetura do projeto.
 title: ARQ - *Funcionalidade* - Descrição breve
-labels: ''
+labels: arquitetura
 assignees: ''
 
 ---
@@ -15,4 +15,3 @@ assignees: ''
 2. 
 3.
 4.
-
