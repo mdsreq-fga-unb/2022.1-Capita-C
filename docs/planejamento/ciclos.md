@@ -9,11 +9,11 @@
 
   <p style="text-align: justify"> O fluxo será realizado de forma que as seguintes etapas sejam repetidas a cada ciclo de vida planejado: </p>
 
-| Requisitos             | Análise e Design       | Construção              | Testes                        |
-| ---------------------- | ---------------------- | ----------------------- | ----------------------------- |
-| Construção do backlog  | Entrada do backlog     | Entrada da arquitetura  | Entrada do produto            |
-| Validação do backlog   | Criação da Arquitetura | Implementação do código | Testes e validação do produto |
-| Entrega do backlog     | Saída da arquitetura   | Finalização do produto  | Entrega do produto validado   |
+| Requisitos            | Análise e Design       | Construção              | Testes                        |
+| --------------------- | ---------------------- | ----------------------- | ----------------------------- |
+| Construção do backlog | Entrada do backlog     | Entrada da arquitetura  | Entrada do produto            |
+| Validação do backlog  | Criação da Arquitetura | Implementação do código | Testes e validação do produto |
+| Entrega do backlog    | Saída da arquitetura   | Finalização do produto  | Entrega do produto validado   |
 
 ## Planejamento das Iterações do Projeto
 | Ciclos   | Entrega                         | Data Início | Data Fim   |
@@ -33,6 +33,6 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                    | Autor                                                         |
-| ---------- | ------ | ---------------------------- | ------------------------------------------------------------- |
-| 30/07/2021 | 0.1    | Versão inicial               | [Ana Caroline](https://github.com/anaaroch)                   |
+| Data       | Versão | Descrição      | Autor                                       |
+| ---------- | ------ | -------------- | ------------------------------------------- |
+| 30/07/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) |

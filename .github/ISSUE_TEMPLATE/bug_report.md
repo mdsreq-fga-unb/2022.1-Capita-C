@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Descrição do Bug**
-A clear and concise description of what the bug is.
+<!-- Uma descrição breve do que se trata o bug e em qual parte do programa ele ocorre. -->
 
 **Passo-a-passo**
  (tela) -> (tela) -> (tela) -> (tela)
@@ -19,12 +19,13 @@ A clear and concise description of what the bug is.
 4.
 
 **Comportamento Esperado**
-A clear and concise description of what you expected to happen.
+<!-- Comportamento esperado -->
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+<!-- Adicione aqui screenshots ou vídeos que demonstram ou explicitam o bug -->
 
 **Plataforma (Mobile/Desktop):**
+<!-- Descreva abaixo o ambiente que ele ocorre, se for relevante -->
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]

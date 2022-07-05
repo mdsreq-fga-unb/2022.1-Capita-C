@@ -13,15 +13,15 @@ A Fim de auxiliar na definição da visão do produto e definição do MVP optam
 
 ## Análise de Requisitos
 
-| Atividade                                                                        | Método                | Ferramenta                                                                             | Entrega                                                        |
-| -------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Busca do alinhamento entre os desejos do cliente e as funcionalidades do projeto | Entrevista/Brainstorm | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe | Definição de viabilidade do projeto <br> Histórias de Usuários |
+| Atividade                                                                        | Método                | Ferramenta                                                                             | Entrega                                                       |
+| -------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Busca do alinhamento entre os desejos do cliente e as funcionalidades do projeto | Entrevista/Brainstorm | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe | Definição de viabilidade do projeto <br> noção dos requisitos |
 
 ## Documentação de Requisito
 
-| Atividade                   | Método                           | Ferramenta                                                                                                                             | Entrega                                                                 |
-| --------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Formalização dos requisitos | Análise das histórias de usuário | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe <br> GitHub Pages para o registro de atividades | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
+| Atividade                   | Método                          | Ferramenta                                                                                                                             | Entrega                                                                 |
+| --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Formalização dos requisitos | Análise das entregas da análise | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe <br> GitHub Pages para o registro de atividades | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
 
 ## Verificação e Validação de Requisitos
 
@@ -37,6 +37,7 @@ A Fim de auxiliar na definição da visão do produto e definição do MVP optam
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                       |
-| ---------- | ------ | -------------- | ------------------------------------------- |
-| 01/08/2022 | 0.1    | Versão inicial | [Gabriel Luiz](https://github.com/ggomesbr) |
+| Data       | Versão | Descrição              | Autor                                         |
+| ---------- | ------ | ---------------------- | --------------------------------------------- |
+| 01/07/2022 | 0.1    | Versão inicial         | [Gabriel Luiz](https://github.com/ggomesbr)   |
+| 01/07/2022 | 0.1.1  | Correçâo na formatação | [André corrêa](https://github.com/dartmol203) |
