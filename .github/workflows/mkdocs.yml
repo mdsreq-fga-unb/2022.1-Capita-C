@@ -31,7 +31,7 @@ jobs:
       - name: Installing mkdocs
         run: pip3 install mkdocs mkdocs-material
 
-      - run: git pull
+      - run: git pull origin main
 
       # Deploying mkdocs to branch gh-pages
       - name: Deploying mkdocs
