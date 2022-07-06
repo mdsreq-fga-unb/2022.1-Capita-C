@@ -31,6 +31,7 @@
     <li>Os commits devem ter títulos significativos</li>
     <li>O título deve descrever com clareza o que foi alterado</li>
 </ul>
+testestes
 
 **Histórico de Versões**
 
