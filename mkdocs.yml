@@ -21,7 +21,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -43,7 +43,7 @@ nav:
     - Riscos: planejamento/riscos.md
     - Ciclos: planejamento/ciclos.md  
     - Lições aprendidas: licoes_aprendidas.md
+    - Entregas: entregas/entregas.md
     # - Políticas do Repositório: 
     - Como contribuir: contributing.md
     - Código de conduta: code_of_conduct.md
-    
