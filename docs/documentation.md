@@ -7,6 +7,7 @@
 <p style="text-align: justify" > O sistema será direcionado para os funcionários da empresa Capital Atacadista, considerando inicialmente três tipos de usuários, o consultor externo, que coletará e atualizará os dados, o atendente de telemarketing, que consome os dados, e o gerente que tem acesso a todos anteriores e a relatórios feitos dos dados coletados e utilizados. O cliente do produto é a empresa Capital Atacadista, que é representada pelo diretor Geraldo Corrêa. Além disso, o cliente extendeu o convite das reuiões para o consultor da <a href ="https://www.basf.com/br/pt.html"> BASF</a>, empresa produtora das marcas suvinil e glasu!, Ricardo de Andrade.</p>
 
 **Histórico de Versões**
+
 | Data       | Versão | Descrição                           | Autor                                                                                                       |
 | ---------- | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | 30/06/2022 | 0.1    | Versão inicial                      | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
