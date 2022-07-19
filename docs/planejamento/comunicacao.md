@@ -30,4 +30,4 @@ O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organiz
 | Data       | Versão | Descrição                           | Autor                                                                                                       |
 | ---------- | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | 30/06/2022 | 0.1    | Versão inicial                      | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 19/07/2022 | 0.2    | atualizações para entrega unidade 2 | [André Corrêa](https://github.com/dartmol203)                                                               |
+| 19/07/2022 | 0.2    | Atualizações para entrega unidade 2 | [André Corrêa](https://github.com/dartmol203)                                                               |
