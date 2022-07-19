@@ -35,16 +35,17 @@
 
 ## Matriz de Comunicação
 
-| Descrição                                                                                                               | Área/ Envolvidos                                                        | Peridicidade          | Produtos Gerados                                         |
-| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------- | -------------------------------------------------------- |
-| Acompanhamento das Atividades em Andamento<br><br>Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | Equipe de MDS                             <br><br> Equipe de Requisitos | Semanal               | Ata de reunião<br><br>  Relatório de situação do projeto |
-| Atualização do andamento do projeto                                                                                     | Equipe de MDS<br><br>Equipe de Requisitos<br><br> Professor             | Duas vezes por semana | Feedback para a equipe                                   |
-| Comunicação geral com a equipe                                                                                          | Equipe de MDS  <br><br>           Equipe de Requisitos                  | Sempre que necessário | Feedback da equipe                                       |
-| Reunião com o cliente                                                                                                   | Equipe de requisitos<br><br>Cliente                                     | Semanal               | Relatório de satisfação                                  |
+| Descrição                                                                                                               | Área/ Envolvidos                                                        | Peridicidade          | Produtos Gerados                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------- |
+| Acompanhamento das Atividades em Andamento<br><br>Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | Equipe de MDS                             <br><br> Equipe de Requisitos | Semanal               | Lista de presença e tópicos importantes da reunião<br><br>  Relatório de situação do projeto |
+| Atualização do andamento do projeto                                                                                     | Equipe de MDS<br><br>Equipe de Requisitos<br><br> Professor             | Duas vezes por semana | Feedback para a equipe                                                                       |
+| Comunicação geral com a equipe                                                                                          | Equipe de MDS  <br><br>           Equipe de Requisitos                  | Sempre que necessário | Feedback da equipe                                                                           |
+| Reunião com o cliente                                                                                                   | Equipe de requisitos<br><br>Cliente                                     | Semanal               | Relatório de satisfação <br><br> Lista de presença na reunião e tópicos importantes          |
 
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                             |
-| ---------- | ------ | -------------- | ------------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |
+| Data       | Versão | Descrição                           | Autor                                             |
+| ---------- | ------ | ----------------------------------- | ------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial                      | [Augusto Camargo](https://github.com/augustocrmg) |
+| 19/07/2022 | 0.2    | atualizações para entrega unidade 2 | [André Corrêa](https://github.com/dartmol203)     |
