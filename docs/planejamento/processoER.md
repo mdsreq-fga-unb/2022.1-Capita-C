@@ -11,25 +11,25 @@ A Fim de auxiliar na definição da visão do produto e definição do MVP optam
 | Entendimento do projeto                | Workshop de Requisitos | Teams para as reuniões <br> Word para anotações | Declaração do problema <br> Necessidades <br> Características chave <br> Lista de riscos priorizada |
 | Elucidação das necessidades do cliente | Entrevista aberta      | Teams para as reuniões <br> Word para anotações | Declaração do problema <br> Necessidades <br> Características chave <br> Lista de riscos priorizada |
 
-## Análise de Requisitos
+### Análise de Requisitos
 
 | Atividade                                                                        | Método                | Ferramenta                                                                             | Entrega                                                       |
 | -------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | Busca do alinhamento entre os desejos do cliente e as funcionalidades do projeto | Entrevista/Brainstorm | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe | Definição de viabilidade do projeto <br> noção dos requisitos |
 
-## Documentação de Requisito
+### Documentação de Requisito
 
 | Atividade                   | Método                          | Ferramenta                                                                                                                             | Entrega                                                                 |
 | --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Formalização dos requisitos | Análise das entregas da análise | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe <br> GitHub Pages para o registro de atividades | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
 
-## Verificação e Validação de Requisitos
+### Verificação e Validação de Requisitos
 
 | Atividade               | Método                               | Ferramenta                                                                                                                 | Entrega                                                                 |
 | ----------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Validação e Verificação | Testes de aceitação <br> Walkthrough | Teams para as reuniões <br> Word para anotações <br> Office 365 para realização de questionário e avaliações com o cliente | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
 
-## Gerenciamento de Requisitos
+### Gerenciamento de Requisitos
 
 | Atividade                 | Método                                                             | Ferramenta                                                       | Entrega                |
 | ------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------- | ---------------------- |

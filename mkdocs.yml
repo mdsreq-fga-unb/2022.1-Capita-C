@@ -29,19 +29,21 @@ extra:
 
 nav:
   - Artefatos:
-      - Início: documentation.md
-      #- Documento de Arquitetura: doc_arquitetura.md
-      - Documento de Visão: doc_visao.md
-      - Organização do Projeto: doc_org_proj.md
-      - Identidade Visual: visual_id.md
-      # - Planejamento:
-      - Plano de Comunicação: planejamento/comunicacao.md
-      - Processo de Engenharia de Requisitos: planejamento/processoER.md
-      # - Custos: planejamento/custos.md
-      - Riscos: planejamento/riscos.md
-      - Ciclos: planejamento/ciclos.md
-      - Lições aprendidas: licoes_aprendidas.md
-      - Entregas: entregas/entregas.md
-      # - Políticas do Repositório:
-      - Como contribuir: contributing.md
-      - Código de conduta: code_of_conduct.md
+    - Início: documentation.md
+    #- Documento de Arquitetura: doc_arquitetura.md
+    - Documento de Visão: doc_visao.md
+    - MVP: mvp.md
+    - Product Backlog: doc_product_backlog.md
+    - Organização do Projeto: doc_org_proj.md
+    - Identidade Visual: visual_id.md
+    # - Planejamento:
+    - Plano de Comunicação: planejamento/comunicacao.md
+    - Processo de Engenharia de Requisitos: planejamento/processoER.md
+    # - Custos: planejamento/custos.md
+    - Riscos: planejamento/riscos.md
+    - Ciclos: planejamento/ciclos.md  
+    - Lições aprendidas: licoes_aprendidas.md
+    - Entregas: entregas/entregas.md
+    # - Políticas do Repositório: 
+    - Como contribuir: contributing.md
+    - Código de conduta: code_of_conduct.md
