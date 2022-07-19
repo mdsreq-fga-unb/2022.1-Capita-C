@@ -5,14 +5,14 @@
 ## Processo de Desenvolvimento de Software
   <p style="text-align: justify"> Para decidir o processo de desenvolvimento de software do projeto usamos a ideia de Sommerville (2018), que propõe que a decisão deve ser tomada a partir das respostas às perguntas de três naturezas: técnicas, humanas e organizacionais. </p>
 
-  <p style="text-align: justify"> Analisando as respostas, a metodologia ágil foi adotada para o projeto por fazer mais sentido com o contexto. Perante isso, as nossas atividades de: requisitos, análise e design, construção e teste serão guiadas por práticas e métodos do Extreme Programming (XP), que tem uma metodologia ágil e ciclo de vida evolutivo, sendo assim possível fazer entregas parciais e ter o feedback constante do cliente. </p>
+  <p style="text-align: justify"> Analisando as respostas, uma metodologia híbrida foi adotada para o projeto por fazer mais sentido com o contexto. Perante isso, as nossas atividades de: requisitos e análise e design serão inicialmente sequenciais e posteriormente haverão ciclos com a metodolgia ágil, sendo assim, construção e teste serão guiadas por práticas e métodos do Extreme Programming (XP), que tem uma metodologia ágil e ciclo de vida evolutivo, sendo possível fazer entregas parciais e ter o feedback constante do cliente. </p>
 
   <p style="text-align: justify"> O fluxo será realizado de forma que as seguintes etapas sejam repetidas a cada ciclo de vida planejado: </p>
 
 | Requisitos            | Análise e Design       | Construção              | Testes                        |
 | --------------------- | ---------------------- | ----------------------- | ----------------------------- |
-| Construção do backlog | Entrada do backlog     | Entrada da arquitetura  | Entrada do produto            |
-| Validação do backlog  | Criação da Arquitetura | Implementação do código | Testes e validação do produto |
+| Construção do backlog | Revisão do backlog     | Entrada da arquitetura  | Entrada do produto            |
+| Validação do backlog  | Revisão da Arquitetura | Implementação do código | Testes e validação do produto |
 | Entrega do backlog    | Saída da arquitetura   | Finalização do produto  | Entrega do produto validado   |
 
 ## Planejamento das Iterações do Projeto
@@ -33,6 +33,7 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                       |
-| ---------- | ------ | -------------- | ------------------------------------------- |
-| 30/07/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) |
+| Data       | Versão | Descrição                  | Autor                                        |
+| ---------- | ------ | -------------------------- | -------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial             | [Ana Caroline](https://github.com/anaaroch)  |
+| 19/07/2022 | 0.2    | Atualização de metodologia | [Alexia Naara](https://github.com/alexianaa) | 
