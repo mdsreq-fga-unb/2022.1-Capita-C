@@ -18,12 +18,17 @@
     <p style="text-align: justify">Com o decorrer da unidade 1 começamos a entender como trabalhar com equipes com visões diferentes de como realizar o trabalho,vale ressaltar que ainda temos muito a nos desenvolver para que as atividades em equipe saiam da forma que deveriam. Além disso, é de interesse geral que, no decorrer das unidades, a equipe se torne mais organizada e capaz de realizar trabalhos com uma qualidade superior.</p>
 </div>
 
-# Depoimentos
+<!-- 
+    # Depoimentos
 
-<p>...<p>
+    <div>
+        <p>Em construção</p>
+    </div>
+-->
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                             |
-| ---------- | ------ | -------------- | ------------------------------------------------- |
-| 01/07/2022 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |
+| Data       | Versão | Descrição                  | Autor                                             |
+| ---------- | ------ | -------------------------- | ------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial             | [Augusto Camargo](https://github.com/augustocrmg) |
+| 01/07/2022 | 0.1.1  | pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)     |

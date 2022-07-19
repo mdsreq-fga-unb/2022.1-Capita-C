@@ -47,4 +47,4 @@
 
 | Data       | Versão | Descrição      | Autor                                             |
 | ---------- | ------ | -------------- | ------------------------------------------------- |
-| 01/07/2021 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |
+| 30/06/2022 | 0.1    | Versão inicial | [Augusto Camargo](https://github.com/augustocrmg) |

@@ -108,3 +108,9 @@ utilizadas na aplicação:
 
 Os icones utilizados na aplicação serão, por padrão, os icones do
 [Material Icons](https://material.io/resources/icons/?style=baseline). -->
+**Histórico de Versões**
+
+| Data       | Versão | Descrição                   | Autor                                                         |
+| ---------- | ------ | --------------------------- | ------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial              | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 01/07/2022 | 0.1.1  | adição da tabela de versões | [André Corrêa](https://github.com/dartmol203)                 |

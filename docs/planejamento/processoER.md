@@ -1,9 +1,10 @@
+# Processo de Engenharia de Requisitos
 
- <p style="text-align: justify"> Diante de conversas com o cliente e em conjunto com a equipe de MDS, foi escolhido seguir a abordagem ágil, com um conjunto de atividades, descritas a seguir, que combinem tanto com a visão do cliente quanto com as características da equipe. A Fim de auxiliar na definição da visão do produto e definição do MVP optamos por realizar o workshop colaborativo Lean Inception, esse que, além dos produtos citados anteriormente, produz artefatos interessantes que auxiliam nas etapas da engenharia de requisitos, entre eles, a definição de personas, uma lista de funcionalidades priorizada, entre outros.
+<p style="text-align: justify" > Diante de conversas com o cliente e em conjunto com a equipe de MDS, foi escolhido seguir a abordagem ágil, com um conjunto de atividades, descritas a seguir, que combinem tanto com a visão do cliente quanto com as características da equipe.
+A Fim de auxiliar na definição da visão do produto e definição do MVP optamos por realizar o workshop colaborativo Lean Inception, esse que, além dos produtos citados anteriormente, produz artefatos interessantes que auxiliam nas etapas da engenharia de requisitos, entre eles, a definição de personas, uma lista de funcionalidades priorizada, entre outros.
  </p>
 
-
- ### Elicitação de Requisitos
+## Elicitação de Requisitos
 
 | Atividade                              | Método                 | Ferramenta                                      | Entrega                                                                                             |
 | -------------------------------------- | ---------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -12,15 +13,15 @@
 
 ### Análise de Requisitos
 
-| Atividade                                                                        | Método                | Ferramenta                                                                             | Entrega                                                        |
-| -------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Busca do alinhamento entre os desejos do cliente e as funcionalidades do projeto | Entrevista/Brainstorm | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe | Definição de viabilidade do projeto <br> Histórias de Usuários |
+| Atividade                                                                        | Método                | Ferramenta                                                                             | Entrega                                                       |
+| -------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Busca do alinhamento entre os desejos do cliente e as funcionalidades do projeto | Entrevista/Brainstorm | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe | Definição de viabilidade do projeto <br> noção dos requisitos |
 
 ### Documentação de Requisito
 
-| Atividade                   | Método                           | Ferramenta                                                                                                                             | Entrega                                                                 |
-| --------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Formalização dos requisitos | Análise das histórias de usuário | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe <br> GitHub Pages para o registro de atividades | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
+| Atividade                   | Método                          | Ferramenta                                                                                                                             | Entrega                                                                 |
+| --------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Formalização dos requisitos | Análise das entregas da análise | Teams para as reuniões <br> Word para anotações <br> ZenHub para organização da equipe <br> GitHub Pages para o registro de atividades | Requisitos funcionais e não Funcionais em linguagem natural estruturada |
 
 ### Verificação e Validação de Requisitos
 
@@ -36,6 +37,7 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                       |
-| ---------- | ------ | -------------- | ------------------------------------------- |
-| 01/08/2022 | 0.1    | Versão inicial | [Gabriel Luiz](https://github.com/ggomesbr) |
+| Data       | Versão | Descrição              | Autor                                         |
+| ---------- | ------ | ---------------------- | --------------------------------------------- |
+| 01/07/2022 | 0.1    | Versão inicial         | [Gabriel Luiz](https://github.com/ggomesbr)   |
+| 01/07/2022 | 0.1.1  | Correçâo na formatação | [André corrêa](https://github.com/dartmol203) |

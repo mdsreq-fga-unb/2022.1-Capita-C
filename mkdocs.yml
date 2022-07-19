@@ -32,6 +32,8 @@ nav:
     - Início: documentation.md
     #- Documento de Arquitetura: doc_arquitetura.md
     - Documento de Visão: doc_visao.md
+    - MVP: mvp.md
+    - Product Backlog: doc_product_backlog.md
     - Organização do Projeto: doc_org_proj.md
     - Identidade Visual: visual_id.md
     # - Planejamento:
@@ -44,3 +46,4 @@ nav:
     # - Políticas do Repositório: 
     - Como contribuir: contributing.md
     - Código de conduta: code_of_conduct.md
+    
