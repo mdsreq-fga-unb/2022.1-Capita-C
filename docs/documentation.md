@@ -1,8 +1,3 @@
-## Links
-
-<ul>
-<li><a href ="https://drive.google.com/file/d/1eL-pX9ZtqTw1kxzvs4oMRPZgEVu55U2g/view?usp=sharing"> Video de apresentação da Visão do Produto e Projeto</a></li>
-</ul>
 
 ## Introdução
 
@@ -12,6 +7,7 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                                                                                       |
-| ---------- | ------ | -------------- | ----------------------------------------------------------------------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| Data       | Versão | Descrição                   | Autor                                                                                                       |
+| ---------- | ------ | --------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial              | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 19/07/2022 | 0.2    | Removendo link da entrega 1 | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues)                                               |
