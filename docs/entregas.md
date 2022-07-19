@@ -95,13 +95,17 @@
     }
     export default App;
 
+    - Durante a aplicação do códgio os participantes estiveram a disposição dos alunos para resolver possíveis erros
+    - Quem não conseguiu baixar o projeto teve a oportunidade de codar no [codesandbox](https://codesandbox.io/)
+    - O projeto ficou disponível para consulta no [github](https://github.com/alexianaa/React-JSX)
+
 3. Bibliografia 
     - [typescript com JSX](https://www.typescriptlang.org/pt/docs/handbook/jsx.html)
     - [typescript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
     - [JSX e React](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 
 4. Kahoot
-    - Foi realizado uma atividade no kahoot
+    - Foi realizado uma atividade no kahoot com perguntas de quiz e verdade ou desafio, os 5 primeiros ganhadores receberam um bombom como premiação
 
 **Histórico de Versões**
 
