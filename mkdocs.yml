@@ -31,6 +31,7 @@ nav:
   - Artefatos:
     - Início: documentation.md
     #- Documento de Arquitetura: doc_arquitetura.md
+    - Requisitos: planejamento/lista_requisitos.md
     - Documento de Visão: doc_visao.md
     - MVP: mvp.md
     - Product Backlog: doc_product_backlog.md
