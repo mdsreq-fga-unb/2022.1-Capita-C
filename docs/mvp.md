@@ -1,3 +1,3 @@
 # MVP do projeto
 
-![plot](./imagens/MVP.png)
+<img src="/imagens/MVP.png" style="width:2000px;">
