@@ -6,9 +6,9 @@ O Gerenciamento de Tempo é uma etapa essencial de planejamento que visa organiz
 
 | Descrição                                                              | Envolvidos                                | Periodicidade | Produtos Gerados                                                                             |
 | ---------------------------------------------------------------------- | ----------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
-| Acompanhamento das Atividades em Andamento                             | Equipe do Projeto                         | Semanal       | lista de presença e tópicos importantes da reunião <br><br> relatório de situação do projeto |
+| Acompanhamento das Atividades em Andamento                             | Equipe do Projeto                         | Semanal       | Lista de presença e tópicos importantes da reunião <br><br> Relatório de situação do projeto |
 | Atualização do Andamento do Projeto                                    | Equipe e Professor                        | 2x na Semana  | Feedback para a equipe                                                                       |
-| Acompanhamento dos Riscos, Compromissos, Ações Pendentes e indicadores | Equipe do Projeto                         | Semanal       | lista de presença e tópicos importantes da reunião <br><br> relatório de situação do projeto |
+| Acompanhamento dos Riscos, Compromissos, Ações Pendentes e indicadores | Equipe do Projeto                         | Semanal       | Lista de presença e tópicos importantes da reunião <br><br> Relatório de situação do projeto |
 | Reunião com o cliente                                                  | Equipe do Projeto de Requisitos e Cliente | Semanal       | Relatório de Satisfação                                                                      |
 
 
