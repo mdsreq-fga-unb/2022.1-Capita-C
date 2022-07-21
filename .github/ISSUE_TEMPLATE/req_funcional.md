@@ -1,13 +1,13 @@
 ---
 name: Requisitos Funcionais
 about: Requisitos Funcionais do projeto, atrelados à uma feature
-title: ReqFunc - Requisito
+title: (Feature a qual o Requisito Pertence) - (Requisito)
 labels: requisito
 assignees: ''
 
 ---
 
-**Feature e Código do Requisito**
+**Código do Requisito**
 <!-- Exeplo: Login - RF4,RF13 -->
 
 
