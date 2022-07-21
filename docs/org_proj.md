@@ -11,6 +11,12 @@
 | Analista de Teste  | Ajudar o cliente a escrever os testes de aceitação e Identificar eventuais defeitos no sistema fornecendo feedback para os desenvolvedores | [Ana Caroline](https://github.com/anaaroch)                   | Carlos Eduardo Mesquita, Alexia Naara, Davi Gonçalves                       |
 | Redator Técnico    | Auxiliar a equipe de desenvolvimento a documentar o sistema                                                                                | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) | Alexia Naara, Carlos Eduardo Mesquita, Ana Caroline, Davi Gonçalves         |
 
+
+## Planejamento das Fases e/ou Iterações do Projeto
+
+<p style="text-align: justify">Foi escolhido o ciclo de vida evolutivo graças ao constante feedback recebido pelo cliente em que nós vamos aos poucos implementando os requisitos do cliente à medida que são necessários. Disponível em: <a href="./ciclos.md">Ciclos</a>.</p>
+
+
 ## Matriz de Comunicação
 
 | Descrição                                                                                                               | Área/ Envolvidos                                                        | Peridicidade          | Produtos Gerados                                                                             |
@@ -155,3 +161,4 @@ Os icones utilizados na aplicação serão, por padrão, os icones do
 | 19/07/2022 | 0.2    | Atualizações para entrega unidade 2     | [André Corrêa](https://github.com/dartmol203)                 |
 | 19/07/2022 | 0.3    | Remodela pagina                         | [Alexia Naara](https://github.com/alexianaa)                  |
 | 21/07/2022 | 0.3.1  | pequena alteração matriz de comunicação | [André Corrêa](https://github.com/dartmol203)                 |
+

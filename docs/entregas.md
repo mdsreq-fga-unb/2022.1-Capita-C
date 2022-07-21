@@ -4,16 +4,19 @@
 
 ## Entrega 2
 
-### Métodos de Desenvolvimento de Software
+----------
+
+## Métodos de Desenvolvimento de Software
+
 
 Participantes:
 
-| Nome                 | Matricula                 |
-| -------------------- | ------------------------- |
-| Alexia Naara         | 202045007                 |
-| Ana Caroline         | 190083930                 |
-| Carlos Eduardo       | 190085584                 |
-| Davi Gonçalves       | 190105071                 |
+| Nome           | Matricula |
+| -------------- | --------- |
+| Alexia Naara   | 202045007 |
+| Ana Caroline   | 190083930 |
+| Carlos Eduardo | 190085584 |
+| Davi Gonçalves | 190105071 |
 
 > Título da atividade: O que é JSX?
 
@@ -121,6 +124,7 @@ Participantes:
 
 4. Kahoot
     - Foi realizado uma atividade no kahoot com perguntas de quiz e verdade ou desafio, os 5 primeiros ganhadores receberam um bombom como premiação
+----------
 
 **Histórico de Versões**
 
@@ -128,4 +132,4 @@ Participantes:
 | ---------- | ------ | ------------------------------- | ------------------------------------------------------------- |
 | 05/07/2022 | 0.1    | Entrega 1                       | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
 | 19/07/2022 | 0.1.1  | Adicionando Tópico da Entrega 2 | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 19/07/2022 | 0.2    | Entrega 2 - MDS                 | [Alexia Naara](https://github.com/alexianaa)                  | 
+| 19/07/2022 | 0.2    | Entrega 2 - MDS                 | [Alexia Naara](https://github.com/alexianaa)                  |
