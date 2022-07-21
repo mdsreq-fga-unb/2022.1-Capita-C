@@ -3,10 +3,19 @@
 [Video de apresentação da Visão do Produto e Projeto](https://drive.google.com/file/d/1eL-pX9ZtqTw1kxzvs4oMRPZgEVu55U2g/view?usp=sharing)
 
 ## Entrega 2
+----------
+### Requisitos de Software
+
+[Video de apresentação da entrega da Unidade 2](https://https://drive.google.com/file/d/1eL-pX9ZtqTw1kxeqhgj2W4x3wrRPZg4wqeVu55t22g/view?usp=sharing)
+
+#### Quadro Kanbam
+
+![QuadroKanban](./imagens/QuadroKanbam.png)
+Disponível no zenhub do repositório.
 
 ----------
 
-## Métodos de Desenvolvimento de Software
+### Métodos de Desenvolvimento de Software
 
 
 Participantes:
