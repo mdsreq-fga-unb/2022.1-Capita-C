@@ -5,7 +5,22 @@
 ## Entrega 2
 
 ### Métodos de Desenvolvimento de Software
+
+Participantes:
+
+| Nome                 | Matricula                 |
+| -------------------- | ------------------------- |
+| Alexia Naara         | 202045007                 |
+| Ana Caroline         | 190083930                 |
+| Carlos Eduardo       | 190085584                 |
+| Davi Gonçalves       | 190105071                 |
+
+> Título da atividade: O que é JSX?
+
+> Tema da atividade: Typescript e JSX
+
 > Foi realizado um DOJO sobre JSX e typescript em que iniciamos um projeto em typescript na sala com os alunos e introduzimos sobre o que é JSX e typescript e como utiliza-los
+
 #### Teoria
 1. JSX
     - O que é JSX? É uma extensão de sintaxe para JavaScript usada com o React.
