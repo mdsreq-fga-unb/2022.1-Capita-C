@@ -65,7 +65,7 @@
 </li>
 
 <li>
-  <p style="text-align: justify">RF13 - Importar dados externos;</p>
+  <p style="text-align: justify">RF13 - Importar dados de bases externas;</p>
 </li>
 
 <li>
