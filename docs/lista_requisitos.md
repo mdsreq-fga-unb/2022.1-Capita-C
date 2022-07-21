@@ -81,7 +81,7 @@
 </li>
 
 <li>
-  <p style="text-align: justify">RF16 - Ver taxas de efetivação;</p>
+  <p style="text-align: justify">RF16 - Visualizar taxas de efetivação;</p>
 </li>
 </ul>
 
