@@ -24,7 +24,7 @@
 | Acompanhamento das Atividades em Andamento<br><br>Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores | Equipe de MDS                             <br><br> Equipe de Requisitos | Semanal               | Lista de presença e tópicos importantes da reunião<br><br>  Relatório de situação do projeto |
 | Atualização do andamento do projeto                                                                                     | Equipe de MDS<br><br>Equipe de Requisitos<br><br> Professor             | Duas vezes por semana | Feedback para a equipe                                                                       |
 | Comunicação geral com a equipe                                                                                          | Equipe de MDS  <br><br>           Equipe de Requisitos                  | Sempre que necessário | Feedback da equipe                                                                           |
-| Reunião com o cliente                                                                                                   | Equipe de requisitos<br><br>Cliente                                     | Semanal               | Relatório de satisfação <br><br> Lista de presença na reunião e tópicos importantes          |
+| Reunião com o cliente                                                                                                   | Equipe de requisitos<br><br>Cliente                                     | Semanal               | Relato de satisfação <br><br> Lista de presença na reunião e tópicos importantes             |
 
 ## Ferramentas
 
@@ -153,10 +153,12 @@ Os icones utilizados na aplicação serão, por padrão, os icones do
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                           | Autor                                                         |
-| ---------- | ------ | ----------------------------------- | ------------------------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial                      | [Augusto Camargo](https://github.com/augustocrmg)             |
-| 30/06/2022 | 0.1.1  | Versão inicial(identidade visual)   | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 01/07/2022 | 0.1.2  | Adição da tabela de versões         | [André Corrêa](https://github.com/dartmol203)                 |
-| 19/07/2022 | 0.2    | Atualizações para entrega unidade 2 | [André Corrêa](https://github.com/dartmol203)                 |
-| 19/07/2022 | 0.3    | Remodela pagina                     | [Alexia Naara](https://github.com/alexianaa)                  |
+| Data       | Versão | Descrição                               | Autor                                                         |
+| ---------- | ------ | --------------------------------------- | ------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial                          | [Augusto Camargo](https://github.com/augustocrmg)             |
+| 30/06/2022 | 0.1.1  | Versão inicial(identidade visual)       | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 01/07/2022 | 0.1.2  | adição da tabela de versões             | [André Corrêa](https://github.com/dartmol203)                 |
+| 19/07/2022 | 0.2    | Atualizações para entrega unidade 2     | [André Corrêa](https://github.com/dartmol203)                 |
+| 19/07/2022 | 0.3    | Remodela pagina                         | [Alexia Naara](https://github.com/alexianaa)                  |
+| 21/07/2022 | 0.3.1  | pequena alteração matriz de comunicação | [André Corrêa](https://github.com/dartmol203)                 |
+
