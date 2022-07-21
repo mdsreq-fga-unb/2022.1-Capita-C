@@ -1,12 +1,12 @@
 
 ## Entrega 1
-[Video de apresentação da Visão do Produto e Projeto](https://drive.google.com/file/d/1eL-pX9ZtqTw1kxzvs4oMRPZgEVu55U2g/view?usp=sharing)
+[Vídeo de apresentação da Visão do Produto e Projeto](https://drive.google.com/file/d/1eL-pX9ZtqTw1kxzvs4oMRPZgEVu55U2g/view?usp=sharing)
 
 ## Entrega 2
 ----------
 ### Requisitos de Software
 
-[Video de apresentação da entrega da Unidade 2](https://https://drive.google.com/file/d/1eL-pX9ZtqTw1kxeqhgj2W4x3wrRPZg4wqeVu55t22g/view?usp=sharing)
+[Vídeo de apresentação da entrega da Unidade 2](https://https://drive.google.com/file/d/1eL-pX9ZtqTw1kxeqhgj2W4x3wrRPZg4wqeVu55t22g/view?usp=sharing)
 
 #### Quadro Kanbam
 
