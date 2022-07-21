@@ -7,9 +7,7 @@ assignees: ''
 
 ---
 
-**Código do Requisito**
-<!-- Exeplo: RF4,RF13 -->
+**Feature e Código do Requisito**
+<!-- Exeplo: Login - RF4,RF13 -->
 
-**Descrição da Atividade**
-<!-- Descreva a atividade, qual tela deve ser incluída, etc -->
 
