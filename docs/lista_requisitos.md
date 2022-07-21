@@ -177,4 +177,4 @@
 | Data       | Versão | Descrição                                     | Autor                                                                                       |
 | ---------- | ------ | --------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | 19/07/2022 | 0.1    | Versão inicial                                | [Gabriel Luiz](https://github.com/ggomesbr) e [André Corrêa](https://github.com/dartmol203) |
-| 20/07/2022 | 0.2    | adição da imagem e atualização nos requisitos | [André Corrêa](https://github.com/dartmol203)                                               |
+| 20/07/2022 | 0.2    | Adição da imagem e atualização nos requisitos | [André Corrêa](https://github.com/dartmol203)                                               |
