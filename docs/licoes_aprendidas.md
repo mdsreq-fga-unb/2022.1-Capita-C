@@ -45,4 +45,4 @@
 | 30/06/2022 | 0.1    | Versão inicial             | [Augusto Camargo](https://github.com/augustocrmg) |
 | 01/07/2022 | 0.1.1  | Pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)     |
 | 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)       |
-| 21/07/2022 | 0.2    | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)       |
+| 21/07/2022 | 0.2.1  | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)       |
