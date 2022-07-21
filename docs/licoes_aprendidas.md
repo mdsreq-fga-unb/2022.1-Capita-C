@@ -7,7 +7,7 @@
 </div>
 
 <div>
-    <p style="text-align: justify">Durante a <b>Unidade 2</b>, foram evoluídas principalmente questões técnicas, com a participação dos dojos das equipes e, em especial, ao dojo de react sobre como construir uma calculadora. Foram sanadas também dúvidas do grupo sobre o que são e como criar histórias de usuário, foi trabalhada também a parte de testes unitários.</p>
+    <p style="text-align: justify">Durante a <b>Unidade 2</b>, foram evoluídas principalmente questões técnicas, com a participação dos dojos das equipes e, em especial, ao dojo de react sobre como construir uma calculadora. Foram sanadas também dúvidas do grupo sobre o que são e como criar histórias de usuário, houve aprendizado sobre testes unitários e apresentação/esclarecimento de termos empresariais de desenvolvimento de software, que muitas vezes eram conhecidos pelos integrantes mas não possuiam um conceito claro, e, em alguns casos, o conceito entendido era equivocado.</p>
 </div>
 
 ### Requisitos
@@ -45,3 +45,4 @@
 | 30/06/2022 | 0.1    | Versão inicial             | [Augusto Camargo](https://github.com/augustocrmg) |
 | 01/07/2022 | 0.1.1  | Pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)     |
 | 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)       |
+| 21/07/2022 | 0.2    | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)       |
