@@ -53,7 +53,7 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF10 - Gerar relatório de lojas;</p>
+  <p style="text-align: justify">RF10 - Gerar relatório de lojas cadastradas;</p>
 </li>
 
 <li>
@@ -77,7 +77,7 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF15 - Pegar lista de Clientes do dia;</p>
+  <p style="text-align: justify">RF15 - Visualizar lista de lojas para entrar em contato no dia;</p>
 </li>
 
 <li>
