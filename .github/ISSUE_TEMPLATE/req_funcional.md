@@ -1,6 +1,6 @@
 ---
-name: ReqFunc
-about: requisitos Funcionais
+name: Requisitos Funcionais
+about: Requisitos Funcionais do projeto, atrelados à uma feature
 title: ReqFunc - Requisito
 labels: requisito
 assignees: ''

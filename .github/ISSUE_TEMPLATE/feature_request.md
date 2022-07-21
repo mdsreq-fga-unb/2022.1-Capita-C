@@ -1,7 +1,7 @@
 ---
-name: Feature request
+name: Feature Request
 about: Sugira uma ideia para o projeto.
-title: Feature - (Descrição resumida da feature)
+title: Feature Request - (Descrição resumida da feature)
 labels: enhancement
 assignees: ''
 
