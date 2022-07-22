@@ -1,5 +1,8 @@
 # Gerenciamento de Riscos
 
+<span style="color:red">COMO ESTÃO SENDO OU SERÃO GERENCIADOS ESSES RISCOS?</span>
+
+
 ## Planejamento das Iterações do Projeto
 
 | Risco                                    | Nível de Impacto [0 - 5] | Gerenciamento de Risco                              | Prevenção ao Risco                                                                   |
