@@ -17,6 +17,9 @@ Disponível no zenhub do repositório.
 
 ### Métodos de Desenvolvimento de Software
 
+<span style="color:red">por favor, criem uma outra página específica para esse material. Deixem aqui, apenas os vídeos</span>.
+<span style="color:red">outra supgestão: coloquem aqui, os links das outras páginas onde as entregas estão detalhadas. Ou seja: entrega 1: link para o Visão, etc,. Entrega 2: link para esse material, etc.</span>.
+
 
 Participantes:
 
