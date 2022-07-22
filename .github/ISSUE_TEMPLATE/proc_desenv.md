@@ -1,6 +1,6 @@
 ---
 name: Processo de Desenvolvimento
-about:
+about: Atividades de desenvolvimento
 title: Processo de Desenvolvimento - (Atividade)
 labels: ProcessoDesenvolvimento
 assignees: ''

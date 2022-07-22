@@ -1,6 +1,6 @@
 ---
 name: Processo de Requisitos
-about:
+about: Atividade de Engenharia de Requisitos
 title: Processo de Requisitos - (Atividade)
 labels: ProcessoRequisitos
 assignees: ''

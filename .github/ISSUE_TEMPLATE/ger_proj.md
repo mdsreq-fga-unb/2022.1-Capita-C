@@ -1,6 +1,6 @@
 ---
 name: Gerência de Projeto
-about:
+about: Atividades de gerência do projeto
 title: Gerência de Projeto - (Atividade)
 labels: documentation, Repositório
 assignees: ''
