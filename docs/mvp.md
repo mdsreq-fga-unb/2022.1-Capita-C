@@ -4,7 +4,8 @@
 
 <!-- Sempre que atualizar o MVP atualizar também o link abaixo -->
 ![MVP](./imagens/MVP.png)
-Disponível no [link](https://i.imgur.com/UgXCHDC.png).
+[Imagem Original](https://i.imgur.com/UgXCHDC.png) |
+[Mural](https://app.mural.co/t/requisitos6858/m/requisitos6858/1656525706225/acd8ef4573530a8178e2f405c530fae78f9d07a7?sender=u7c0784fb9d80b64998242126).
 
 
 **Histórico de Versões**
