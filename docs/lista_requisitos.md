@@ -57,7 +57,7 @@
 </li>
 
 <li>
-  <p style="text-align: justify">RF11 - Exportar dados;</p>
+  <p style="text-align: justify">RF11 - Exportar dados de lojas cadastradas;</p>
 </li>
 
 <li>
@@ -69,7 +69,7 @@
 </li>
 
 <li>
-  <p style="text-align: justify">RF14 - Visualizar log de alterações;</p>
+  <p style="text-align: justify">RF14 - Visualizar log de alterações realizadas no cadastro de uma loja;</p>
 </li>
 </ul>
 
