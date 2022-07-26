@@ -2,7 +2,7 @@
 name: BackEnd
 about: Tarefas do BackEnd
 title: Back - Funcionalidade - (Nome da atividade)
-labels: ''
+labels: 'BackEnd'
 assignees: ''
 
 ---

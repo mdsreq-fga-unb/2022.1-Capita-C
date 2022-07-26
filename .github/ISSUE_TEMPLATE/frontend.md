@@ -2,7 +2,7 @@
 name: FrontEnd
 about: Tarefas do FrontEnd
 title: Front - Funcionalidade - (Nome da atividade)
-labels: ''
+labels: 'FrontEnd'
 assignees: ''
 
 ---
