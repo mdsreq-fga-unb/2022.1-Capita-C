@@ -10,10 +10,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteUser = exports.editUser = exports.registerUser = exports.getsUserById = exports.getsUser = void 0;
-const database_1 = require("../data/database");
+const pool = require("./database");
 const getsUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield database_1.pool.query('SELECT * FROM users'); // consulta a banco de dados
+        const response = yield pool.query('SELECT * FROM users'); // consulta a banco de dados
         //console.log(response.rows)
         return res.status(200).json(response.rows);
     }
@@ -26,7 +26,7 @@ exports.getsUser = getsUser;
 const getsUserById = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const idSelected = parseInt(req.params.id);
-        const response = yield database_1.pool.query('SELECT * FROM users WHERE id = $1', [idSelected]); // seleciona o usuario com id passado por parametro
+        const response = yield pool.query('SELECT * FROM users WHERE id = $1', [idSelected]); // seleciona o usuario com id passado por parametro
         return res.status(200).json(response.rows);
     }
     catch (e) {
@@ -37,14 +37,15 @@ const getsUserById = (req, res) => __awaiter(void 0, void 0, void 0, function* (
 exports.getsUserById = getsUserById;
 const registerUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { name, email } = req.body;
-        const response = yield database_1.pool.query('INSERT INTO users (name,email) VALUES ($1, $2)', [name, email]); // manda para o banco de dados um novo usuario com nome e email escritos no body
+        const { name, email, password } = req.body;
+        const response = yield pool.query('INSERT INTO users (name,email,password) VALUES ($1, $2, $3)', [name, email, password]); // manda para o banco de dados um novo usuario com nome e email escritos no body
         return res.status(200).json({
             message: 'Usuario cadastrado com sucesso',
             body: {
                 user: {
                     name,
-                    email
+                    email,
+                    password
                 }
             }
         });
@@ -58,14 +59,15 @@ exports.registerUser = registerUser;
 const editUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const idUpdate = parseInt(req.params.id);
-        const { name, email } = req.body;
-        const response = yield database_1.pool.query('UPDATE users SET name = $1, email = $2 WHERE id = $3', [name, email, idUpdate]); // manda para o banco de dados um novo usuario com nome e email escritos no body
+        const { name, email, password } = req.body;
+        const response = yield pool.query('UPDATE users SET name = $1, email = $2, password = $3 WHERE id = $3=4', [name, email, password, idUpdate]); // manda para o banco de dados um novo usuario com nome e email escritos no body
         return res.status(200).json({
             message: `Usuario ${idUpdate} atualizado com sucesso`,
             body: {
                 user: {
                     name,
-                    email
+                    email,
+                    password
                 }
             }
         });
@@ -79,7 +81,7 @@ exports.editUser = editUser;
 const deleteUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const idDelete = parseInt(req.params.id);
-        const response = yield database_1.pool.query('DELETE FROM users WHERE id = $1', [idDelete]); // seleciona o usuario com id passado por parametro
+        const response = yield pool.query('DELETE FROM users WHERE id = $1', [idDelete]); // seleciona o usuario com id passado por parametro
         return res.status(200).json(`Usuario ${idDelete} deletado com sucesso`);
     }
     catch (e) {

@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express"); // router e um modulo que permite criar rotas para o servidor
-const index_controller_1 = require("../controllers/index.controller");
 const router = (0, express_1.Router)();
-router.get('/users', index_controller_1.getsUser);
-router.get('/users/:id', index_controller_1.getsUserById);
-router.post('/users/register', index_controller_1.registerUser);
-router.put('/users/edit/:id', index_controller_1.editUser);
-router.delete('/users/delete/:id', index_controller_1.deleteUser);
+router.get('/api', (req, res) => {
+    res.status(200).send({
+        success: 'true',
+        message: 'Seja bem-vindo(a) a API Node.js + PostgreSQL + Azure!',
+        version: '1.0.0',
+    });
+});
 exports.default = router;

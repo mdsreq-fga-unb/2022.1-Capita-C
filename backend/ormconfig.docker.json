@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "db",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "capitac",
+    "synchronize": true,
+    "logging": false,
+    "entities": ["build/src/entity/**/*"],
+    "migrations": ["build/src/migration/**/*"],
+    "subscribers": ["build/src/subscriber/**/*"],
+    "cli": {
+      "entitiesDir": "build/src/entity",
+      "migrationsDir": "build/src/migration",
+      "subscribersDir": "build/src/subscriber"
+    }
+  }
