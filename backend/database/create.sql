@@ -1,0 +1,12 @@
+CREATE DATABASE users;
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(40),
+    email TEXT,
+    password TEXT,
+);
+
+INSERT INTO users (name, email, password) VALUES
+    ('ALEXIA CARDOSO','ALEXIASILVACARDOSOO@GMAIL.COM', '123421'),
+    ('ROBERTA LOPES','ROBERTA-LOPES@GMAIL.COM', '123212');
