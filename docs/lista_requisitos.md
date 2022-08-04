@@ -12,6 +12,12 @@
   <p style="text-align: justify">RF1 - Realizar login;</p>
 </li>
 
+
+</ul>
+
+#### Gerenciar Sistema
+
+<ul>
 <li>
   <p style="text-align: justify">RF2 - Criar Usuário;</p>
 </li>
