@@ -7,12 +7,11 @@ const body_parser_1 = __importDefault(require("body-parser"));
 const express_1 = __importDefault(require("express"));
 const cors = require('cors');
 const app = (0, express_1.default)();
-const index = require('./router/index');
 const userRoute = require('./router/user.routes');
 //middlewares: converte um .json num objeto
-app.use(express_1.default.json()); // rest API
-app.use(body_parser_1.default.json()); // pegar o body de um request
-app.use(express_1.default.urlencoded({ extended: false })); // formulario html
+app.use(express_1.default.json());
+app.use(body_parser_1.default.json());
+app.use(express_1.default.urlencoded({ extended: false }));
 app.use(cors());
 app.use(userRoute);
 // porta usada para hostear a pagina
