@@ -39,6 +39,7 @@ nav:
       # - Documento de Arquitetura: arquitetura.md
       - Requisitos: lista_requisitos.md
       - MVP: mvp.md
+      - PBB: pbb.md
       - Reuniões: reunioes.md
       # - Planejamento:
       # - Políticas do Repositório:
