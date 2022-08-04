@@ -1,11 +1,13 @@
 const {Pool} = require('pg');
-const dotenv = require('dotenv');
-
-dotenv.config();
+require('dotenv').config();
 
 // conexao com base de dados
 const pool = new Pool ({
-    connectionString: process.env.DATABASE_URL
+    user: 'postgres',
+    host: 'capitac_ct',
+    database: 'capitac_db',
+    password: 'A7Y7c1E*',
+    port: 5432,
 });
 
 pool.on('conect', () => {
