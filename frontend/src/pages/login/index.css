@@ -1,0 +1,35 @@
+#mainDiv {
+    background-color: #F6F6F6;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    background-color: #FF834F;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.input {
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    transition: background .3s;
+    border-radius: 10px;
+}
+
+#btn {
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 10px;
+    width: 20%;
+}
