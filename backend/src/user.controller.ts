@@ -23,7 +23,7 @@ export const login = async (req: Request, res: Response) => {
         if(response.rows.length != 0){
             const response: QueryResult = await pool.query('SELECT password FROM users WHERE password=$1', [password])
             if(response.rows.length != 0){
-                return res.status(200).json(true) // usuario e senha digitados
+                return res.status(200).json({message: "usuario encontrado", user}) // usuario e senha digitados
             }else{
                 return res.status(400).json(false) // senha nao compativel
             }

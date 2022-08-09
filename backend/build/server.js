@@ -13,7 +13,7 @@ app.get("/", (req, res) => res.send("Welcome"));
 app.use(express_1.default.json());
 app.use(body_parser_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(router_1.default);
 // porta usada para hostear a pagina
 const port = 4000;

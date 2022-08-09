@@ -1,5 +1,5 @@
 import express from "express";
-import storeRoute from "./lojas.router";
+import storeRoute from "./lojas.routes";
 import userRoute from "./user.routes";
 const router = express.Router();
 
