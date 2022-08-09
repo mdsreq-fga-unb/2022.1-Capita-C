@@ -17,13 +17,19 @@ export const getsUser = async (req: Request, res: Response): Promise<Response> =
 export const login = async (req: Request, res: Response) => {
     try {
         const { user } = req.body;
-        return res.status(500).json('Rota encontrada')
-        /* const name = user.name;
+        const name = user.name;
         const password = user.senha;
-        console.log(name,password);
         const response: QueryResult = await pool.query('SELECT name FROM users WHERE name=$1', [name]) // consulta a banco de dados
-        return res.status(200).json(response.rows) */
-        //console.log(response.rows)
+        if(response.rows.length != 0){
+            const response: QueryResult = await pool.query('SELECT password FROM users WHERE password=$1', [password])
+            if(response.rows.length != 0){
+                return res.status(200).json(true) // usuario e senha digitados
+            }else{
+                return res.status(400).json(false) // senha nao compativel
+            }
+        }else{
+            return res.status(400).json(false) // usuario nao encontrado
+        }
     } catch (e) {
         console.log(e) //caso tenha um erro no try ele pega e mostra no console
         return res.status(500).json('Nome nao encontrado')
