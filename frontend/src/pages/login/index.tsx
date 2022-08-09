@@ -1,13 +1,16 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useContext, useState } from "react";
 import "./index.css";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import AuthContext from "../../contexts/auth";
+import api from "../../services/api";
 
 const Login = () => {
     const [user, setUser] = useState({name: '', senha: ''});
     let navigate = useNavigate();
+    const context = useContext(AuthContext);
 
     function handleInput(e: ChangeEvent<HTMLInputElement>) {
+        // ao mudar as informacoes das caixas de texto
         const {value,name} = e.currentTarget
         setUser({...user,[name]: value})
     }
@@ -15,11 +18,14 @@ const Login = () => {
     const handleClick = async () => {
         // enviar o nome de usuário e a senha ao servidor
         try {
-            console.log(user.name)
-            const response = await axios.post('http://localhost:4000/users/login',{user})
-            .then(() => alert("logado"))
-            navigate("/home");
-        } catch (error) {
+            
+            const response = await api.post('/users/login', {user})
+            .then((response) => {
+                alert(`Bem vindo(a) ${user.name}`)
+                navigate("/home"); // redireciona para pagina home
+            })
+           
+        } catch (error) { // carrega erro de login
             alert("erro ao logar")
             console.log(error)
         }

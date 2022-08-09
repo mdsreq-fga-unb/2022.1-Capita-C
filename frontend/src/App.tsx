@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
-import Login from './pages/login';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/home';
-import { ErrorPage } from './pages/erropage';
+import AuthContext, { AuthProvider } from './contexts/auth';
+import { Routes } from './routes/index.routes';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login/>} />
-        <Route path="/home" element={<HomePage/>}/>
-        <Route path="*" element={<ErrorPage/>} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   );
 }
 
