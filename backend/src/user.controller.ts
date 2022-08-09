@@ -9,7 +9,24 @@ export const getsUser = async (req: Request, res: Response): Promise<Response> =
         return res.status(200).json(response.rows)
     } catch (e) {
         console.log(e) //caso tenha um erro no try ele pega e mostra no console
-        return res.status(500).json('Server Error')
+        return res.status(500).json('Nao foi possivel obter os usuarios')
+    }
+
+}
+
+export const login = async (req: Request, res: Response) => {
+    try {
+        const { user } = req.body;
+        return res.status(500).json('Rota encontrada')
+        /* const name = user.name;
+        const password = user.senha;
+        console.log(name,password);
+        const response: QueryResult = await pool.query('SELECT name FROM users WHERE name=$1', [name]) // consulta a banco de dados
+        return res.status(200).json(response.rows) */
+        //console.log(response.rows)
+    } catch (e) {
+        console.log(e) //caso tenha um erro no try ele pega e mostra no console
+        return res.status(500).json('Nome nao encontrado')
     }
 
 }

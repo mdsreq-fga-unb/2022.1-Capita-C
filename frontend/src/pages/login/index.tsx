@@ -1,4 +1,6 @@
+import axios from "axios";
 import React, { ChangeEvent, useState } from "react";
+import api from "../../services/api";
 import "./index.css";
 
 const Login = () => {
@@ -9,21 +11,21 @@ const Login = () => {
         setUser({...user,[name]: value})
     }
 
-    function handleClick() {
-       console.log(user)
+    const handleClick = async () => {
+       // enviar o nome de usuário e a senha ao servidor
+        const response = await axios.post(
+            "http://locallhost:3000/login",
+            user
+        );
     }
 
     return (
         <div id="mainDiv" >
             <div id="box" >
                 <h2>Login</h2>
-                <br/>
-                <text>Digite o seu nome: </text>
-                <br/>
+                <p>Digite o seu nome: </p>
                 <input className="input" name="email" value={user.email} onChange={e => handleInput(e)} />
-                <br/>
-                <text>Digite a sua senha: </text>
-                <br/>
+                <p>Digite a sua senha: </p>
                 <input className="input" name="senha" value={user.senha} onChange={e => handleInput(e)} />
                 <br/><br/>
                 <button id="btn" onClick={() => { handleClick() }} >Enviar</button>
