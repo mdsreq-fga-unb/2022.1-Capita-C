@@ -1,10 +1,11 @@
 import React, { ChangeEvent, useState } from "react";
 import "./index.css";
-import api from "../../services/api";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [user, setUser] = useState({name: '', senha: ''});
+    let navigate = useNavigate();
 
     function handleInput(e: ChangeEvent<HTMLInputElement>) {
         const {value,name} = e.currentTarget
@@ -17,8 +18,9 @@ const Login = () => {
             console.log(user.name)
             const response = await axios.post('http://localhost:4000/users/login',{user})
             .then(() => alert("logado"))
-            console.log(response)
+            navigate("/home");
         } catch (error) {
+            alert("erro ao logar")
             console.log(error)
         }
     }

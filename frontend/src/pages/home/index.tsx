@@ -1,8 +1,11 @@
 import React from "react";
+import './index.css';
 
-const HomePage = () => {
+const HomePage = ( ) => {
     return(
-        <h1>Home Page</h1>
+        <div id="mainDiv">
+            <h1>Home Page</h1>
+        </div>
     )
 }
 
