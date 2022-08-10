@@ -2,10 +2,9 @@ import React, { ChangeEvent, useContext, useState } from "react";
 import "./index.css";
 import { useNavigate } from "react-router-dom";
 import AuthContext from "../../contexts/auth";
-import api from "../../services/api";
 
 const Login = () => {
-    const [user, setUser] = useState({name: '', senha: ''});
+    const [user, setUser] = useState({email: '', senha: ''});
     const context = useContext(AuthContext);
     let navigate = useNavigate();
 
@@ -17,11 +16,10 @@ const Login = () => {
 
     const handleClick = async () => {
         try {
-            const response = context.Login(user);
-            alert(`Bem vindo(a) ${user.name}`)
+            context.signIn(user);
             navigate("/home"); // redireciona para pagina home
         } catch (error) {
-            alert("erro ao logar")
+            alert("Erro ao logar")
         }
     }
 
@@ -29,8 +27,8 @@ const Login = () => {
         <div id="mainDiv" >
             <div id="box" >
                 <h2>Login</h2>
-                <p>Digite o seu nome: </p>
-                <input className="input" name="name" value={user.name} onChange={e => handleInput(e)} />
+                <p>Digite o seu email: </p>
+                <input className="input" name="email" value={user.email} onChange={e => handleInput(e)} />
                 <p>Digite a sua senha: </p>
                 <input className="input" type="password" name="senha" value={user.senha} onChange={e => handleInput(e)} />
                 <br/><br/>

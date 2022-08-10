@@ -25,14 +25,14 @@ const getsUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 exports.getsUser = getsUser;
 const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { user } = req.body;
-        const name = user.name;
-        const password = user.senha;
-        const response = yield pool.query('SELECT name FROM users WHERE name=$1', [name]); // consulta a banco de dados
+        const user = req.body;
+        const email = user.email;
+        const pass = user.senha;
+        const response = yield pool.query('SELECT * FROM users WHERE email=$1', [email]); // consulta a banco de dados
         if (response.rows.length != 0) {
-            const response = yield pool.query('SELECT password FROM users WHERE password=$1', [password]);
+            const password = yield pool.query('SELECT password FROM users WHERE password=$1', [pass]);
             if (response.rows.length != 0) {
-                return res.status(200).json({ message: "usuario encontrado", user }); // usuario e senha digitados
+                return res.status(200).json(response.rows[0]); // retorna usuario encontrado
             }
             else {
                 return res.status(400).json(false); // senha nao compativel

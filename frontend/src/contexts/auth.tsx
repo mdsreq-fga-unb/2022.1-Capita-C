@@ -1,17 +1,16 @@
-import React, { createContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import Login from "../pages/login";
+import React, { createContext, useEffect, useState } from "react";
 import api from "../services/api";
 
 interface User {
-    name: string
+    email: string
     senha: string
 }
 
 interface AuthContextData {
     signed: boolean,
     user: object | null;
-    Login(user: User): Promise<void>;
+    signIn(user: User): Promise<void>;
+    logOut(): void;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
@@ -24,19 +23,36 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
 
     const [user, setUser] = useState<object | null>(null);
 
-    async function Login(user: User) {
+    useEffect(() => {
+        async function loadStorageData() {
+          const storagedUser = await localStorage.getItem('@App:user');
+    
+          if (storagedUser) {
+            setUser(JSON.parse(storagedUser));
+          }
+    
+        }
+    
+        loadStorageData();
+      });
+
+    async function signIn(userLogin: User) {
         try {
-            const response = await api.post('/users/login', { user })
-                .then((response) => {
-                    setUser(user);
-                })
-        } catch (error) { // carrega erro de login
-            console.log(error)
+            const response = await api.post('/users/login',  userLogin );
+            setUser(response.data);
+            localStorage.setItem('@App:user', JSON.stringify(response.data));
+        } catch (error) {
+            alert("Erro ao logar")
         }
     }
 
+    function logOut() {
+        setUser(null);
+        localStorage.removeItem('@App:user');
+    }
+
     return (
-        <AuthContext.Provider value={{ signed: Boolean(user), user, Login }}>
+        <AuthContext.Provider value={{ signed: Boolean(user), user, signIn, logOut }}>
             {children}
         </AuthContext.Provider>
     )
