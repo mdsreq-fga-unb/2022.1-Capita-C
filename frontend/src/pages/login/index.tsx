@@ -6,8 +6,8 @@ import api from "../../services/api";
 
 const Login = () => {
     const [user, setUser] = useState({name: '', senha: ''});
-    let navigate = useNavigate();
     const context = useContext(AuthContext);
+    let navigate = useNavigate();
 
     function handleInput(e: ChangeEvent<HTMLInputElement>) {
         // ao mudar as informacoes das caixas de texto
@@ -16,18 +16,12 @@ const Login = () => {
     }
 
     const handleClick = async () => {
-        // enviar o nome de usuário e a senha ao servidor
         try {
-            
-            const response = await api.post('/users/login', {user})
-            .then((response) => {
-                alert(`Bem vindo(a) ${user.name}`)
-                navigate("/home"); // redireciona para pagina home
-            })
-           
-        } catch (error) { // carrega erro de login
+            const response = context.Login(user);
+            alert(`Bem vindo(a) ${user.name}`)
+            navigate("/home"); // redireciona para pagina home
+        } catch (error) {
             alert("erro ao logar")
-            console.log(error)
         }
     }
 
