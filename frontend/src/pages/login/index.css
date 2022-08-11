@@ -1,5 +1,5 @@
 #mainDiv {
-    background-color: #F6F6F6;
+    background-image: linear-gradient(#FF834F,#FF4949);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -9,11 +9,13 @@
 }
 
 #box {
-    background-color: #FF834F;
-    width: 400px;
-    height: 300px;
+    background-color: #F6F6F6;
+    width: 380px;
+    height: 400px;
     text-align: center;
     border-radius: 10%;
+    padding: 5px;
+    position: absolute;
 }
 
 .input {
@@ -21,15 +23,40 @@
     padding: 5px;
     text-decoration: none;
     transition: background .3s;
-    border-radius: 10px;
+    border-radius: 8px;
+    background-color: #b8b8b8;
+    width: 230px;
+    height: 20px;
 }
 
 #btn {
     border: none;
-    padding: 5px;
     text-decoration: none;
     cursor: pointer;
     transition: background .3s;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 20%;
+    color: #F6F6F6;
+    background-color:#FF834F;
+    height: 30px;
+    width: 100px;
+    padding: 6px;
+}
+
+#formDiv {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.inputDiv {
+    margin-bottom: 30px;
+    justify-content: center;
+    display:grid;
+    height: 30px;
+    text-align: left;
+}
+
+#semLogin {
+    margin-bottom: 10px;
 }

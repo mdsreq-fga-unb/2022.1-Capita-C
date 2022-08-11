@@ -22,6 +22,7 @@ interface Props {
 export const AuthProvider: React.FC<Props> = ({ children }) => {
 
     const [user, setUser] = useState<object | null>(null);
+    console.log(user);
 
     useEffect(() => {
         async function loadStorageData() {
