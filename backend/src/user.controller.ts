@@ -17,9 +17,9 @@ export const getsUser = async (req: Request, res: Response): Promise<Response> =
 export const login = async (req: Request, res: Response) => {
     try {
         const user = req.body;
-        const email = user.email;
+        const cpf = user.cpf;
         const pass = user.senha;
-        const response: QueryResult = await pool.query('SELECT * FROM users WHERE email=$1', [email]) // consulta a banco de dados
+        const response: QueryResult = await pool.query('SELECT * FROM users WHERE cpf=$1', [cpf]) // consulta a banco de dados
         if(response.rows.length != 0){
             const password: QueryResult = await pool.query('SELECT password FROM users WHERE password=$1', [pass])
             if(response.rows.length != 0){
@@ -50,14 +50,16 @@ export const getsUserById = async (req: Request, res: Response): Promise<Respons
 
 export const registerUser = async (req: Request, res: Response): Promise<Response> => {
     try {
-        const { name, email, password } = req.body;
-        const response: QueryResult = await pool.query('INSERT INTO users (name,email,password) VALUES ($1, $2, $3)', [name, email, password]) // manda para o banco de dados um novo usuario com nome e email escritos no body
+        const { name, email, cpf, admin, password } = req.body;
+        const response: QueryResult = await pool.query('INSERT INTO users (name,email, cpf, admin, password) VALUES ($1, $2, $3, $4, $5)', [name, email, cpf, admin, password]) // manda para o banco de dados um novo usuario com nome e email escritos no body
         return res.status(200).json({
             message: 'Usuario cadastrado com sucesso',
             body: {
                 user: {
                     name,
                     email,
+                    cpf,
+                    admin,
                     password
                 }
             }
@@ -71,8 +73,8 @@ export const registerUser = async (req: Request, res: Response): Promise<Respons
 export const editUser = async (req: Request, res: Response): Promise<Response> => {
     try {
         const idUpdate = parseInt(req.params.id)
-        const { name, email, password } = req.body;
-        const response: QueryResult = await pool.query('UPDATE users SET name = $1, email = $2, password = $3 WHERE id = $3=4', [name, email, password, idUpdate]) // manda para o banco de dados um novo usuario com nome e email escritos no body
+        const { name, email, cpf, password } = req.body;
+        const response: QueryResult = await pool.query('UPDATE users SET name = $1, email = $2, cpf = $3, password = $4 WHERE id = $4', [name, email, cpf, password, idUpdate]) // manda para o banco de dados um novo usuario com nome e email escritos no body
         return res.status(200).json({
             message: `Usuario ${idUpdate} atualizado com sucesso`,
             body: {

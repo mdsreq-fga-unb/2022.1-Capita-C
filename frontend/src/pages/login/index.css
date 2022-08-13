@@ -1,21 +1,39 @@
 #mainDiv {
-    background-image: linear-gradient(#FF834F,#FF4949);
+    background-image: linear-gradient(var(--color-primary), var(--color-secondary));
     width: 100vw;
     height: 100vh;
+    font-family: var(--font-family);
+    position: relative
+}
+
+#rodape {
+    height: 60px;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    display:inline-flex;
+}
+
+#body {
+    width: 100vw;
+    margin-top: 60px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative
 }
 
 #box {
-    background-color: #F6F6F6;
-    width: 380px;
-    height: 400px;
-    text-align: center;
-    border-radius: 10%;
-    padding: 5px;
+    background-color: var(--background);
     position: absolute;
+    width: 380px;
+    height: 450px;
+    text-align: center;
+    border-radius: 5%;
+    padding: 5px;
 }
 
 .input {
@@ -24,9 +42,14 @@
     text-decoration: none;
     transition: background .3s;
     border-radius: 8px;
-    background-color: #b8b8b8;
-    width: 230px;
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 280px;
     height: 20px;
+    box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.4);
+}
+
+.inputText {
+    font-size: 14px;
 }
 
 #btn {
@@ -36,11 +59,13 @@
     transition: background .3s;
     border-radius: 5px;
     width: 20%;
-    color: #F6F6F6;
-    background-color:#FF834F;
-    height: 30px;
-    width: 100px;
+    color: var(--background);
+    background-color: var(--color-primary);
+    height: 35px;
+    width: 130px;
     padding: 6px;
+    margin-top: 15px;
+    ;
 }
 
 #formDiv {
@@ -51,12 +76,25 @@
 
 .inputDiv {
     margin-bottom: 30px;
+    ;
     justify-content: center;
-    display:grid;
+    display: grid;
     height: 30px;
     text-align: left;
 }
 
 #semLogin {
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.otherLogin {
+    cursor: pointer;
+    color: var(--color-primary);
+    font-size: 12px;
+}
+
+.otherLoginText {
+    font-size: 12px;
 }

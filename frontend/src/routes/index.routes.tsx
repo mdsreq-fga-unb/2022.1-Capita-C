@@ -1,10 +1,14 @@
 import React, {useContext} from "react";
 import SignRoutes from "./SignRoutes";
 import AuthContext from "../contexts/auth";
-import OtherRoutes from "./OtherRoutes";
+import UserRoutes from "./UserRoutes";
+import AdminRoutes from "./AdminRoutes";
 
 export const Routes = () => {
-    const { signed } = useContext(AuthContext);
-    console.log(signed)
-    return signed ? <OtherRoutes /> : <SignRoutes />;
+    const { signed, admin } = useContext(AuthContext);
+    if (signed){
+        return admin ? <AdminRoutes/> : <UserRoutes/>
+    }else{
+        return <SignRoutes/>
+    }
 }

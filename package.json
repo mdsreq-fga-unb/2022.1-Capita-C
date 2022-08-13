@@ -1,6 +1,0 @@
-{
-  "devDependencies": {
-    "@svgr/webpack": "^6.3.1",
-    "file-loader": "^6.2.0"
-  }
-}

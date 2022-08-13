@@ -2,13 +2,14 @@ import React, { createContext, useEffect, useState } from "react";
 import api from "../services/api";
 
 interface User {
-    email: string
+    cpf: string
     senha: string
 }
 
 interface AuthContextData {
-    signed: boolean,
+    signed: boolean;
     user: object | null;
+    admin: boolean;
     signIn(user: User): Promise<void>;
     logOut(): void;
 }
@@ -22,25 +23,28 @@ interface Props {
 export const AuthProvider: React.FC<Props> = ({ children }) => {
 
     const [user, setUser] = useState<object | null>(null);
-    console.log(user);
+    const [admin, setAdmin] = useState<boolean>(false);
 
     useEffect(() => {
         async function loadStorageData() {
-          const storagedUser = await localStorage.getItem('@App:user');
-    
-          if (storagedUser) {
-            setUser(JSON.parse(storagedUser));
-          }
-    
+            const storagedUser = await localStorage.getItem('@App:user');
+            if (storagedUser) {
+                setUser(JSON.parse(storagedUser));
+            }
+
         }
-    
+
         loadStorageData();
-      });
+
+    });
+
+
 
     async function signIn(userLogin: User) {
         try {
-            const response = await api.post('/users/login',  userLogin );
+            const response = await api.post('/users/login', userLogin);
             setUser(response.data);
+            setAdmin(response.data.admin);
             localStorage.setItem('@App:user', JSON.stringify(response.data));
         } catch (error) {
             alert("Erro ao logar")
@@ -53,7 +57,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ signed: Boolean(user), user, signIn, logOut }}>
+        <AuthContext.Provider value={{ signed: Boolean(user), user, admin, signIn, logOut }}>
             {children}
         </AuthContext.Provider>
     )
