@@ -12,7 +12,8 @@ services:
 
   db:
     container_name: capitac_ct
-    image: postgres
+    user: postgres
+    image: "postgres"
     restart: always
     environment:
       POSTGRES_PASSWORD: "A7Y7c1E*"
@@ -20,3 +21,5 @@ services:
       POSTGRES_DB: "capitac_db"
     ports:
       - "5432:5432"
+    volumes:
+      - ./CreateDatabase.sql:/docker-entrypoint-initdb.d/CreateDatabase.sql
