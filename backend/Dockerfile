@@ -14,7 +14,7 @@ RUN npm install --silent --only=production
 COPY . .
 
 # Run on port 3000
-EXPOSE 4000
+EXPOSE 3000
 
 # Run app
 CMD ["/bin/sh","./scripts/start.sh"]

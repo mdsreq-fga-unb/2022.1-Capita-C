@@ -1,0 +1,10 @@
+build/
+coverage/
+node_modules/
+public/
+prisma/
+docs/
+env/
+scripts/
+/*.js
+/*.json

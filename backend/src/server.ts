@@ -1,18 +1,33 @@
-import bodyParser from 'body-parser';
-import express, { Router } from 'express';
+//* Main file for express configuration
 
-const cors = require('cors');
-const app = express();
-const userRoute = require('./router/user.routes');
+import express from "express";
+import morgan from "morgan";
+import helmet from "helmet";
+import "express-async-errors";
 
-//middlewares: converte um .json num objeto
-app.use(express.json()); 
-app.use(bodyParser.json()) 
-app.use(express.urlencoded({extended: false}));
-app.use(cors());
-app.use(userRoute);
+import indexRouter from "./routes/indexRoute";
 
-// porta usada para hostear a pagina
-const port = 4000;
-app.listen(port);
-console.log("Server on port", port)
+import env from "./utils/env";
+import handlePrismaError from "./middlewares/handlePrismaError";
+import handleCommonError from "./middlewares/handleCommonError";
+
+const server = express();
+
+//* Middlewares
+if (env.NODE_ENV !== "production") {
+  server.use(morgan("dev"));
+}
+server.use(helmet());
+server.use(express.json());
+
+//* The routes are being created in the routes folder
+server.use("/", indexRouter);
+
+//* Prisma Error handler
+server.use(handlePrismaError);
+server.use(handleCommonError);
+
+//* Get port from environment and store in Express.
+server.set("port", env.PORT);
+
+export default server;

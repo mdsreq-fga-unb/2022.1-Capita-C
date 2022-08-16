@@ -1,22 +1,27 @@
-version: '3.1'
+version: "3.4"
 
 services:
-
-  back:
-    build: .
-    command: npm run dev
-    ports:
-     - '4000:4000'
-    volumes:
-      - .:/usr/back
-
   db:
-    container_name: capitac_ct
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: "A7Y7c1E*"
-      POSTGRES_USER: "postgres"
-      POSTGRES_DB: "capitac_db"
+    image: postgres:14-alpine
+    restart: unless-stopped
+    env_file:
+      - env/.build.env
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $${POSTGRES_USER}" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  web:
+    image: CapitaC
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    env_file:
+      - env/.build.env
     ports:
-      - "5432:5432"
+      - 3000:3000
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
