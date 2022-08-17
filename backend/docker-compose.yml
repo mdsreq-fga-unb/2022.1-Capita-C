@@ -19,4 +19,4 @@ services:
       POSTGRES_USER: "postgres"
       POSTGRES_DB: "capitac_db"
     ports:
-      - "5432:5432"
+      - "4000:4000"
