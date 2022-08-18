@@ -6,7 +6,7 @@
     gap: 0.5rem;
 } */
 
-.cardWraper{
+.cardWraper {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #969696;
@@ -18,7 +18,11 @@
     padding: 3px;
 }
 
-.cardWraper:hover{
+.loja-nome:hover {
+    cursor: pointer;
+}
+
+.cardWraper:hover {
     border: 1px solid #969696;
     color: var(--color-secondary);
 }
@@ -29,10 +33,3 @@
     cursor: pointer;
 }
 
-.edit-icon:hover{
-    color: var(--color-secondary);
-}
-
-.delete-icon:hover{
-    color: var(--color-secondary);
-}

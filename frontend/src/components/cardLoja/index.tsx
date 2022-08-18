@@ -14,9 +14,9 @@ interface CardProps {
 export function CardLoja({ nome, cnpj, telefone, cep, bairro }: CardProps) {
     return (
         <div className="cardWraper">
-            <text className='loja-nome' >{nome}</text>
+            <text className='loja-nome' onClick={() => alert(`cnpj: ${cnpj}, telefone: ${telefone}, cep: ${cep}, bairro: ${bairro}`)} >{nome}</text>
             <div className='icons'>
-                <img className='edit-icon' onClick={() => alert("editar")} src={editIcon} />
+                <img onClick={() => alert("editar")} src={editIcon} />
                 <img className='delete-icon' onClick={() => alert("deletar")} src={deleteIcon} />
             </div>
         </div>
