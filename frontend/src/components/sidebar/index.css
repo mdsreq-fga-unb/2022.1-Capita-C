@@ -1,9 +1,7 @@
 .sidebar{
    height: calc(100vh - 5rem);
    width: 12rem;
-
-   background-color: var(--color-primary);
-
+   background-image: linear-gradient(var(--color-primary), var(--color-secondary));
    display: flex;
    flex-direction: column;
    align-items: center;
