@@ -31,6 +31,20 @@ Disponível no zenhub do repositório.
 <span style="color:red">outra supgestão: coloquem aqui, os links das outras páginas onde as entregas estão detalhadas. Ou seja: entrega 1: link para o Visão, etc,. Entrega 2: link para esse material, etc.</span>. -->
 <br>
 
+## Entrega 3
+
+[Documento de visão](visao.md)
+
+[Organização do Projeto](org_proj.md)
+
+[Método de desenvolvimento e processos](ciclos.md)
+
+[Riscos](riscos.md)
+
+[Lições aprendidas](licoes_aprendidas.md)
+
+[Arquitetura](arquitetura.md)
+
 **Histórico de Versões**
 
 | Data       | Versão | Descrição                       | Autor                                                         |
