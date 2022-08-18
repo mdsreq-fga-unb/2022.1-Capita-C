@@ -40,7 +40,7 @@ const Login = () => {
                     <h2>Login</h2>
                     <div id="formDiv">
                         <div className="inputDiv" >
-                            <text className="inputText" >Usuário: </text>
+                            <text className="inputText" >CPF: </text>
                             <input className="input" name="cpf" value={user.cpf} onChange={e => handleInput(e)} />
                         </div>
                         <div className="inputDiv" >
