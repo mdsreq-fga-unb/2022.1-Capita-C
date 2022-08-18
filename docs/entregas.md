@@ -45,6 +45,9 @@ Disponível no zenhub do repositório.
 
 [Arquitetura](arquitetura.md)
 
+[Protótipos](prototipos.md)
+
+
 **Histórico de Versões**
 
 | Data       | Versão | Descrição                       | Autor                                                         |
@@ -53,3 +56,4 @@ Disponível no zenhub do repositório.
 | 19/07/2022 | 0.1.1  | Adicionando Tópico da Entrega 2 | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
 | 19/07/2022 | 0.2    | Entrega 2 - MDS                 | [Alexia Naara](https://github.com/alexianaa)                  |
 | 02/08/2022 | 0.2.1  | Entrega 2 - correção de links   | [Alexia Naara](https://github.com/alexianaa)                  |
+| 18/08/2022 | 0.3    | Adição tópico entrega 3         | [André Corrêa](https://github.com/dartmol203)                 |
