@@ -190,3 +190,4 @@
 | 19/07/2022 | 0.1    | Versão inicial                                | [Gabriel Luiz](https://github.com/ggomesbr) e [André Corrêa](https://github.com/dartmol203) |
 | 20/07/2022 | 0.2    | Adição da imagem e atualização nos requisitos | [André Corrêa](https://github.com/dartmol203)                                               |
 | 21/07/2022 | 0.2.1  | hotfix imagem fundo transparente              | [André Corrêa](https://github.com/dartmol203)                                               |
+| 18/08/2022 | 0.3    | adição de requito e correção na numeração     | [André Corrêa](https://github.com/dartmol203)                                               |
