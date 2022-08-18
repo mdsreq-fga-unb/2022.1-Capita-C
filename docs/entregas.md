@@ -1,5 +1,5 @@
-
 ## Entrega 1
+
 [Vídeo de apresentação da Visão do Produto e Projeto](https://drive.google.com/file/d/1eL-pX9ZtqTw1kxzvs4oMRPZgEVu55U2g/view?usp=sharing)
 
 [Documento de visão](visao.md)
@@ -13,7 +13,9 @@
 [Lições aprendidas](licoes_aprendidas.md)
 
 ## Entrega 2
-----------
+
+---
+
 ### Requisitos de Software
 
 [Vídeo de apresentação da entrega da Unidade 2](https://https://drive.google.com/file/d/1eL-pX9ZtqTw1kxeqhgj2W4x3wrRPZg4wqeVu55t22g/view?usp=sharing)
@@ -23,7 +25,7 @@
 ![QuadroKanban](./imagens/QuadroKanbam.png)
 Disponível no zenhub do repositório.
 
-----------
+---
 
 ### [Métodos de Desenvolvimento de Software](dojo.md)
 
@@ -47,13 +49,15 @@ Disponível no zenhub do repositório.
 
 [Protótipos](prototipos.md)
 
+[Diagrama de Classes](diagrama_de_classes.md)
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                       | Autor                                                         |
-| ---------- | ------ | ------------------------------- | ------------------------------------------------------------- |
-| 05/07/2022 | 0.1    | Entrega 1                       | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 19/07/2022 | 0.1.1  | Adicionando Tópico da Entrega 2 | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 19/07/2022 | 0.2    | Entrega 2 - MDS                 | [Alexia Naara](https://github.com/alexianaa)                  |
-| 02/08/2022 | 0.2.1  | Entrega 2 - correção de links   | [Alexia Naara](https://github.com/alexianaa)                  |
-| 18/08/2022 | 0.3    | Adição tópico entrega 3         | [André Corrêa](https://github.com/dartmol203)                 |
+| Data       | Versão | Descrição                       | Autor                                                                     |
+| ---------- | ------ | ------------------------------- | ------------------------------------------------------------------------- |
+| 05/07/2022 | 0.1    | Entrega 1                       | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues)             |
+| 19/07/2022 | 0.1.1  | Adicionando Tópico da Entrega 2 | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues)             |
+| 19/07/2022 | 0.2    | Entrega 2 - MDS                 | [Alexia Naara](https://github.com/alexianaa)                              |
+| 02/08/2022 | 0.2.1  | Entrega 2 - correção de links   | [Alexia Naara](https://github.com/alexianaa)                              |
+| 18/08/2022 | 0.3    | Adição tópico entrega 3         | [André Corrêa](https://github.com/dartmol203)                             |
+| 18/08/2022 | 0.3.1  | Adição tópico entrega 3         | [Carlos Eduardo Mendes](https://github.com/CarlosEduardoMendesdeMesquita) |
