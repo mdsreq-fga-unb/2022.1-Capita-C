@@ -29,17 +29,18 @@ const Login = () => {
             <div id="rodape" >
                 <img
                     src={CapitalLogo}
-                    style={{ height: 36, width: 117.83, marginRight: 30}}
+                    style={{ height: 36, width: 117.83, marginRight: 30 }}
                     alt="Capital atacadista"
                 />
-                <text style={{marginTop: 10}} >Capitação de Clientes</text>
+                <text style={{ marginTop: 10 }} >Capitação de Clientes</text>
             </div>
             <div id="body">
                 <div id="box" >
+                    <br /><br />
                     <h2>Login</h2>
                     <div id="formDiv">
                         <div className="inputDiv" >
-                            <text className="inputText" >Usuário: </text>
+                            <text className="inputText" >CPF: </text>
                             <input className="input" name="cpf" value={user.cpf} onChange={e => handleInput(e)} />
                         </div>
                         <div className="inputDiv" >

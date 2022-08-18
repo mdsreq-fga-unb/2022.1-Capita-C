@@ -1,12 +1,10 @@
 .header{
-
     height: 5rem ;
     width: 100%;
     align-items: center;
     display: flex;
-    
+    cursor: pointer;
     background-color: var(--color-primary);
-
 }
 
 .header-wraper{

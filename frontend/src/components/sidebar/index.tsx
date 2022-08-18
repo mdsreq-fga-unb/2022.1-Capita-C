@@ -10,7 +10,7 @@ export function Sidebar() {
                 <span>Lorem ipsum</span>
                 <span>Lorem ipsum</span>
             </div>
-            <img className="imagem"src={LogoImage}/>
+            <img className="imagem" src={LogoImage}/>
         </div>
     );
 }
