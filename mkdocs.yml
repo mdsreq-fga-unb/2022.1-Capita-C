@@ -30,7 +30,7 @@ extra:
 nav:
   - Artefatos:
       - Início: documentation.md
-      - Entregas: entregas.md
+      - Entregas: entregas_conjunto.md
       - Visão: visao.md
       - Organização do Projeto: org_proj.md
       - Processo de Engenharia de Requisitos: processoER.md
