@@ -1,0 +1,36 @@
+.sidebar{
+   height: calc(100vh - 5rem);
+   width: 12rem;
+
+   background-color: var(--color-primary);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 0 1rem 0;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation>span{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 70%;
+    align-self: center;
+    height: 1.5rem;
+    
+}
+
+.lojas{
+    background-color: rgba(217,217,217,0.5);
+}
+
+.imagem{
+    width: 90%;
+
+}

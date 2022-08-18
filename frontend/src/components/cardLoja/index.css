@@ -1,0 +1,7 @@
+.cardWraper{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.5);
+    align-items: center;
+    gap: 0.5rem;
+}
