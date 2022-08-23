@@ -20,3 +20,29 @@ model User {
   password String
   name     String
 }
+
+model CadastroCnpj {
+  cnpjFinal                         String  @id @unique
+  identificadorMatrizFiliar         String   
+  nomeFantasia                      String?
+  cnaes                             Cnae[]
+  tipoLogradouro                    String?
+  logradouro                        String?
+  numero                            String?
+  complemento                       String?
+  bairro                            String?
+  cep                               Int 
+  unidadeFederativa                 String
+  municipio                         String
+  dddPrincipal                      String?
+  numeroPrincipal                   String?
+  dddSecundario                     String?
+  numeroSecundario                  String?
+  correioEletronico                 String?
+}
+
+model Cnae{
+  cnae                              Int  @id @unique
+  cnpj                              String
+  cadastroCnpj                      CadastroCnpj @relation(fields: [cnpj], references: [cnpjFinal   ], onDelete: Cascade)
+}
