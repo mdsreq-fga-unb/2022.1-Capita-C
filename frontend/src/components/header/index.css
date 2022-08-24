@@ -17,6 +17,12 @@
     justify-content: space-between;
 }
 
+.body{
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+}
+
 span{
     color: white;
     font-size: 80%;

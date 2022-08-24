@@ -1,7 +1,8 @@
 import './index.css'
 import CapitalLogo from '../../images/capitalLogo.svg'
 import userIcon from '../../images/user-icon.svg'
-import { useContext, useEffect, useState } from 'react'
+import logoutIcon from '../../images/logout-icon.svg'
+import { useContext, useEffect, useState} from 'react'
 import AuthContext from '../../contexts/auth'
 import { useNavigate } from 'react-router-dom'
 
@@ -35,16 +36,24 @@ export function Header(){
 
     return (
         <div className="header">
-
+            
             <div className="header-wraper">
                 <div className="logo-nome">
                     <img className="logo" src= {CapitalLogo}/>
                     <span>Captação de Clientes</span>
                 </div>    
 
-                <div className="user" onClick={() => handleClick()} >
-                    <img className="user-icon" src={userIcon} />
-                    <span>{user?.name}</span>
+                <div className="body">
+                    <div className="user">
+                        <img className="user-icon" src={userIcon} />
+                        <span> {user?.name}</span>
+                    </div>
+                    {user? 
+                        <div className="button-logout" onClick={() => handleClick()}>
+                            <img className='logout-icon' src={logoutIcon} />
+                            <span> sign out</span>
+                        </div>
+                    : <div></div>}
                 </div>
             </div>
             
