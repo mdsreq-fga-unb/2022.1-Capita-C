@@ -12,6 +12,12 @@
   <p style="text-align: justify">RF1 - Realizar login;</p>
 </li>
 
+
+</ul>
+
+#### Gerenciar Sistema
+
+<ul>
 <li>
   <p style="text-align: justify">RF2 - Criar Usuário;</p>
 </li>
@@ -47,29 +53,34 @@
 <li>
   <p style="text-align: justify">RF9 - Deletar Lojas;</p>
 </li>
+
+<li>
+  <p style="text-align: justify">RF10 - Atribuir lojas a atendente de telemarketing;</p>
+</li>
+
 </ul>
 
 #### Gerência de Dados
 
 <ul>
 <li>
-  <p style="text-align: justify">RF10 - Gerar relatório de lojas cadastradas;</p>
+  <p style="text-align: justify">RF11 - Gerar relatório de lojas cadastradas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF11 - Exportar dados de lojas cadastradas;</p>
+  <p style="text-align: justify">RF12 - Exportar dados de lojas cadastradas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF12 - Gerar relatórios de usuários;</p>
+  <p style="text-align: justify">RF13 - Gerar relatórios de usuários;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF13 - Importar dados de bases externas;</p>
+  <p style="text-align: justify">RF14 - Importar dados de bases externas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF14 - Visualizar log de alterações realizadas no cadastro de uma loja;</p>
+  <p style="text-align: justify">RF15 - Visualizar log de alterações realizadas no cadastro de uma loja;</p>
 </li>
 </ul>
 
@@ -77,11 +88,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF15 - Visualizar lista de lojas para entrar em contato no dia;</p>
+  <p style="text-align: justify">RF16 - Visualizar lista de lojas para entrar em contato no dia;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF16 - Visualizar taxas de efetivação;</p>
+  <p style="text-align: justify">RF17 - Visualizar taxas de efetivação;</p>
 </li>
 </ul>
 
@@ -91,19 +102,19 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF17 - Enviar emails para lojas;</p>
+  <p style="text-align: justify">RF18 - Enviar emails para lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF18 - Visualizar emails recebidos;</p>
+  <p style="text-align: justify">RF19 - Visualizar emails recebidos;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF19 - Enviar mensagens via whatsapp para lojas;</p>
+  <p style="text-align: justify">RF20 - Enviar mensagens via whatsapp para lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF20 - Visualizar mensagens whatsapp recebidas;</p>
+  <p style="text-align: justify">RF21 - Visualizar mensagens whatsapp recebidas;</p>
 </li>
 </ul>
 
@@ -111,11 +122,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF21 - Receber indicação de lojas para dar maior atenção;</p>
+  <p style="text-align: justify">RF22 - Receber indicação de lojas para dar maior atenção;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF22 - Acompanhar balanço de vendas;</p>
+  <p style="text-align: justify">RF23 - Acompanhar balanço de vendas;</p>
 </li>
 </ul>
 
@@ -123,11 +134,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF23 - Receber dados de regiões com pouca efetivação;</p>
+  <p style="text-align: justify">RF24 - Receber dados de regiões com pouca efetivação;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF24 - Receber previsões de crescimento de clientes;</p>
+  <p style="text-align: justify">RF25 - Receber previsões de crescimento de clientes;</p>
 </li>
 
 </ul>
@@ -179,3 +190,4 @@
 | 19/07/2022 | 0.1    | Versão inicial                                | [Gabriel Luiz](https://github.com/ggomesbr) e [André Corrêa](https://github.com/dartmol203) |
 | 20/07/2022 | 0.2    | Adição da imagem e atualização nos requisitos | [André Corrêa](https://github.com/dartmol203)                                               |
 | 21/07/2022 | 0.2.1  | hotfix imagem fundo transparente              | [André Corrêa](https://github.com/dartmol203)                                               |
+| 18/08/2022 | 0.3    | adição de requito e correção na numeração     | [André Corrêa](https://github.com/dartmol203)                                               |

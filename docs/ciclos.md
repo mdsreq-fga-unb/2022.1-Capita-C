@@ -16,24 +16,29 @@
 | Entrega do backlog    | Saída da arquitetura   | Finalização do produto  | Entrega do produto validado   |
 
 ## Planejamento das Iterações do Projeto
-| Ciclos   | Entrega                         | Data Início | Data Fim   |
-| -------- | ------------------------------- | ----------- | ---------- |
-| Ciclo 1  | Definição do Produto            | 27/06/2022  | 03/07/2022 |
-| Ciclo 2  | Levantamento de Requisitos      | 04/07/2022  | 10/07/2022 |
-| Ciclo 3  | Análise e Design                | 11/07/2022  | 17/07/2022 |
-| Ciclo 4  | Análise e Design                | 18/07/2022  | 24/07/2022 |
-| Ciclo 5  | Implementação                   | 25/07/2022  | 31/07/2022 |
-| Ciclo 6  | Implementação                   | 01/08/2022  | 07/08/2022 |
-| Ciclo 7  | Implementação                   | 08/08/2022  | 14/08/2022 |
-| Ciclo 8  | Implementação e entrega do MVP1 | 15/08/2022  | 21/08/2022 |
-| Ciclo 9  | Implementação                   | 22/08/2022  | 28/08/2022 |
-| Ciclo 10 | Implementação                   | 29/08/2022  | 05/09/2022 |
-| Ciclo 11 | Implantação                     | 06/09/2022  | 12/09/2022 |
-| Ciclo 12 | Implantação e entrega do MVP2   | 13/09/2022  | 19/09/2022 |
+
+| Ciclos   | Entrega                                                                      | Data Início | Data Fim   |
+| -------- | ---------------------------------------------------------------------------- | ----------- | ---------- |
+| Ciclo 1  | Definição do Produto                                                         | 27/06/2022  | 03/07/2022 |
+| Ciclo 2  | Levantamento de Requisitos                                                   | 04/07/2022  | 10/07/2022 |
+| Ciclo 3  | Análise e Design                                                             | 11/07/2022  | 17/07/2022 |
+| Ciclo 4  | Análise e Design                                                             | 18/07/2022  | 24/07/2022 |
+| Ciclo 5  | Configuração do ambiente                                                     | 25/07/2022  | 31/07/2022 |
+| Ciclo 6  | Configuração do ambiente e inicio da codificação                             | 01/08/2022  | 07/08/2022 |
+| Ciclo 7  | Implementação do sistema de login e inicio do tratamento de dados            | 08/08/2022  | 14/08/2022 |
+| Ciclo 8  | Implementação e entrega do MVP1                                              | 15/08/2022  | 21/08/2022 |
+| Ciclo 9  | Implementação das US faltantes no MVP1 e correções das criticas do professor | 22/08/2022  | 28/08/2022 |
+| Ciclo 10 | Implementação                                                                | 29/08/2022  | 05/09/2022 |
+| Ciclo 11 | Implantação                                                                  | 06/09/2022  | 12/09/2022 |
+| Ciclo 12 | Implantação e entrega do MVP2                                                | 13/09/2022  | 19/09/2022 |
+
+
+![Processos](./imagens/Processos.png)
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                  | Autor                                        |
-| ---------- | ------ | -------------------------- | -------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial             | [Ana Caroline](https://github.com/anaaroch)  |
-| 19/07/2022 | 0.2    | Atualização de metodologia | [Alexia Naara](https://github.com/alexianaa) | 
+| Data       | Versão | Descrição                                              | Autor                                         |
+| ---------- | ------ | ------------------------------------------------------ | --------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial                                         | [Ana Caroline](https://github.com/anaaroch)   |
+| 19/07/2022 | 0.2    | Atualização de metodologia                             | [Alexia Naara](https://github.com/alexianaa)  |
+| 18/08/2022 | 0.3    | Atualização dos ciclos e adição da imagem de processos | [André Corrêa](https://github.com/dartmol203) |

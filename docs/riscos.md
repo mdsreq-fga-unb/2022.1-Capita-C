@@ -1,8 +1,5 @@
 # Gerenciamento de Riscos
 
-<span style="color:red">COMO ESTÃO SENDO OU SERÃO GERENCIADOS ESSES RISCOS?</span>
-
-
 ## Planejamento das Iterações do Projeto
 
 | Risco                                    | Nível de Impacto [0 - 5] | Gerenciamento de Risco                              | Prevenção ao Risco                                                                   |
@@ -29,8 +26,13 @@
     <li>Replanejamento da alocação de tarefas.</li>
 </ul>
 
+## Gerência de riscos
+
+<p>Os riscos estão sendo gerenciados durante as reuniões com o cliente, até o momento os relativos ao cliente não trouxeram preocupações, durante as reuniões de planing e review, houve um atraso maior o que o sustentável nos últimos ciclos, o que traz um alerta vermelho. Dessa forma, iremos replanejar os ciclos seguintes e possivelmente será necessário editar o escopo do MVP2</p>
+
 **Histórico de Versões**
 
-| Data       | Versão | Descrição      | Autor                                                                                                       |
-| ---------- | ------ | -------------- | ----------------------------------------------------------------------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| Data       | Versão | Descrição                         | Autor                                                                                                       |
+| ---------- | ------ | --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial                    | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 18/08/2022 | 0.2    | Adição do gerenciamento de riscos | [André Corrêa](https://github.com/dartmol203)                                                               |

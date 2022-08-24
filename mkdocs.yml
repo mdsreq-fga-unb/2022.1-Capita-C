@@ -30,16 +30,17 @@ extra:
 nav:
   - Artefatos:
       - Início: documentation.md
-      - Entregas: entregas.md
-      - Documento de Visão: visao.md
+      - Entregas: entregas_conjunto.md
+      - Visão: visao.md
       - Organização do Projeto: org_proj.md
       - Processo de Engenharia de Requisitos: processoER.md
       # - Custos: planejamento/custos.md
       - Riscos: riscos.md
       - Ciclos: ciclos.md
-      #- Documento de Arquitetura: arquitetura.md
+      - Documento de Arquitetura: arquitetura.md
       - Requisitos: lista_requisitos.md
       - MVP: mvp.md
+      - PBB: pbb.md
       - Reuniões: reunioes.md
       # - Planejamento:
       # - Políticas do Repositório:

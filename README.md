@@ -19,3 +19,10 @@ Repositório da Equipe MDS-REQ referente a disciplinas do curso de engenharia de
 | Ana Caroline Campos Rocha         | sqscamposuni@gmail.com        | [anaaroch](https://github.com/anaaroch)     | MDS        | 19/0083930 |
 | Carlos Eduardo Mendes de Mesquita | cmendesdemesquita@gmail.com   | [CarlosEduardo](https://github.com/CarlosEduardoMendesdeMesquita) | MDS        | 19/0085584  |
 | Davi Gonçalves Akegawa Pierre     | davi.pierre123@gmail.com      | [DaviPierre](https://github.com/DaviPierre) | MDS        | 19/0105071 |
+
+#### Para rodar o código:
+
+- ter node instalado
+- ter docker-compose instalado
+- rodar npm install nas pastas backend e fronted
+- rodar sudo docker-compose up em backend e frontend
