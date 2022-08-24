@@ -16,7 +16,7 @@ export function CardLojaUser({ nome, cnpj, telefone, cep, bairro }: CardProps) {
         <div className="cardWraper">
             <text className='loja-nome' onClick={() => alert(`cnpj: ${cnpj}, telefone: ${telefone}, cep: ${cep}, bairro: ${bairro}`)} >{nome}</text>
             <div className='icons'>
-                <img className='delete-icon' onClick={() => alert("deletar")} src={deleteIcon} />
+                <img onClick={() => alert("editar")} src={editIcon} />
             </div>
         </div>
     );
