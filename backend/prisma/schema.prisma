@@ -16,33 +16,53 @@ datasource db {
 }
 
 model User {
-  email    String @id
-  password String
-  name     String
+  cpf             String  @id
+  password        String
+  name            String
+  isAdmin         Boolean @default(false)
+  isConsultor     Boolean @default(false)
+  isTelemarketing Boolean @default(true)
+  // Lembrar de que nós teremos que validar nos controles os níveis de permissão
 }
 
 model CadastroCnpj {
-  cnpjFinal                         String  @id @unique
-  identificadorMatrizFiliar         String   
-  nomeFantasia                      String?
-  cnaes                             Cnae[]
-  tipoLogradouro                    String?
-  logradouro                        String?
-  numero                            String?
-  complemento                       String?
-  bairro                            String?
-  cep                               Int 
-  unidadeFederativa                 String
-  municipio                         String
-  dddPrincipal                      String?
-  numeroPrincipal                   String?
-  dddSecundario                     String?
-  numeroSecundario                  String?
-  correioEletronico                 String?
+  cnpjFinal                 String           @id
+  identificadorMatrizFiliar String
+  nomeFantasia              String?
+  cnaes                     Cnae[]
+  tipoLogradouro            String?
+  logradouro                String?
+  numero                    String?
+  complemento               String?
+  bairro                    String?
+  cep                       Int
+  unidadeFederativa         String
+  municipio                 String
+  telefone                  Telefone[]
+  correioEletronico         Email[]
+  atribuido                 Boolean          @default(false)
+  parceriaAceita            SituacaoParceria @default(Processando)
 }
 
-model Cnae{
-  cnae                              Int  @id @unique
-  cnpj                              String
-  cadastroCnpj                      CadastroCnpj @relation(fields: [cnpj], references: [cnpjFinal   ], onDelete: Cascade)
+model Cnae {
+  cnae         Int            @id
+  cadastroCnpj CadastroCnpj[]
+}
+
+model Telefone {
+  numeroTelefone BigInt         @id
+  origemTelefone String?
+  cadastroCnpj   CadastroCnpj[]
+}
+
+model Email {
+  email        String         @id
+  origemEmail  String?
+  cadastroCnpj CadastroCnpj[]
+}
+
+enum SituacaoParceria {
+  Aceita
+  Processando
+  NaoAceita
 }
