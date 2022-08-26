@@ -1,6 +1,10 @@
 import './index.css'
 import editIcon from '../../images/edit-icon.svg'
+import editIconRed from '../../images/edit-icon-red.svg'
 import deleteIcon from '../../images/delete-icon.svg'
+import deleteIconRed from '../../images/delete-icon-red.svg'
+import { useState } from 'react';
+import ModalLoja from '../modalLoja';
 
 interface CardProps {
     nome?: String;
@@ -12,13 +16,15 @@ interface CardProps {
 }
 
 export function CardLoja({ nome, cnpj, telefone, cep, bairro }: CardProps) {
+    const [openModal, setOpenModal] = useState(false);
     return (
         <div className="cardWraper">
             <text className='loja-nome' onClick={() => alert(`cnpj: ${cnpj}, telefone: ${telefone}, cep: ${cep}, bairro: ${bairro}`)} >{nome}</text>
             <div className='icons'>
-                <img onClick={() => alert("editar")} src={editIcon} />
-                <img className='delete-icon' onClick={() => alert("deletar")} src={deleteIcon} />
+                <img className='edit-icon' onClick={() => setOpenModal(true)} src={editIcon} onMouseOver={e => (e.currentTarget.src = editIconRed)} onMouseOut={e => (e.currentTarget.src = editIcon)} />
+                <img className='delete-icon' onClick={() => alert("deletar")} src={deleteIcon} onMouseOver={e => (e.currentTarget.src = deleteIconRed)} onMouseOut={e => (e.currentTarget.src = deleteIcon)} />
             </div>
+            {openModal && <ModalLoja closeModal={setOpenModal} />}
         </div>
     );
 }
@@ -34,16 +40,3 @@ export function CardLoja({ nome, cnpj, telefone, cep, bairro }: CardProps) {
         </div>
     );
 } */
-
-// export function CardLoja(nome: String, cnpj:String, telefone: String, telefone2: String, cep: String, endereco: String){
-//     return(
-//         <div className="cardWraper">
-//                 <span>Nome: {nome}</span>
-//                 <span>CNPJ: {cnpj}</span>
-//                 <span>Telefone: {telefone}</span>
-//                 <span>Telefode Secundário: {telefone2}</span>
-//                 <span>CEP: {nome}</span>
-//                 <span>ENDERECO: {nome}</span>
-//         </div>
-//     );
-// }

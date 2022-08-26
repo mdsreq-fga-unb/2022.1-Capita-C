@@ -3,6 +3,7 @@ import { Sidebar } from '../../components/sidebar';
 import './index.css';
 import { useState } from 'react'
 import { CardLoja } from '../../components/cardLoja';
+import ModalLoja from '../../components/modalLoja';
 
 const HomePageAdmin = () => {
 
@@ -40,7 +41,6 @@ const HomePageAdmin = () => {
     }]
 
     const [count, setCount] = useState(5);
-
 
     return (
 
