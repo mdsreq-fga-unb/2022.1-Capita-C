@@ -9,7 +9,7 @@ interface User {
 interface AuthContextData {
     signed: boolean;
     user: object | null;
-    admin: boolean;
+    gerente: boolean;
     signIn(user: User): Promise<void>;
     logOut(): void;
 }
@@ -28,8 +28,10 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     useEffect(() => {
         async function loadStorageData() {
             const storagedUser = await localStorage.getItem('@App:user');
-            if (storagedUser) {
+            const storagedAdmin = await localStorage.getItem('@App:admin');
+            if (storagedUser && storagedAdmin) {
                 setUser(JSON.parse(storagedUser));
+                setAdmin(JSON.parse(storagedAdmin));
             }
 
         }
@@ -46,6 +48,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
             setUser(response.data);
             setAdmin(response.data.admin);
             localStorage.setItem('@App:user', JSON.stringify(response.data));
+            localStorage.setItem('@App:admin', JSON.stringify(response.data.admin));
         } catch (error) {
             alert("Erro ao logar")
         }
@@ -57,7 +60,7 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider value={{ signed: Boolean(user), user, admin, signIn, logOut }}>
+        <AuthContext.Provider value={{ signed: Boolean(user), user, gerente: Boolean(admin), signIn, logOut }}>
             {children}
         </AuthContext.Provider>
     )

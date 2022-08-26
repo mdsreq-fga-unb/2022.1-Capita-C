@@ -22,7 +22,6 @@ const HomePageUser = () => {
 
     const [count, setCount] = useState(2);
 
-
     return (
 
         <div className="main">
@@ -37,7 +36,7 @@ const HomePageUser = () => {
                     <div className="cards">
                         {lojas.map((element, i) => {
                             return (
-                                <CardLojaUser nome={element.nome_fantasia} cnpj={element.cnpj} telefone={element.ddd_telefone_1} cep={element.cep} bairro={element.bairro} />
+                                <CardLojaUser key={i} nome={element.nome_fantasia} cnpj={element.cnpj} telefone={element.ddd_telefone_1} cep={element.cep} bairro={element.bairro} />
                             )
                         })}
                     </div>

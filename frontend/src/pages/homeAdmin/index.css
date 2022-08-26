@@ -22,6 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 12px;
     /* border-bottom: 1px solid rgba(217, 217, 217, 0.5); */
 }
 
@@ -37,6 +38,12 @@
     box-sizing: border-box;
     color: var(--color-primary);
     text-align: center;
+}
+
+#adicionarLojas:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
 }
 
 #addLojasText {
