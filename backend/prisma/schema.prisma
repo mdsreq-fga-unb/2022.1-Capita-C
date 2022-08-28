@@ -64,5 +64,6 @@ model Email {
 enum SituacaoParceria {
   Aceita
   Processando
+  NaoConseguiuFazerContato
   NaoAceita
 }

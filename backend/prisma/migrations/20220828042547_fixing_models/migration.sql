@@ -1,5 +1,5 @@
 -- CreateEnum
-CREATE TYPE "SituacaoParceria" AS ENUM ('Aceita', 'Processando', 'NaoAceita');
+CREATE TYPE "SituacaoParceria" AS ENUM ('Aceita', 'Processando', 'NaoConseguiuFazerContato', 'NaoAceita');
 
 -- CreateTable
 CREATE TABLE "User" (
