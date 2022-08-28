@@ -1,5 +1,5 @@
 import { RequestHandler } from "express";
-import { HttpError } from "http-errors";
+import HttpError from "http-errors";
 import prisma from "../databaseClient";
 
 const list: RequestHandler = async (req, res) => {
@@ -60,7 +60,6 @@ const update: RequestHandler = async (req, res) => {
       isAdmin: true,
       isConsultor: true,
       isTelemarketing: true,
-      password: true,
     },
   });
 
