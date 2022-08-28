@@ -1,5 +1,4 @@
 import { RequestHandler } from "express";
-import HttpError from "http-errors";
 import prisma from "../databaseClient";
 
 const list: RequestHandler = async (req, res) => {

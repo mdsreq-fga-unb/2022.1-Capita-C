@@ -6,8 +6,11 @@ const NODE_ENV = process.env.NODE_ENV as string;
 const BASE_URL = process.env.BASE_URL as string;
 const PORT = normalizePort(process.env.PORT as string);
 
+const PRIVATE_KEY = process.env.PRIVATE_KEY as string;
+
 export default {
   NODE_ENV,
   PORT,
   BASE_URL,
+  PRIVATE_KEY,
 };
