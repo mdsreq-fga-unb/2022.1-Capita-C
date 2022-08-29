@@ -1,7 +1,11 @@
 declare namespace Express {
-  export interface User {
-    email: string;
-    name: string;
-    password: string;
+  export interface Request {
+    user: {
+      cpf: string;
+      name: string;
+      isAdmin: boolean;
+      isConsultor: boolean;
+      isTelemarketing: boolean;
+    } | null;
   }
 }
