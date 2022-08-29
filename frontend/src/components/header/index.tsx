@@ -51,7 +51,7 @@ export function Header(){
                     {user? 
                         <div className="button-logout" onClick={() => handleClick()}>
                             <img className='logout-icon' src={logoutIcon} />
-                            <span> sign out</span>
+                            <span> Sign Out</span>
                         </div>
                     : <div></div>}
                 </div>
