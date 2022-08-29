@@ -15,20 +15,21 @@
     width: 100%;
 }
 
-.navigation>span{
-    padding: 0.5rem;
+.menu{
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    font-size: 70%;
-    align-self: center;
-    height: 2rem;
-    
+    background-color: rgba(217,217,217,0.5);
 }
 
-.lojas{
-    background-color: rgba(217,217,217,0.5);
+.menu>span{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 14px;
+    align-self: center;
+    height: 2rem;
 }
 
 .imagem{
     width: 90%;
-
 }
