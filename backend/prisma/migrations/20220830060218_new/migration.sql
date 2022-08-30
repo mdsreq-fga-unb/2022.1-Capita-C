@@ -1,6 +1,9 @@
 -- CreateEnum
 CREATE TYPE "SituacaoParceria" AS ENUM ('Aceita', 'Processando', 'NaoConseguiuFazerContato', 'NaoAceita');
 
+-- CreateEnum
+CREATE TYPE "IdentificadorMAtrizFilial" AS ENUM ('Matriz', 'Filial');
+
 -- CreateTable
 CREATE TABLE "User" (
     "cpf" TEXT NOT NULL,
@@ -18,7 +21,7 @@ CREATE TABLE "User" (
 -- CreateTable
 CREATE TABLE "CadastroCnpj" (
     "cnpjFinal" TEXT NOT NULL,
-    "identificadorMatrizFiliar" TEXT NOT NULL,
+    "identificadorMatrizFiliar" "IdentificadorMAtrizFilial" NOT NULL DEFAULT E'Matriz',
     "nomeFantasia" TEXT,
     "tipoLogradouro" TEXT,
     "logradouro" TEXT,

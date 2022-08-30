@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import prisma from "./databaseClient";
 
 prisma.user

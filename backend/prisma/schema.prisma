@@ -28,8 +28,8 @@ model User {
 }
 
 model CadastroCnpj {
-  cnpjFinal                 String           @id
-  identificadorMatrizFiliar String
+  cnpjFinal                 String                    @id
+  identificadorMatrizFiliar IdentificadorMAtrizFilial @default(Matriz)
   nomeFantasia              String?
   cnaes                     Cnae[]
   tipoLogradouro            String?
@@ -42,8 +42,8 @@ model CadastroCnpj {
   municipio                 String
   telefone                  Telefone[]
   correioEletronico         Email[]
-  atribuido                 Boolean          @default(false)
-  parceriaAceita            SituacaoParceria @default(Processando)
+  atribuido                 Boolean                   @default(false)
+  parceriaAceita            SituacaoParceria          @default(Processando)
 }
 
 model Cnae {
@@ -68,4 +68,9 @@ enum SituacaoParceria {
   Processando
   NaoConseguiuFazerContato
   NaoAceita
+}
+
+enum IdentificadorMAtrizFilial {
+  Matriz
+  Filial
 }
