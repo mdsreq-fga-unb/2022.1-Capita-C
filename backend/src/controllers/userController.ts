@@ -2,14 +2,43 @@ import { RequestHandler } from "express";
 import HttpError from "http-errors";
 import prisma from "../databaseClient";
 
+const create: RequestHandler = async (req, res) => {
+  const { cpf, password, name, email, isAdmin, isConsultor, isTelemarketing, status } = req.body;
+  const users = await prisma.user.create({
+    data: {
+      cpf,
+      password,
+      name,
+      email,
+      isAdmin,
+      isConsultor,
+      isTelemarketing,
+      status,
+    },
+    select: {
+      cpf: true,
+      name: true,
+      email: true,
+      isAdmin: true,
+      isConsultor: true,
+      isTelemarketing: true,
+      status: true,
+    },
+  });
+
+  return res.json(users);
+};
+
 const list: RequestHandler = async (req, res) => {
   const users = await prisma.user.findMany({
     select: {
       cpf: true,
       name: true,
+      email: true,
       isAdmin: true,
       isConsultor: true,
       isTelemarketing: true,
+      status: true,
     },
   });
 
@@ -26,9 +55,11 @@ const retrieve: RequestHandler = async (req, res) => {
     select: {
       cpf: true,
       name: true,
+      email: true,
       isAdmin: true,
       isConsultor: true,
       isTelemarketing: true,
+      status: true,
     },
   });
 
@@ -41,7 +72,7 @@ const retrieve: RequestHandler = async (req, res) => {
 
 const update: RequestHandler = async (req, res) => {
   const { cpf } = req.params;
-  const { name, isAdmin, isConsultor, isTelemarketing, password } = req.body;
+  const { name, email, isAdmin, isConsultor, isTelemarketing, password, status } = req.body;
 
   const user = await prisma.user.update({
     where: {
@@ -49,17 +80,21 @@ const update: RequestHandler = async (req, res) => {
     },
     data: {
       name,
+      email,
       isAdmin,
       isConsultor,
       isTelemarketing,
       password,
+      status,
     },
     select: {
       cpf: true,
+      email: true,
       name: true,
       isAdmin: true,
       isConsultor: true,
       isTelemarketing: true,
+      status: true,
     },
   });
 
@@ -79,6 +114,7 @@ const destroy: RequestHandler = async (req, res) => {
 };
 
 export default {
+  create,
   list,
   retrieve,
   update,

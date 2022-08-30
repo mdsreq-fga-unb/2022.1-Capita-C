@@ -19,9 +19,11 @@ model User {
   cpf             String  @id
   password        String
   name            String
+  email           String
   isAdmin         Boolean @default(false)
   isConsultor     Boolean @default(false)
   isTelemarketing Boolean @default(true)
+  status          Boolean @default(true)
   // Lembrar de que nós teremos que validar nos controles os níveis de permissão
 }
 
