@@ -4,7 +4,7 @@ declare namespace Express {
       cpf: string;
       name: string;
       isAdmin: boolean;
-      isConsultor: boolean;
+      isManager: boolean;
       isTelemarketing: boolean;
     } | null;
   }

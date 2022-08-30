@@ -3,7 +3,7 @@ import HttpError from "http-errors";
 import prisma from "../databaseClient";
 
 const create: RequestHandler = async (req, res) => {
-  const { cpf, password, name, email, isAdmin, isConsultor, isTelemarketing, status } = req.body;
+  const { cpf, password, name, email, isAdmin, isManager, isTelemarketing, status } = req.body;
   const users = await prisma.user.create({
     data: {
       cpf,
@@ -11,7 +11,7 @@ const create: RequestHandler = async (req, res) => {
       name,
       email,
       isAdmin,
-      isConsultor,
+      isManager,
       isTelemarketing,
       status,
     },
@@ -20,7 +20,7 @@ const create: RequestHandler = async (req, res) => {
       name: true,
       email: true,
       isAdmin: true,
-      isConsultor: true,
+      isManager: true,
       isTelemarketing: true,
       status: true,
     },
@@ -36,7 +36,7 @@ const list: RequestHandler = async (req, res) => {
       name: true,
       email: true,
       isAdmin: true,
-      isConsultor: true,
+      isManager: true,
       isTelemarketing: true,
       status: true,
     },
@@ -57,7 +57,7 @@ const retrieve: RequestHandler = async (req, res) => {
       name: true,
       email: true,
       isAdmin: true,
-      isConsultor: true,
+      isManager: true,
       isTelemarketing: true,
       status: true,
     },
@@ -72,7 +72,7 @@ const retrieve: RequestHandler = async (req, res) => {
 
 const update: RequestHandler = async (req, res) => {
   const { cpf } = req.params;
-  const { name, email, isAdmin, isConsultor, isTelemarketing, password, status } = req.body;
+  const { name, email, isAdmin, isManager, isTelemarketing, password, status } = req.body;
 
   const user = await prisma.user.update({
     where: {
@@ -82,7 +82,7 @@ const update: RequestHandler = async (req, res) => {
       name,
       email,
       isAdmin,
-      isConsultor,
+      isManager,
       isTelemarketing,
       password,
       status,
@@ -92,7 +92,7 @@ const update: RequestHandler = async (req, res) => {
       email: true,
       name: true,
       isAdmin: true,
-      isConsultor: true,
+      isManager: true,
       isTelemarketing: true,
       status: true,
     },

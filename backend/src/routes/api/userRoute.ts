@@ -1,14 +1,15 @@
 import { Router } from "express";
 import userController from "../../controllers/userController";
-import { isAdmin, isConsultor } from "../../middlewares/authMiddlewares";
+import { isAdmin } from "../../middlewares/authMiddlewares";
 
 const router = Router();
 
-router.get("/", userController.list);
-router.get("/search/:cpf", userController.retrieve);
-router.patch("/search/:cpf", userController.update);
-router.delete("/search/:cpf", userController.destroy);
-router.put("/add", userController.create);
+router.get("/", isAdmin, userController.list);
+router.get("/:cpf", isAdmin, userController.retrieve);
+router.patch("/:cpf", isAdmin, userController.update);
+router.delete("/:cpf", isAdmin, userController.destroy);
+router.put("/add", isAdmin, userController.create);
 
-router.get("/test", isConsultor, (req, res) => res.json(req.user));
+// Exemplo para limitar acesso a uma rota restrita a administradores
+// router.get("/test", isAdmin, (req, res) => res.json(req.user));
 export default router;

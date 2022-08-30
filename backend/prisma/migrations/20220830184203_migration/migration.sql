@@ -11,7 +11,7 @@ CREATE TABLE "User" (
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "isAdmin" BOOLEAN NOT NULL DEFAULT false,
-    "isConsultor" BOOLEAN NOT NULL DEFAULT false,
+    "isManager" BOOLEAN NOT NULL DEFAULT false,
     "isTelemarketing" BOOLEAN NOT NULL DEFAULT true,
     "status" BOOLEAN NOT NULL DEFAULT true,
 

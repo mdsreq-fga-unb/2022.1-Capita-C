@@ -27,7 +27,7 @@ async function login(cpf: string, pass: string) {
   });
 
   if (user === null || user.password !== pass) {
-    throw new Error("Usuário não encontrado");
+    throw new Error("Usuário não encontrado ou senha inválida");
   }
 
   // Retorna um jwt com payload contendo o ID (cpf) do usuario
@@ -45,7 +45,7 @@ async function getUserByToken(token: string) {
       cpf: true,
       name: true,
       isAdmin: true,
-      isConsultor: true,
+      isManager: true,
       isTelemarketing: true,
     },
   });
