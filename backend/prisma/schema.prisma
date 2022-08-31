@@ -1,6 +1,10 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// Coisas por fazer: 
+// Criar os controllers de telefone e email
+// Criar alguma relação para salvar as atribuições
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -52,7 +56,7 @@ model Cnae {
 }
 
 model Telefone {
-  numeroTelefone BigInt         @id
+  numeroTelefone String         @id
   origemTelefone String?
   cadastroCnpj   CadastroCnpj[]
 }
