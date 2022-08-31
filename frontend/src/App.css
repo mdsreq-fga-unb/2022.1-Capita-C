@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+:root {
+  /* Cores */
+  --color-primary: #FF834F;
+  --color-secondary: #FF4949;
+  --background: #F6F6F6;
+  /* Fontes */
+  --font-family: Montserrat
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +46,54 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 84.375%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 81.25%;
   }
 }

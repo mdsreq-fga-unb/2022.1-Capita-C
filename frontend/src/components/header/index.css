@@ -1,0 +1,39 @@
+.header{
+    height: 5rem ;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+
+.header-wraper{
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body{
+    align-items:center;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    color: white;
+    font-size: 80%;
+}
+
+.logo-nome{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .user{
+} */
+

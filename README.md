@@ -26,6 +26,3 @@ Repositório da Equipe MDS-REQ referente a disciplinas do curso de engenharia de
 - ter docker-compose instalado
 - rodar npm install nas pastas backend e fronted
 - rodar sudo docker-compose up em backend e frontend
-- em backend rodar: 
-  - sudo docker cp ./CreateDatabase.sql capitac_ct:/docker-entrypoint-initdb.d/CreateDatabase.sql
-  - sudo docker exec -u postgres capitac_ct psql capitac_db postgres -f docker-entrypoint-initdb.d/CreateDatabase.sql para criar tabelas do banco de dados

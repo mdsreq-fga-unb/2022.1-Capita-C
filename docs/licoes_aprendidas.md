@@ -10,6 +10,10 @@
     <p style="text-align: justify">Durante a <b>Unidade 2</b>, foram evoluídas principalmente questões técnicas, com a participação dos dojos das equipes e, em especial, ao dojo de react sobre como construir uma calculadora. Foram sanadas também dúvidas do grupo sobre o que são e como criar histórias de usuário, houve aprendizado sobre testes unitários e apresentação/esclarecimento de termos empresariais de desenvolvimento de software, que muitas vezes eram conhecidos pelos integrantes mas não possuiam um conceito claro, e, em alguns casos, o conceito entendido era equivocado.</p>
 </div>
 
+<div>
+    <p style="text-align: justify">Durante a <b>Unidade 3</b>, houve um avanço interessante na compreensão de todo o processo de desenvonvimento, desde a construção de um, até a manutenção do mesmo, o workshop ocorrido durante a SBPC foi de grande valor para esse entendimento. Entretanto, ainda há muito o que melhorar no trabalho em equipe para que seja possível atingir o objetivo final da disciplina.</p>
+</div>
+
 ### Requisitos
 
 <div>
@@ -20,6 +24,10 @@
     <p style="text-align: justify">Com o decorrer da <b>Unidade 2</b>, foi notável a evolução do grupo no que diz sobre a prática dos conceitos estudados na unidade anterior. Num primeiro momento, foi importante entendermos que devemos ir além do que o cliente pede, afinal, é papel do engenheiro não só entregar um produto, mas sim entender as dores e necessidades do cliente e propor a melhor solução possível. Aplicamos a técnica "lean inception" para a elicitação dos requisitos para o MVP, melhorando assim nossas habilidades em declarar requisitos e nos relacionar com clientes. Foi solucionada também uma dúvida geral do grupo sobre a diferença entre requisito, regra de negócio e critério de aceitação e como organizar e montar uma lista de requisitos.</p>
 </div>
 
+<div>
+    <p style="text-align: justify">Durante a <b>Unidade 3</b>, houve um aprendizado maior em o que é e como criar um processo de engenharia de requisitos, além de outros frameworks que gerenciam todo o ecossistema de requisitos. Nessa unidade tivemos diversos imprevistos quanto ao avanço nas entregas da disciplina, isso se deve principalmente por uma falta de comprometimento geral da equipe, na minha visão, ainda temos um pouco de tempo para tentar resolver esses problemas. Os membros da equipe devem aprender a se organizar melhor, distribuindo o tempo entre as diversas disciplinas que estão cursando.</p>
+</div>
+
 ### MDS-Requisitos
 
 <div>
@@ -28,6 +36,10 @@
 
 <div>
     <p style="text-align: justify">Na <b>Unidade 2</b>,  conseguimos integrar mais o grupo e melhorar o convívio entre os membros. Ocorreu uma melhora na separação das atividades e no ritmo de entrega das mesmas, desta forma, sendo notável a evolução de ambas as equipes no escopo de suas respectivas disciplinas.</p>
+</div>
+
+<div>
+    <p style="text-align: justify">Durante a <b>Unidade 3</b>, ocorreu uma maior integração entre as duas equipes, mas é nítida a necessidade de melhora nessa parte, tendo em visto que ela é o maior empecilho atualmente no projeto, caso a equipe consiga se unir mais, o projeto tende a se organizar melhor. Além disso, é visível a falta de organização da equipe, o que gera atrasos e baixa qualidade nas entregas da disciplina e para o cliente.</p>
 </div>
 
 <!-- 
@@ -46,3 +58,4 @@
 | 01/07/2022 | 0.1.1  | Pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)     |
 | 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)       |
 | 21/07/2022 | 0.2.1  | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)       |
+| 18/08/2022 | 0.3    | Adição de conteúdo         | [André Corrêa](https://github.com/dartmol203)     |

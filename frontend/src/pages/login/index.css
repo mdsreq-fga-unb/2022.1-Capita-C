@@ -1,0 +1,100 @@
+#mainDiv {
+    background-image: linear-gradient(var(--color-primary), var(--color-secondary));
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+#rodape {
+    height: 60px;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    display:inline-flex;
+    background-color: var(--color-primary);
+}
+
+#body {
+    width: 100vw;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+#box {
+    background-color: var(--background);
+    position: absolute;
+    width: 380px;
+    height: 450px;
+    text-align: center;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.input {
+    border: none;
+    padding: 5px;
+    text-decoration: none;
+    transition: background .3s;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 280px;
+    height: 20px;
+    box-shadow: 1px 3px 2px rgba(114, 114, 114, 0.4);
+}
+
+.inputText {
+    font-size: 14px;
+}
+
+#btn {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .3s;
+    border-radius: 5px;
+    width: 20%;
+    color: var(--background);
+    background-color: var(--color-primary);
+    height: 35px;
+    width: 130px;
+    padding: 6px;
+    margin-top: 15px;
+    ;
+}
+
+#formDiv {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.inputDiv {
+    margin-bottom: 30px;
+    ;
+    justify-content: center;
+    display: grid;
+    height: 30px;
+    text-align: left;
+}
+
+#semLogin {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.otherLogin {
+    cursor: pointer;
+    color: var(--color-primary);
+    font-size: 12px;
+}
+
+.otherLoginText {
+    font-size: 12px;
+}
