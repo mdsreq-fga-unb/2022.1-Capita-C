@@ -29,6 +29,7 @@ tests/
 .prettierrc.json
 babel.config.json
 jest.config.js
+src/
 .github/
 tsconfig.json
 tsconfig.build.json

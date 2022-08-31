@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Coisas por fazer: 
+// Criar os controllers de telefone e email
+// Criar alguma relação para salvar as atribuições
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator docs {
+  provider = "node node_modules/prisma-docs-generator"
+  output   = "../docs/prismaModels"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  cpf             String  @id
+  password        String
+  name            String
+  email           String
+  isAdmin         Boolean @default(false)
+  isManager       Boolean @default(false)
+  isTelemarketing Boolean @default(true)
+  status          Boolean @default(true)
+  // Lembrar de que nós teremos que validar nos controles os níveis de permissão
+}
+
+model CadastroCnpj {
+  cnpjFinal                 String                    @id
+  identificadorMatrizFiliar IdentificadorMAtrizFilial @default(Matriz)
+  nomeFantasia              String?
+  cnaes                     Cnae[]
+  tipoLogradouro            String?
+  logradouro                String?
+  numero                    String?
+  complemento               String?
+  bairro                    String?
+  cep                       Int
+  unidadeFederativa         String
+  municipio                 String
+  telefone                  Telefone[]
+  correioEletronico         Email[]
+  atribuido                 Boolean                   @default(false)
+  parceriaAceita            SituacaoParceria          @default(Processando)
+}
+
+model Cnae {
+  cnae         Int            @id
+  cadastroCnpj CadastroCnpj[]
+}
+
+model Telefone {
+  numeroTelefone String         @id
+  origemTelefone String?
+  cadastroCnpj   CadastroCnpj[]
+}
+
+model Email {
+  email        String         @id
+  origemEmail  String?
+  cadastroCnpj CadastroCnpj[]
+}
+
+enum SituacaoParceria {
+  Aceita
+  Processando
+  NaoConseguiuFazerContato
+  NaoAceita
+}
+
+enum IdentificadorMAtrizFilial {
+  Matriz
+  Filial
+}
