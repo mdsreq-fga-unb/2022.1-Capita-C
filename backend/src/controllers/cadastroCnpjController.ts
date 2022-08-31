@@ -12,7 +12,7 @@ const list: RequestHandler = async (req, res) => {
   return res.json(cnpj);
 };
 
-const create: RequestHandler = async (req, res) => {
+const createCnpj: RequestHandler = async (req, res) => {
   const {
     cnpjFinal,
     identificadorMatrizFiliar,
@@ -26,29 +26,69 @@ const create: RequestHandler = async (req, res) => {
     cep,
     unidadeFederativa,
     municipio,
-    telefone,
-    correioEletronico,
     atribuido,
     parceriaAceita,
+    telefones,
+    emails,
   } = req.body;
+
+  const cnaesQuery = cnaes.map((cnae: number) => ({
+    where: {
+      cnae,
+    },
+    create: {
+      cnae,
+    },
+  }));
+
+  const telefonesQuery = telefones?.map((numeroTelefone: number) => ({
+    where: {
+      numeroTelefone: numeroTelefone.toString(),
+    },
+    create: {
+      numeroTelefone: numeroTelefone.toString(),
+    },
+  }));
+
+  const emailsQuery = emails?.map((email: string) => ({
+    where: {
+      email: email.toString(),
+    },
+    create: {
+      email: email.toString(),
+    },
+  }));
+
   const cnpj = await prisma.cadastroCnpj.create({
     data: {
       cnpjFinal,
       identificadorMatrizFiliar,
       nomeFantasia,
-      cnaes,
       tipoLogradouro,
       logradouro,
-      numero,
+      numero: numero.toString(),
       complemento,
       bairro,
       cep,
       unidadeFederativa,
       municipio,
-      telefone,
-      correioEletronico,
       atribuido,
       parceriaAceita,
+      cnaes: {
+        connectOrCreate: cnaesQuery,
+      },
+      telefone:
+        telefones !== undefined
+          ? {
+              connectOrCreate: telefonesQuery,
+            }
+          : undefined,
+      correioEletronico:
+        emails !== undefined
+          ? {
+              connectOrCreate: emailsQuery,
+            }
+          : undefined,
     },
     select: {
       cnpjFinal: true,
@@ -75,5 +115,5 @@ const create: RequestHandler = async (req, res) => {
 
 export default {
   list,
-  create,
+  createCnpj,
 };

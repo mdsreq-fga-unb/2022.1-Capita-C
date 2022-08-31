@@ -52,7 +52,7 @@ model Cnae {
 }
 
 model Telefone {
-  numeroTelefone BigInt         @id
+  numeroTelefone String         @id
   origemTelefone String?
   cadastroCnpj   CadastroCnpj[]
 }
