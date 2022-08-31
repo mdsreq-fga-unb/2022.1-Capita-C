@@ -23,11 +23,16 @@ async function login(cpf: string, pass: string) {
     },
     select: {
       password: true,
+      status: true,
     },
   });
 
   if (user === null || user.password !== pass) {
     throw new Error("Usuário não encontrado ou senha inválida");
+  }
+
+  if (!user?.status) {
+    throw new Error("Perfil desativado. Converse com o seu gerente.");
   }
 
   // Retorna um jwt com payload contendo o ID (cpf) do usuario
@@ -47,6 +52,7 @@ async function getUserByToken(token: string) {
       isAdmin: true,
       isManager: true,
       isTelemarketing: true,
+      status: true,
     },
   });
 
