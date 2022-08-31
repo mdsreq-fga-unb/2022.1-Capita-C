@@ -113,7 +113,69 @@ const createCnpj: RequestHandler = async (req, res) => {
   return res.json(cnpj);
 };
 
+const update: RequestHandler = async (req, res) => {
+  const { cnpjFinal } = req.params;
+  const {
+    tipoLogradouro,
+    logradouro,
+    numero,
+    complemento,
+    bairro,
+    cep,
+    atribuido,
+    parceriaAceita,
+  } = req.body;
+  const cnpj = await prisma.cadastroCnpj.update({
+    where: {
+      cnpjFinal,
+    },
+    data: {
+      tipoLogradouro,
+      logradouro,
+      numero,
+      complemento,
+      bairro,
+      cep,
+      atribuido,
+      parceriaAceita,
+    },
+    select: {
+      cnpjFinal: true,
+      identificadorMatrizFiliar: true,
+      nomeFantasia: true,
+      cnaes: true,
+      tipoLogradouro: true,
+      logradouro: true,
+      numero: true,
+      complemento: true,
+      bairro: true,
+      cep: true,
+      unidadeFederativa: true,
+      municipio: true,
+      telefone: true,
+      correioEletronico: true,
+      atribuido: true,
+      parceriaAceita: true,
+    },
+  });
+
+  return res.json(cnpj);
+};
+
+const destroy: RequestHandler = async (req, res) => {
+  const { cnpjFinal } = req.params;
+  await prisma.cadastroCnpj.delete({
+    where: {
+      cnpjFinal,
+    },
+  });
+
+  return res.sendStatus(204);
+};
+
 export default {
   list,
   createCnpj,
+  update,
+  destroy,
 };
