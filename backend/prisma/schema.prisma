@@ -49,8 +49,8 @@ model CadastroCnpj {
   correioEletronico         Email[]
   atribuido                 Boolean                   @default(false)
   parceriaAceita            SituacaoParceria          @default(Processando)
-  responsaveis              User?                     @relation(fields: [responsavel], references: [cpf], onDelete: SetNull)
-  responsavel               String?
+  responsavelCpf            String?
+  responsavel               User?                     @relation(fields: [responsavelCpf], references: [cpf], onDelete: SetNull)
 }
 
 model Cnae {

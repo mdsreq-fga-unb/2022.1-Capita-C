@@ -1,3 +1,4 @@
+import { CadastroCnpj } from "@prisma/client";
 import { RequestHandler } from "express";
 import HttpError from "http-errors";
 import prisma from "../databaseClient";
@@ -176,6 +177,46 @@ const destroy: RequestHandler = async (req, res) => {
   });
 
   return res.sendStatus(204);
+};
+
+const designate: RequestHandler = async (req, res) => {
+  const { cpf, qtd } = req.body;
+
+  if (qtd >= 25) {
+    throw new HttpError.BadRequest("Quantidade máxima excedida (25)");
+  }
+
+  const cnpjs = await prisma.cadastroCnpj.findMany({
+    where: {
+      atribuido: false,
+    },
+    select: {
+      cnpjFinal: true,
+    },
+    take: qtd,
+  });
+
+  if (cnpjs.length === 0) {
+    return res.sendStatus(204);
+  }
+
+  const atribuidas = cnpjs.map((cnpj) =>
+    prisma.cadastroCnpj.update({
+      where: {
+        cnpjFinal: cnpj.cnpjFinal,
+      },
+      data: {
+        atribuido: true,
+        responsavel: {
+          connect: {
+            cpf,
+          },
+        },
+      },
+    })
+  );
+
+  return res.json(await prisma.$transaction(atribuidas));
 };
 
 export default {
