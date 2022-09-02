@@ -1,6 +1,7 @@
 import { RequestHandler } from "express";
 import HttpError from "http-errors";
 import prisma from "../databaseClient";
+import authService from "../services/authService";
 
 const create: RequestHandler = async (req, res) => {
   const { cpf, password, name, email, isAdmin, isManager, isTelemarketing, status } = req.body;
@@ -30,24 +31,53 @@ const create: RequestHandler = async (req, res) => {
 };
 
 const list: RequestHandler = async (req, res) => {
-  const users = await prisma.user.findMany({
-    select: {
-      cpf: true,
-      name: true,
-      email: true,
-      isAdmin: true,
-      isManager: true,
-      isTelemarketing: true,
-      status: true,
-      designatedCnpjs: {
-        include: {
-          cnaes: true,
-          correioEletronico: true,
-          telefone: true,
+  let users;
+
+  if (req.user?.isAdmin) {
+    users = await prisma.user.findMany({
+      select: {
+        cpf: true,
+        name: true,
+        email: true,
+        isAdmin: true,
+        isManager: true,
+        isTelemarketing: true,
+        status: true,
+        designatedCnpjs: {
+          include: {
+            cnaes: true,
+            correioEletronico: true,
+            telefone: true,
+          },
         },
       },
-    },
-  });
+    });
+  }
+
+  if (req.user?.isManager) {
+    users = await prisma.user.findMany({
+      where: {
+        NOT: {
+          isAdmin: true,
+        },
+      },
+      select: {
+        cpf: true,
+        name: true,
+        email: true,
+        isManager: true,
+        isTelemarketing: true,
+        status: true,
+        designatedCnpjs: {
+          include: {
+            cnaes: true,
+            correioEletronico: true,
+            telefone: true,
+          },
+        },
+      },
+    });
+  }
 
   return res.json(users);
 };
