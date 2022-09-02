@@ -45,7 +45,6 @@ prisma.user
 
     // eslint-disable-next-line no-plusplus
     for (let index = 0; index < 20; index++) {
-      console.log(index);
       array.push(
         prisma.cadastroCnpj.create({
           data: {
