@@ -5,7 +5,7 @@ import { isAdmin, isAdminOrManager } from "../../middlewares/authMiddlewares";
 
 const router = Router();
 
-router.get("/", isAdmin, userController.list);
+router.get("/", isAdminOrManager, userController.list);
 router.get("/:cpf", isAdmin, userController.retrieve);
 router.patch("/:cpf", isAdmin, userController.update);
 router.delete("/:cpf", isAdmin, userController.destroy);
