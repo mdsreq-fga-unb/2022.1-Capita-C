@@ -39,7 +39,13 @@ const list: RequestHandler = async (req, res) => {
       isManager: true,
       isTelemarketing: true,
       status: true,
-      atribuido: true,
+      designatedCnpjs: {
+        include: {
+          cnaes: true,
+          correioEletronico: true,
+          telefone: true,
+        },
+      },
     },
   });
 
@@ -61,6 +67,7 @@ const retrieve: RequestHandler = async (req, res) => {
       isManager: true,
       isTelemarketing: true,
       status: true,
+      designatedCnpjs: true,
     },
   });
 

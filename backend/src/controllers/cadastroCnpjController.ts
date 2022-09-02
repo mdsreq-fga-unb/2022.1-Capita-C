@@ -239,4 +239,5 @@ export default {
   createCnpj,
   update,
   destroy,
+  designate,
 };

@@ -65,7 +65,7 @@ prisma.user
             cep: 7777777,
             unidadeFederativa: "DF",
             municipio: "Brasilia",
-            atribuido: true,
+            /* atribuido: true, */
             parceriaAceita: "Aceita",
             telefone: {
               connectOrCreate: ["123123", "111"].map((numeroTelefone) => ({
@@ -79,9 +79,9 @@ prisma.user
                 create: { email },
               })),
             },
-            responsavel: {
+            /* responsavel: {
               connect: { cpf: "33333333333" },
-            },
+            }, */
           },
         })
       );
