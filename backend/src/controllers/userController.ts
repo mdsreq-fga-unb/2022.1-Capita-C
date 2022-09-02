@@ -39,6 +39,7 @@ const list: RequestHandler = async (req, res) => {
       isManager: true,
       isTelemarketing: true,
       status: true,
+      atribuido: true,
     },
   });
 

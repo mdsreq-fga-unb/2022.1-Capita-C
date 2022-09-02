@@ -30,6 +30,7 @@ const createCnpj: RequestHandler = async (req, res) => {
     parceriaAceita,
     telefones,
     emails,
+    responsavel,
   } = req.body;
 
   const cnaesQuery = cnaes.map((cnae: number) => ({
@@ -74,6 +75,7 @@ const createCnpj: RequestHandler = async (req, res) => {
       municipio,
       atribuido,
       parceriaAceita,
+      responsavel,
       cnaes: {
         connectOrCreate: cnaesQuery,
       },
@@ -124,6 +126,7 @@ const update: RequestHandler = async (req, res) => {
     cep,
     atribuido,
     parceriaAceita,
+    responsavel,
   } = req.body;
   const cnpj = await prisma.cadastroCnpj.update({
     where: {
@@ -138,6 +141,7 @@ const update: RequestHandler = async (req, res) => {
       cep,
       atribuido,
       parceriaAceita,
+      responsavel,
     },
     select: {
       cnpjFinal: true,
@@ -156,6 +160,7 @@ const update: RequestHandler = async (req, res) => {
       correioEletronico: true,
       atribuido: true,
       parceriaAceita: true,
+      responsavel: true,
     },
   });
 

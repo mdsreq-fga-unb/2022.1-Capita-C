@@ -20,14 +20,15 @@ datasource db {
 }
 
 model User {
-  cpf             String  @id
+  cpf             String         @id
   password        String
   name            String
   email           String
-  isAdmin         Boolean @default(false)
-  isManager       Boolean @default(false)
-  isTelemarketing Boolean @default(true)
-  status          Boolean @default(true)
+  isAdmin         Boolean        @default(false)
+  isManager       Boolean        @default(false)
+  isTelemarketing Boolean        @default(true)
+  status          Boolean        @default(true)
+  atribuido       CadastroCnpj[]
   // Lembrar de que nós teremos que validar nos controles os níveis de permissão
 }
 
@@ -48,6 +49,8 @@ model CadastroCnpj {
   correioEletronico         Email[]
   atribuido                 Boolean                   @default(false)
   parceriaAceita            SituacaoParceria          @default(Processando)
+  responsaveis              User?                     @relation(fields: [responsavel], references: [cpf], onDelete: SetNull)
+  responsavel               String?
 }
 
 model Cnae {
