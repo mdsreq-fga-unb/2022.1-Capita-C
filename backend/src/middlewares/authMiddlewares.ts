@@ -58,4 +58,12 @@ const isTelemarketing: RequestHandler = (req, res, next) => {
   throw new HttpError.Forbidden();
 };
 
-export { isAuthenticated, isAdmin, isManager, isTelemarketing };
+const isAdminOrManager: RequestHandler = (req, res, next) => {
+  if (req.user?.isAdmin || req.user?.isManager) {
+    return next();
+  }
+
+  throw new HttpError.Forbidden();
+};
+
+export { isAuthenticated, isAdmin, isManager, isTelemarketing, isAdminOrManager };

@@ -34,32 +34,47 @@ const createCnpj: RequestHandler = async (req, res) => {
     responsavel,
   } = req.body;
 
-  const cnaesQuery = cnaes.map((cnae: number) => ({
-    where: {
-      cnae,
-    },
-    create: {
-      cnae,
-    },
-  }));
+  let cnaesQuery = [];
+  let telefonesQuery = [];
+  let emailsQuery = [];
+  try {
+    cnaesQuery = cnaes.map((cnae: number) => ({
+      where: {
+        cnae,
+      },
+      create: {
+        cnae,
+      },
+    }));
+  } catch (error) {
+    throw new HttpError.BadRequest();
+  }
 
-  const telefonesQuery = telefones?.map((numeroTelefone: number) => ({
-    where: {
-      numeroTelefone: numeroTelefone.toString(),
-    },
-    create: {
-      numeroTelefone: numeroTelefone.toString(),
-    },
-  }));
+  try {
+    telefonesQuery = telefones?.map((numeroTelefone: number) => ({
+      where: {
+        numeroTelefone: numeroTelefone.toString(),
+      },
+      create: {
+        numeroTelefone: numeroTelefone.toString(),
+      },
+    }));
+  } catch (error) {
+    throw new HttpError.BadRequest();
+  }
 
-  const emailsQuery = emails?.map((email: string) => ({
-    where: {
-      email: email.toString(),
-    },
-    create: {
-      email: email.toString(),
-    },
-  }));
+  try {
+    emailsQuery = emails?.map((email: string) => ({
+      where: {
+        email: email.toString(),
+      },
+      create: {
+        email: email.toString(),
+      },
+    }));
+  } catch (error) {
+    throw new HttpError.BadRequest();
+  }
 
   const cnpj = await prisma.cadastroCnpj.create({
     data: {
@@ -224,4 +239,5 @@ export default {
   createCnpj,
   update,
   destroy,
+  designate,
 };

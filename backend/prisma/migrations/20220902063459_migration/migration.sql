@@ -33,7 +33,7 @@ CREATE TABLE "CadastroCnpj" (
     "municipio" TEXT NOT NULL,
     "atribuido" BOOLEAN NOT NULL DEFAULT false,
     "parceriaAceita" "SituacaoParceria" NOT NULL DEFAULT E'Processando',
-    "responsavel" TEXT,
+    "responsavelCpf" TEXT,
 
     CONSTRAINT "CadastroCnpj_pkey" PRIMARY KEY ("cnpjFinal")
 );
@@ -98,7 +98,7 @@ CREATE UNIQUE INDEX "_CadastroCnpjToEmail_AB_unique" ON "_CadastroCnpjToEmail"("
 CREATE INDEX "_CadastroCnpjToEmail_B_index" ON "_CadastroCnpjToEmail"("B");
 
 -- AddForeignKey
-ALTER TABLE "CadastroCnpj" ADD CONSTRAINT "CadastroCnpj_responsavel_fkey" FOREIGN KEY ("responsavel") REFERENCES "User"("cpf") ON DELETE SET NULL ON UPDATE SET DEFAULT;
+ALTER TABLE "CadastroCnpj" ADD CONSTRAINT "CadastroCnpj_responsavelCpf_fkey" FOREIGN KEY ("responsavelCpf") REFERENCES "User"("cpf") ON DELETE SET NULL ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "_CadastroCnpjToCnae" ADD CONSTRAINT "_CadastroCnpjToCnae_A_fkey" FOREIGN KEY ("A") REFERENCES "CadastroCnpj"("cnpjFinal") ON DELETE CASCADE ON UPDATE CASCADE;

@@ -28,7 +28,7 @@ model User {
   isManager       Boolean        @default(false)
   isTelemarketing Boolean        @default(true)
   status          Boolean        @default(true)
-  atribuido       CadastroCnpj[]
+  designatedCnpjs CadastroCnpj[]
   // Lembrar de que nós teremos que validar nos controles os níveis de permissão
 }
 
