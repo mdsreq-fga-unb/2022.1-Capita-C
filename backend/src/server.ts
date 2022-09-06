@@ -13,6 +13,10 @@ import handleCommonError from "./middlewares/handleCommonError";
 
 const server = express();
 
+const cors = require('cors');
+
+server.use(cors());
+
 //* Middlewares
 if (env.NODE_ENV !== "production") {
   server.use(morgan("dev"));
