@@ -1,6 +1,6 @@
 # Product Backlog Building
 
-![PBB](./imagens/PBB.jpg)
+![PBB](./imagens/pbb.jpg)
 [miro](https://miro.com/app/board/uXjVOhFomxU=/?share_link_id=882216358161)
 
 | Data       | Versão | Descrição          | Autor                                                                                                                                            |
