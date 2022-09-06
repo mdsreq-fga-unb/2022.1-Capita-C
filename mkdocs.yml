@@ -41,6 +41,8 @@ nav:
       - Requisitos: lista_requisitos.md
       - MVP: mvp.md
       - PBB: pbb.md
+      - USM: casos_de_uso.md
+      - Diagrama de Casos de Uso: casos_de_uso.md
       - Reuniões: reunioes.md
       # - Planejamento:
       # - Políticas do Repositório:
