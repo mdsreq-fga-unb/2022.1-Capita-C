@@ -49,11 +49,6 @@ const Login = () => {
                         </div>
                         <button id="btn" onClick={() => { handleClick() }} >LOGIN</button>
                     </div>
-                    <div id="semLogin" >
-                        <p className="otherLogin" onClick={() => alert("Recuperar Senha")} >Recuperar senha</p>
-                        <text className="otherLoginText" >Não possui conta? </text>
-                        <text className="otherLogin" onClick={() => alert("Cadastre-se")} >Cadastre-se</text>
-                    </div>
                 </div>
                 <img
                     src={LogoImage}
