@@ -7,6 +7,7 @@ const UserRoutes: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path="/" element={<HomePageUser />} />
         <Route path="/home" element={<HomePageUser />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

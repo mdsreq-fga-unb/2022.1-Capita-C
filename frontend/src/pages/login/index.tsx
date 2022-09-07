@@ -6,7 +6,7 @@ import LogoImage from '../../images/LogoBackground.svg'
 import CapitalLogo from '../../images/capitalLogo.svg'
 
 const Login = () => {
-    const [user, setUser] = useState({ cpf: '', senha: '' });
+    const [user, setUser] = useState({ cpf: '', password: '' });
     const context = useContext(AuthContext);
     let navigate = useNavigate();
 
@@ -18,7 +18,10 @@ const Login = () => {
 
     const handleClick = async () => {
         try {
-            context.signIn(user).then(() => navigate("/home")) // loga e redireciona para pagina home
+            const log = context.signIn(user)// loga e redireciona para pagina home
+            if(await log){
+                navigate("/home")
+            }
         } catch (error) {
             alert("Erro ao logar")
         }
@@ -45,7 +48,7 @@ const Login = () => {
                         </div>
                         <div className="inputDiv" >
                             <text className="inputText" >Senha: </text>
-                            <input className="input" type="password" name="senha" value={user.senha} onChange={e => handleInput(e)} />
+                            <input className="input" type="password" name="password" value={user.password} onChange={e => handleInput(e)} />
                         </div>
                         <button id="btn" onClick={() => { handleClick() }} >LOGIN</button>
                     </div>

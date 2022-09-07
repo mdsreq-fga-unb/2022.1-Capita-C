@@ -7,6 +7,7 @@ const AdminRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<HomePageAdmin />} />
                 <Route path="/home" element={<HomePageAdmin />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>

@@ -17,17 +17,19 @@
 
 .menu{
     display: flex;
-    flex-direction: row;
-    width: 100%;
     background-color: rgba(217,217,217,0.5);
 }
 
-.menu>span{
+.notSelected {
+    display: flex;
+}
+
+span{
     padding: 0.5rem;
-    width: 100%;
     font-size: 14px;
     align-self: center;
     height: 2rem;
+    color: #fff;
 }
 
 .imagem{

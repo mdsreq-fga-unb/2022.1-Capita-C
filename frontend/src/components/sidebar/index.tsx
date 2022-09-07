@@ -11,7 +11,15 @@ export function Sidebar() {
                 <ul>
                     <div className='menu'>   
                         <img className='menu-hamburguer' src={MenuHamburguer}/>        
-                        <span className='lojas'>Lojas</span>
+                        <span className='lojas'>LOJAS</span>
+                    </div>
+                    <div className='notSelected'>   
+                        <img className='menu-hamburguer' src={MenuHamburguer}/> 
+                        <span >PERFIL  </span>
+                    </div>
+                    <div className='notSelected'>   
+                        <img className='menu-hamburguer' src={MenuHamburguer}/>   
+                        <span >USUŚRIOS</span>
                     </div>
                 </ul>
             </div>
