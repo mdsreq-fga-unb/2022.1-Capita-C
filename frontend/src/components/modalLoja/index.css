@@ -17,7 +17,102 @@
 .boxContent {
     color: #000;
     background-color: var(--background);
-    width: 35%;
+    width: 30em;
     height: 80%;
+    border-radius: 8px;
+    padding: 15px;
     overflow: scroll;
+}
+
+.boxContent::-webkit-scrollbar {
+    width: 7px;
+    height: 80%;
+    margin-right: 10px;
+}
+
+.boxContent::-webkit-scrollbar-track {
+    border-radius: 15px;
+}
+
+.boxContent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-top: 5px;
+    display: grid;
+    width: 100%;
+    padding: 5px 30px 5px 30px;
+    /* top right bottom left */
+}
+
+.inputTitle {
+    text-align: left;
+    margin: 5px 0px 5px 0px;
+    /* top right bottom left */
+    font-size: 14px;
+    width: 49%;
+}
+
+.inputBox {
+    border: 1px solid #a5a5a5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    height: 30px;
+    background-color: var(--background);
+    width: 100%;
+    padding: 5px;
+}
+
+.minorDiv {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+}
+
+.minorInput {
+    border: 1px solid #a5a5a5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    height: 30px;
+    background-color: var(--background);
+    width: 49%;
+    padding: 5px;
+}
+
+.buttons {
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.botao {
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    width: 120px;
+    height: 40px;
+    box-sizing: border-box;
+    color: var(--color-primary);
+}
+
+.botao:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.botaoText {
+    display: block;
+    height: 30px;
+    margin-top: -0.3em
 }
