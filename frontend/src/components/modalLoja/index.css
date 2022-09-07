@@ -11,4 +11,13 @@
     width: 100vw;
     height: 100vh;
     text-align: center;
+    font-family: var(--font-family);
+}
+
+.boxContent {
+    color: #000;
+    background-color: var(--background);
+    width: 35%;
+    height: 80%;
+    overflow: scroll;
 }

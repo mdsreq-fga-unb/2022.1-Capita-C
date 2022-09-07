@@ -7,34 +7,34 @@ import { useState } from 'react';
 import ModalLoja from '../modalLoja';
 
 interface User {
-    cpf: String,
-    password: String,
-    name: String,
-    email: String,
+    cpf: string,
+    password: string,
+    name: string,
+    email: string,
     isAdmin: Boolean,
     isManager: Boolean,
     isTelemarketing: Boolean,
     status: Boolean,
-    designatedCnpjs: String[]
+    designatedCnpjs: string[]
 }
 interface Loja {
-    cnpjFinal: String,
-    identificadorMatrizFiliar: String,
-    nomeFantasia: String,
-    cnaes: String[],
-    tipoLogradouro: String,
-    logradouro: String,
-    numero: String,
-    complemento: String,
-    bairro: String,
+    cnpjFinal: string,
+    identificadorMatrizFiliar: string,
+    nomeFantasia: string,
+    cnaes: string[],
+    tipoLogradouro: string,
+    logradouro: string,
+    numero: string,
+    complemento: string,
+    bairro: string,
     cep: Number,
-    unidadeFederativa: String,
-    municipio: String,
-    telefone: String[],
-    correioEletronico: String[],
+    unidadeFederativa: string,
+    municipio: string,
+    telefone: string[],
+    correioEletronico: string[],
     atribuido: Boolean,
-    parceriaAceita: String,
-    responsavelCpf: String,
+    parceriaAceita: string,
+    responsavelCpf: string,
     responsavel: User
 }
 
@@ -46,9 +46,9 @@ export function CardLoja(lojaCard: any) {
             <text className='loja-nome'>{loja.nomeFantasia}</text>
             <div className='icons'>
                 <img className='edit-icon' onClick={() => setOpenModal(true)} src={editIcon} onMouseOver={e => (e.currentTarget.src = editIconRed)} onMouseOut={e => (e.currentTarget.src = editIcon)} />
-                <img className='delete-icon' onClick={() => alert("deletar")} src={deleteIcon} onMouseOver={e => (e.currentTarget.src = deleteIconRed)} onMouseOut={e => (e.currentTarget.src = deleteIcon)} />
+                <img className='delete-icon' onClick={() => alert("Deseja deletar essa loja?")} src={deleteIcon} onMouseOver={e => (e.currentTarget.src = deleteIconRed)} onMouseOut={e => (e.currentTarget.src = deleteIcon)} />
             </div>
-            {openModal && <ModalLoja closeModal={setOpenModal} />}
+            {openModal && <ModalLoja closeModal={setOpenModal} lojaInfo={loja} />}
         </div>
     );
 }

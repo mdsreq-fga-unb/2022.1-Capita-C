@@ -7,44 +7,45 @@ import listarLojasService from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
 
 interface User {
-    cpf: String,
-    password: String,
-    name: String,
-    email: String,
+    cpf: string,
+    password: string,
+    name: string,
+    email: string,
     isAdmin: Boolean,
     isManager: Boolean,
     isTelemarketing: Boolean,
     status: Boolean,
-    designatedCnpjs: String[]
+    designatedCnpjs: string[]
 }
 interface Loja {
-    cnpjFinal: String,
-    identificadorMatrizFiliar: String,
-    nomeFantasia: String,
-    cnaes: String[],
-    tipoLogradouro: String,
-    logradouro: String,
-    numero: String,
-    complemento: String,
-    bairro: String,
+    cnpjFinal: string,
+    identificadorMatrizFiliar: string,
+    nomeFantasia: string,
+    cnaes: string[],
+    tipoLogradouro: string,
+    logradouro: string,
+    numero: string,
+    complemento: string,
+    bairro: string,
     cep: Number,
-    unidadeFederativa: String,
-    municipio: String,
-    telefone: String[],
-    correioEletronico: String[],
+    unidadeFederativa: string,
+    municipio: string,
+    telefone: string[],
+    correioEletronico: string[],
     atribuido: Boolean,
-    parceriaAceita: String,
-    responsavelCpf: String,
+    parceriaAceita: string,
+    responsavelCpf: string,
     responsavel: User
 }
 
 const HomePageAdmin = () => {
     const { token } = useContext(AuthContext)
     const [lojas, setLojas] = useState([])
-    const [count, setCount] = useState(5);
+    const [count, setCount] = useState(lojas.length);
 
     useEffect(() => {
         getLojas()
+        setCount(lojas.length)
     }, []) // pegar as lojas apenas uma vez atravez do service
 
     async function getLojas() {
@@ -68,21 +69,19 @@ const HomePageAdmin = () => {
                         <div className='botao'>
                             <div className='botaoText'>+ Adicionar Loja</div>
                         </div>
+                        <div className='botao' >
+                            <div className='botaoText'>Atribuir Loja {'>'} </div>
+                        </div>
                     </div>
                     <text id='titulo' >LOJAS</text>
-                    <div className="cards">
-                        { // passa por todas as lojas gerando um card com o nome
-                            lojas?.map(function (item: Loja) {
-                                //console.log(item)
-                                return (
-                                    <CardLoja lojaCard={item} />
-                                )
-                            })
-                        }
-                    </div>
-                    <div className='atribuirLoja' >
-                        <div className='botao'>Atribuir Loja {'>'} </div>
-                    </div>
+                    { // passa por todas as lojas gerando um card com o nome
+                        lojas?.map(function (item: Loja) {
+                            //console.log(item)
+                            return (
+                                <CardLoja lojaCard={item} />
+                            )
+                        })
+                    }
                 </div>
             </div>
         </div>

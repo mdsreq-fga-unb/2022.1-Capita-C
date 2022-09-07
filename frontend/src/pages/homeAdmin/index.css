@@ -47,7 +47,7 @@
 }
 
 .botaoText {
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
     line-height: normal;
 }
@@ -67,13 +67,10 @@
 }
 
 .cards {
-    height: calc(100vh - 18rem);
-    overflow-y: scroll;
     /* display: grid; */
     gap: 1rem;
-    width: 80%;
+    width: 90%;
     margin-top: 30px;
-    margin-left: 10%;
 }
 
 .atribuirLoja {
@@ -83,4 +80,18 @@
     height: 40px;
     display: flex;
     font-size: 14px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
 }
