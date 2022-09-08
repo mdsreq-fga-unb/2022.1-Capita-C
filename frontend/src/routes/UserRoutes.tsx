@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ErrorPage } from '../pages/erropage';
+import { ErrorPage } from '../pages/erro/index';
 import HomePageUser from '../pages/homeUser';
 
 const UserRoutes: React.FC = () => {
