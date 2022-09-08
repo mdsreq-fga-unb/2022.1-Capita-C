@@ -42,7 +42,9 @@ nav:
       - MVP: mvp.md
       - PBB: pbb.md
       - USM: usm.md
-      - Diagrama de Casos de Uso: casos_de_uso.md
+      - Casos de Uso:
+        - Diagrama de casos de uso: casos_de_uso.md
+        - Especificações casos de uso: especificacap_uc.md
       - Reuniões: reunioes.md
       # - Planejamento:
       # - Políticas do Repositório:
