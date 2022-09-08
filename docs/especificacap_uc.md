@@ -7,15 +7,20 @@ Caso de uso é uma técnica de especificação que descreve uma seqüência de a
 </p>
 
 ## Cases
-[UC01](UC01.md)
-[UC02](UC02.md)
-[UC03](UC03.md)
-[UC04](UC04.md)
-[UC05](UC05.md)
+[UC01 - Realizar Login](UC01.md)
+
+[UC02 - Criar Usuário](UC02.md)
+
+[UC03 - Visualizar Lojas](UC03.md)
+
+[UC04 - Atribuir Lojas](UC04.md)
+
+[UC05 - Editar Lojas](UC05.md)
 
 ## Histórico de Revisões
-| Data       | Versão | Descrição                           | Autor                                                                                                       |
-| ---------- | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 31/08/2022 | 1.0    | Criação do caso de uso                    | [Carlos Eduardo](https://github.com/CaduRoriz) [Augusto](https://github.com/augustocrmg) |
-| 31/08/2022 | 1.0    | Revisão do caso de uso                    | [André](https://github.com/dartmol203) |   
-| 07/08/2022 | 1.1    | Inclusão do caso de uso no documento                    | [Carlos Eduardo](https://github.com/CaduRoriz) | 
+| Data       | Versão | Descrição                            | Autor                                                                                     |
+| ---------- | ------ | ------------------------------------ | ----------------------------------------------------------------------------------------- |
+| 31/08/2022 | 1.0    | Criação do caso de uso               | [Carlos Eduardo](https://github.com/CaduRoriz), [Augusto](https://github.com/augustocrmg) |
+| 31/08/2022 | 1.0    | Revisão do caso de uso               | [André](https://github.com/dartmol203)                                                    |
+| 07/09/2022 | 1.1    | Inclusão do caso de uso no documento | [Carlos Eduardo](https://github.com/CaduRoriz)                                            |
+| 08/09/2022 | 1.2    | atualização na formatação            | [André](https://github.com/dartmol203)                                                    |
