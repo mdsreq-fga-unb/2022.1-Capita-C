@@ -28,6 +28,10 @@
     <p style="text-align: justify">Durante a <b>Unidade 3</b>, houve um aprendizado maior em o que é e como criar um processo de engenharia de requisitos, além de outros frameworks que gerenciam todo o ecossistema de requisitos. Nessa unidade tivemos diversos imprevistos quanto ao avanço nas entregas da disciplina, isso se deve principalmente por uma falta de comprometimento geral da equipe, na minha visão, ainda temos um pouco de tempo para tentar resolver esses problemas. Os membros da equipe devem aprender a se organizar melhor, distribuindo o tempo entre as diversas disciplinas que estão cursando.</p>
 </div>
 
+<div>
+    <p style="text-align: justify">Na <b>Unidade 4</b>, foi importante o aprendizado sobre Histórias de Usuário, Casos e Uso e suas especificações, pois permitiu uma melhor conversa e um refinamento melhor de alguns requisitos. Houve também uma melhora na organização do grupo em relação as unidades anteriores, mas tendo em vista ainda que é possível a evolução em praticamente todos os pontos já citados nas unidades anteriores.</p>
+</div>
+
 ### MDS-Requisitos
 
 <div>
@@ -40,6 +44,10 @@
 
 <div>
     <p style="text-align: justify">Durante a <b>Unidade 3</b>, ocorreu uma maior integração entre as duas equipes, mas é nítida a necessidade de melhora nessa parte, tendo em visto que ela é o maior empecilho atualmente no projeto, caso a equipe consiga se unir mais, o projeto tende a se organizar melhor. Além disso, é visível a falta de organização da equipe, o que gera atrasos e baixa qualidade nas entregas da disciplina e para o cliente.</p>
+</div>
+
+<div>
+    <p style="text-align: justify">Na <b>Unidade 4</b>, foi notada a evolução na integração entre as equipes de MDS e Requisitos, houve melhora na organização, comprometimento e no desenvolvimento da ferramenta, o trabalho das equipes tornou-se ligeiramente mais fluido e constante. Mas ainda foram enfrentados os mesmos problemas citados anteriormente, como atrasos, falta de engajamento e problemas na conciliação dos membros com as outras matérias.</p>
 </div>
 
 <!-- 
