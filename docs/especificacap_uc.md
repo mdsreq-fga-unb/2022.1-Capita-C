@@ -3,7 +3,7 @@
 ## Caso de Uso
 
 <p>
-Caso de uso é uma técnica de especificação que descreve uma seqüência de ações que o sistema deve realizar para produzir uma resposta para um ator. Na realidade, tem-se uma seqüência da interação entre caso de uso e ator. O caso de uso detalha o que um sistema deve fazer, descrevendo como uma determinada funcionalidade é utilizada por um ator.
+Caso de uso é uma técnica de especificação que descreve uma sequência de ações que o sistema deve realizar para produzir uma resposta para um ator. Na realidade, tem-se uma seqüência da interação entre caso de uso e ator. O caso de uso detalha o que um sistema deve fazer, descrevendo como uma determinada funcionalidade é utilizada por um ator.
 </p>
 
 ## Cases
