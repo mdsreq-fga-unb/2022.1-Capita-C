@@ -45,8 +45,11 @@ const HomePageAdmin = () => {
 
     useEffect(() => {
         getLojas()
-        setCount(lojas.length)
     }, []) // pegar as lojas apenas uma vez atravez do service
+
+    useEffect(() => {
+        setCount(lojas.length)
+    }, [lojas])
 
     async function getLojas() {
         if (token) {
