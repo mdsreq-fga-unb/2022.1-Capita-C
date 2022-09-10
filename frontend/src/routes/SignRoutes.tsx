@@ -8,7 +8,7 @@ const SignRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="" element={<Login />} />
+                <Route path="/" element={<Login />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter>

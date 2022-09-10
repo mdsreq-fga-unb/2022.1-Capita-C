@@ -13,6 +13,40 @@ const list: RequestHandler = async (req, res) => {
   return res.json(cnpj);
 };
 
+const retrieve: RequestHandler = async (req, res) => {
+  const { cnpjFinal } = req.params;
+
+  const cnpj = await prisma.cadastroCnpj.findUnique({
+    where: {
+      cnpjFinal,
+    },
+    select: {
+      cnpjFinal: true,
+      identificadorMatrizFiliar: true,
+      nomeFantasia: true,
+      cnaes: true,
+      tipoLogradouro: true,
+      logradouro: true,
+      numero: true,
+      complemento: true,
+      bairro: true,
+      cep: true,
+      unidadeFederativa: true,
+      municipio: true,
+      telefone: true,
+      correioEletronico: true,
+      atribuido: true,
+      parceriaAceita: true,
+    },
+  });
+
+  if (!cnpj) {
+    throw new HttpError.NotFound("Usuário não encontrado");
+  }
+
+  return res.json(cnpj);
+};
+
 const createCnpj: RequestHandler = async (req, res) => {
   const {
     cnpjFinal,
@@ -98,14 +132,14 @@ const createCnpj: RequestHandler = async (req, res) => {
       telefone:
         telefones !== undefined
           ? {
-              connectOrCreate: telefonesQuery,
-            }
+            connectOrCreate: telefonesQuery,
+          }
           : undefined,
       correioEletronico:
         emails !== undefined
           ? {
-              connectOrCreate: emailsQuery,
-            }
+            connectOrCreate: emailsQuery,
+          }
           : undefined,
     },
     select: {
@@ -240,4 +274,5 @@ export default {
   update,
   destroy,
   designate,
+  retrieve
 };

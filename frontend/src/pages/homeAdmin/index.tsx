@@ -2,9 +2,9 @@ import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
 import './index.css';
 import React, { useContext, useEffect, useState } from 'react'
-import { CardLoja } from '../../components/cardLoja';
-import listarLojasService from '../../services/lojas.api';
+import { listarLojasService } from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
+import CardLojaAdmin from '../../components/cardLojaAdmin';
 
 interface User {
     cpf: string,
@@ -39,24 +39,24 @@ interface Loja {
 }
 
 const HomePageAdmin = () => {
-    const { token } = useContext(AuthContext)
     const [lojas, setLojas] = useState([])
     const [count, setCount] = useState(lojas.length);
+    const { token } = useContext(AuthContext)
 
     useEffect(() => {
-        getLojas()
-    }, []) // pegar as lojas apenas uma vez atravez do service
+        if (token) {
+            getLojas(token)
+        }
+    }, [token]) // pegar as lojas apenas uma vez atravez do service
 
     useEffect(() => {
         setCount(lojas.length)
     }, [lojas])
 
-    async function getLojas() {
-        if (token) {
-            const response = await listarLojasService(token);
-            if (response) {
-                setLojas(response.data)
-            }
+    async function getLojas(token: string) {
+        const response = await listarLojasService(token);
+        if (response) {
+            setLojas(response.data)
         }
     }
 
@@ -79,9 +79,8 @@ const HomePageAdmin = () => {
                     <text id='titulo' >LOJAS</text>
                     { // passa por todas as lojas gerando um card com o nome
                         lojas?.map(function (item: Loja) {
-                            //console.log(item)
                             return (
-                                <CardLoja lojaCard={item} />
+                                <CardLojaAdmin lojaCard={item}/>
                             )
                         })
                     }

@@ -19,9 +19,6 @@ const Login = () => {
     const handleClick = async () => {
         try {
             const log = context.signIn(user)// loga e redireciona para pagina home
-            if(await log){
-                navigate("/home")
-            }
         } catch (error) {
             alert("Erro ao logar")
         }

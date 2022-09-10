@@ -1,5 +1,8 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useContext, useState } from "react";
+import { useEffect } from "react";
+import AuthContext from "../../contexts/auth";
+import { listarLojaInfo } from "../../services/lojas.api";
 import './index.css'
 
 interface User {
@@ -34,9 +37,24 @@ interface Loja {
     responsavel: User
 }
 
-const ModalLoja = ({ closeModal }: any, lojaInfo: any) => {
-    const [loja, setLoja] = useState<Loja>(lojaInfo)
-    //console.log(lojaInfo)
+const ModalLoja = ({ cnpj, onClickClose }: any) => {
+
+    const { token } = useContext(AuthContext)
+    const [loja, setLoja] = useState([]);
+
+    useEffect(() => {
+        if(token){
+            getLojaByCnpj(cnpj, token)
+        }
+    }, [])
+
+    async function getLojaByCnpj(cnpjLoja: string, token: string){
+        const response = await listarLojaInfo(cnpjLoja, token)
+        if(response){
+            setLoja(response.data)
+        }
+    }
+
     return (
         <div className="modalDiv" >
             <div className="boxContent">
@@ -44,9 +62,9 @@ const ModalLoja = ({ closeModal }: any, lojaInfo: any) => {
                     <text className="title" >Loja</text>
 
                     <text className="inputTitle" >Nome da loja</text>
-                    <input className="inputBox" name="name" value={loja?.nomeFantasia} placeholder={lojaInfo?.nomeFantasia} /* onChange={} */ ></input>
+                    <input className="inputBox" name="name"  /* onChange={} */ ></input>
                     <text className="inputTitle" >CNPJ</text>
-                    <input className="inputBox" name="cnpj" value={loja?.cnpjFinal} placeholder={lojaInfo?.status} ></input>
+                    <input className="inputBox" name="cnpj" ></input>
                     <text className="inputTitle" >Identificador</text>
                     <select className="inputBox" /* { loja?.identificadorMatrizFiliar } */>
                         <option value="Matriz" >Matriz</option> {/**/}
@@ -68,7 +86,7 @@ const ModalLoja = ({ closeModal }: any, lojaInfo: any) => {
                         </select>
                     </div>
                     <text className="inputTitle" >Cnaes</text>
-                    <input className="inputBox" name="cnaes" value={loja?.cnaes} placeholder={lojaInfo?.cnaes} ></input>
+                    <input className="inputBox" name="cnaes" ></input>
                 </div>
                 <div className="section" >
                     <text style={{ marginTop: 5, marginBottom: 5 }} >Contato</text>
@@ -104,7 +122,7 @@ const ModalLoja = ({ closeModal }: any, lojaInfo: any) => {
                             Atualizar
                         </text>
                     </span>
-                    <span className="botao" onClick={() => closeModal(false)} >
+                    <span className="botao" onClick={() => {onClickClose}} >
                         <text className="botaoText">
                             Cancelar
                         </text>

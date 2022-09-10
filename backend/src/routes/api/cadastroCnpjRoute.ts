@@ -5,6 +5,7 @@ import { isAdmin } from "../../middlewares/authMiddlewares";
 const router = Router();
 
 router.get("/", cadastroCnpjController.list);
+router.get("/:cnpjFinal", cadastroCnpjController.retrieve);
 router.post("/add", cadastroCnpjController.createCnpj);
 router.patch("/:cnpjFinal", cadastroCnpjController.update);
 router.delete("/:cnpjFinal", isAdmin, cadastroCnpjController.destroy);

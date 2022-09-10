@@ -8,7 +8,7 @@
     text-align: start;
     justify-content: space-between;
     padding: 3px;
-    margin:  1em 0em 0em 0em;
+    margin:  1em 0em 0em 4em;
 }
 
 .cardWraper:hover {
@@ -20,4 +20,15 @@
     padding: 3px;
     margin-inline: 2px;
     cursor: pointer;
+}
+
+.mouseOver {
+    position: absolute;
+    display: block;
+    flex-direction: row;
+    align-items: left;
+    width: 100px;
+    height: 60px;
+    background-color: var(--background);
+    border: 1px solid var(--color-primary)
 }
