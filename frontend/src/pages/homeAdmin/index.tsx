@@ -66,7 +66,7 @@ const HomePageAdmin = () => {
             <Header />
             <div className="sidebar-index">
                 <Sidebar />
-                <div className='index'>
+                <div className="index">
                     <div className="header-lojas">
                         <span id='totalLojas' >Total de lojas: {count}</span>
                         <div className='botao'>

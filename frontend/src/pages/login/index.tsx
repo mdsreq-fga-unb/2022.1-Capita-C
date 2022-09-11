@@ -18,7 +18,7 @@ const Login = () => {
 
     const handleClick = async () => {
         try {
-            const log = context.signIn(user)// loga e redireciona para pagina home
+            context.signIn(user)// loga e redireciona para pagina home
         } catch (error) {
             alert("Erro ao logar")
         }
@@ -41,11 +41,11 @@ const Login = () => {
                     <div id="formDiv">
                         <div className="inputDiv" >
                             <text className="inputText" >CPF: </text>
-                            <input className="input" name="cpf" value={user.cpf} onChange={e => handleInput(e)} />
+                            <input className="input" name="cpf" defaultValue={user.cpf} onChange={e => handleInput(e)} />
                         </div>
                         <div className="inputDiv" >
                             <text className="inputText" >Senha: </text>
-                            <input className="input" type="password" name="password" value={user.password} onChange={e => handleInput(e)} />
+                            <input className="input" type="password" name="password" defaultValue={user.password} onChange={e => handleInput(e)} />
                         </div>
                         <button id="btn" onClick={() => { handleClick() }} >LOGIN</button>
                     </div>

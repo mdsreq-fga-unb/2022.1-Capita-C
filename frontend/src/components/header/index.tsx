@@ -16,6 +16,7 @@ interface User {
 export function Header() {
     const [user, setUser] = useState<User>();
     const context = useContext(AuthContext);
+    let navigate = useNavigate()
 
     useEffect(() => {
         const storagedUser = localStorage.getItem('@App:user');
@@ -27,6 +28,7 @@ export function Header() {
     function handleClick() {
         try {
             context.logOut();
+            navigate('/')
         } catch (error) {
             alert("Não foi possivel realizar a açao")
         }

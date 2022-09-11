@@ -10,7 +10,7 @@ interface AuthContextData {
     signed: boolean;
     user: object | null;
     gerente: boolean;
-    signIn(user: User): Promise<boolean>;
+    signIn(user: User): void;
     logOut(): void;
     token: string | null;
 }
@@ -59,9 +59,8 @@ export const AuthProvider: React.FC<Props> = ({ children }) => {
             localStorage.setItem('@App:token', JSON.stringify(response.data.token));
             localStorage.setItem('@App:user', JSON.stringify(response.data.user));
             localStorage.setItem('@App:admin', JSON.stringify(response?.data.user.isAdmin));
-            return true
         } catch (error) {
-            return false
+            console.log(error)
         }
     }
 
