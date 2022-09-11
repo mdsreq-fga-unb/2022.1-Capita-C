@@ -6,6 +6,12 @@ import LogoImage from '../../images/LogoBackground.svg'
 import CapitalLogo from '../../images/capitalLogo.svg'
 import MenuIcon from '../../images/menu-hamburguer.svg'
 
+ /* Ideia para a formação do código:
+  * Primeiro conectar com o back fazendo com que eu acesse a lista de usuários
+  * Segundo fazer um loop para organizar os usuários e descobrir quantos usuários temos
+  * Imprimir a lista e o contador de usuários no canto da tela 
+  */
+
 const VerUsuarios  =  () => {
     const user  =  useState({
         cpf: '',
@@ -28,7 +34,37 @@ const VerUsuarios  =  () => {
 
     const handleClick2 = async () =>{
         try {
-            
+                <div id="box" >
+
+                    <br /><br />
+                    
+                    <h2>Usuário</h2>
+                    
+                    <div id="formDiv">
+                        
+                        <div className="textDiv" >
+                            <text className="inputText" >Nome de usuário: </text>
+                        </div>
+
+                        <div className="textDiv" >
+                            <text className="inputText" >CPF: </text>
+                        </div>
+
+                        <div className="textDiv" >
+                            <text className="inputText" >Email: </text>
+                        </div>
+                        loga e 
+                        <div className="textDiv" >
+                            <text className="inputText" >Telefone: </text>
+                        </div>
+
+                        <div className="textDiv" >
+                            <text className="inputText" >Senha: </text>
+                        </div>
+                        
+                        <button id="btn" onClick={() => { handleClick() }} >LOGIN</button>
+                    </div>
+                </div>
         } catch (error) {
             alert("Erro")
         }
