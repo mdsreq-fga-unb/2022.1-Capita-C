@@ -1,0 +1,27 @@
+#mainDiv {
+    background-image: linear-gradient(var(--color-primary), var(--color-secondary));
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font-family);
+}
+
+#rodape {
+    height: 60px;
+    width: 98vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    display:inline-flex;
+    background-color: var(--color-primary);
+}
+
+#body {
+    width: 100vw;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
