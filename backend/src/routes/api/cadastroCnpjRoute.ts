@@ -6,6 +6,7 @@ const router = Router();
 
 router.get("/", cadastroCnpjController.list);
 router.post("/add", cadastroCnpjController.createCnpj);
+router.post("/addMany", isAdmin, cadastroCnpjController.createMany);
 router.patch("/:cnpjFinal", cadastroCnpjController.update);
 router.delete("/:cnpjFinal", isAdmin, cadastroCnpjController.destroy);
 
