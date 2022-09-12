@@ -82,16 +82,15 @@ const EditarLoja = () => {
         }
     }
 
-    async function handleSubmit(cnpj: string | undefined, token: string | null) {
-        console.log(loja)
-        /* if(cnpj && token){
-            const response = await editarLojaService(cnpj, token)
-            if(response){
-                return(
+    async function handleSubmit(cnpj: string | undefined, token: string | null, loja: Loja | undefined) {
+        if (cnpj && token && loja) {
+            const response = await editarLojaService(cnpj, token, loja)
+            if (response) {
+                return (
                     alert("Atualizado com sucesso!")
                 )
             }
-        } */
+        }
     }
 
     return (
@@ -117,7 +116,7 @@ const EditarLoja = () => {
                             <input className="minorInput" name="atribuido" defaultValue={loja?.atribuido ? 'Verdadeiro' : 'Falso'} disabled onChange={(e) => handleInput(e)} ></input>
                             <select className="minorInput" name="parceriaAceita" defaultValue={parceriaStatus} onChange={(e) => handleInput(e)} >
                                 {
-                                    optionsParceria.map((item) => {return(<option>{item}</option>)})
+                                    optionsParceria.map((item) => { return (<option>{item}</option>) })
                                 }
                             </select>
                         </div>
@@ -154,7 +153,7 @@ const EditarLoja = () => {
                     </div>
                     <div className="divBotao">
                         <div className="editBotao" >
-                            <text className="botaoText" onClick={() => handleSubmit(cnpj, token)}>
+                            <text className="botaoText" onClick={() => handleSubmit(cnpj, token, loja)}>
                                 Atualizar
                             </text>
                         </div>

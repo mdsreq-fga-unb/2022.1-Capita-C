@@ -41,13 +41,13 @@ export const deletarLojaService = async (cnpj: string, token: string) => {
     }
 }  
 
-export const editarLojaService = async (cnpj: string, token: string) => {
+export const editarLojaService = async (cnpj: string, token: string, loja: any) => {
     try {
         const config = {
             headers: { Authorization: `Bearer ${token}` }
         };
         const url = `http://localhost:3000/api/cnpj/${cnpj}`
-        const response = await axios.patch(url, config)
+        const response = await axios.patch(url, loja, config)
         return response;
     } catch (error) {
         console.log(error)
