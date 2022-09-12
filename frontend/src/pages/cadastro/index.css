@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  font-family: var(--font-family);
+}
+
+.sidebar-index {
+  display: flex;
+}
+
+.index {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
