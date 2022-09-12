@@ -38,7 +38,7 @@ export function Header() {
         <div className="header">
 
             <div className="header-wraper">
-                <div className="logo-nome">
+                <div className="logo-nome" onClick={() => navigate('/')}>
                     <img className="logo" src={CapitalLogo} />
                     <text className='header-text'>Captação de Clientes</text>
                 </div>

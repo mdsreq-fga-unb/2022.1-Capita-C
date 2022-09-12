@@ -47,18 +47,21 @@ const EditarLoja = () => {
     const { cnpj } = useParams();
     const { token } = useContext(AuthContext)
     const [loja, setLoja] = useState<Loja>()
+    const [parceriaStatus, setParceriaStatus] = useState()
+    const logEdicao = []
 
     // opcoes dos campos de select
     const optionsParceria = ['Aceita', 'Processando', 'Recusada'];
-    const parceriaStatus = loja?.parceriaAceita
+
+    async function getLoja(cnpj: string, token: string) {
+        const response = await listarLojaInfo(cnpj, token);
+        if (response) {
+            setLoja(response.data)
+            setParceriaStatus(response.data.parceriaAceita)
+        }
+    }
 
     useEffect(() => {
-        async function getLoja(cnpj: string, token: string) {
-            const response = await listarLojaInfo(cnpj, token);
-            if (response) {
-                setLoja(response.data)
-            }
-        }
 
         if (cnpj && token) {
             getLoja(cnpj, token)
@@ -86,6 +89,7 @@ const EditarLoja = () => {
         if (cnpj && token && loja) {
             const response = await editarLojaService(cnpj, token, loja)
             if (response) {
+                getLoja(cnpj, token)
                 return (
                     alert("Atualizado com sucesso!")
                 )
@@ -114,11 +118,14 @@ const EditarLoja = () => {
                         </div>
                         <div className="minorDiv" >
                             <input className="minorInput" name="atribuido" defaultValue={loja?.atribuido ? 'Verdadeiro' : 'Falso'} disabled onChange={(e) => handleInput(e)} ></input>
-                            <select className="minorInput" name="parceriaAceita" defaultValue={parceriaStatus} onChange={(e) => handleInput(e)} >
-                                {
-                                    optionsParceria.map((item) => { return (<option>{item}</option>) })
-                                }
-                            </select>
+                            {
+                                parceriaStatus &&
+                                <select className="minorInput" name="parceriaAceita" defaultValue={parceriaStatus} onChange={(e) => handleInput(e)} >
+                                    {
+                                        optionsParceria.map((item) => { return (<option >{item}</option>) })
+                                    }
+                                </select>
+                            }
                         </div>
                         <text className="inputTitle" >Cnaes</text>
                         <input className="inputBox" name="cnaes" disabled defaultValue={loja?.cnaes.map((item: any) => { return (item.cnae) })} onChange={(e) => handleInput(e)} ></input>
@@ -154,7 +161,7 @@ const EditarLoja = () => {
                     <div className="divBotao">
                         <div className="editBotao" >
                             <text className="botaoText" onClick={() => handleSubmit(cnpj, token, loja)}>
-                                Atualizar
+                                ATUALIZAR
                             </text>
                         </div>
                     </div>

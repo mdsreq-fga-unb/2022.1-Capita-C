@@ -5,6 +5,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { listarLojasService } from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
 import CardLojaAdmin from '../../components/cardLojaAdmin';
+import { useNavigate } from 'react-router-dom';
 
 interface User {
     cpf: string,
@@ -42,6 +43,7 @@ const HomePageAdmin = () => {
     const [lojas, setLojas] = useState([])
     const [count, setCount] = useState(lojas.length);
     const { token } = useContext(AuthContext)
+    let navigate = useNavigate()
 
     useEffect(() => {
         if (token) {
@@ -68,12 +70,9 @@ const HomePageAdmin = () => {
                 <Sidebar />
                 <div className="index">
                     <div className="header-lojas">
-                        <span id='totalLojas' >Total de lojas: {count}</span>
-                        <div className='botao'>
-                            <div className='botaoText'>+ Adicionar Loja</div>
-                        </div>
+                        <span id='totalLojas' >Total de lojas: {count}</span> 
                         <div className='botao' >
-                            <div className='botaoText'>Atribuir Loja {'>'} </div>
+                            <div className='botaoText'>Atribuir Loja</div>
                         </div>
                     </div>
                     <text id='titulo' >LOJAS</text>
