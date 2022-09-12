@@ -134,7 +134,7 @@ const createMany: RequestHandler = async (req, res) => {
   const cnpjs: any[] = [];
 
   // eslint-disable-next-line array-callback-return
-  req.body.map((cnpj: any) => {
+  req.body.map(async (cnpj: any) => {
     const {
       cnpjFinal,
       identificadorMatrizFiliar,
@@ -197,41 +197,52 @@ const createMany: RequestHandler = async (req, res) => {
       throw new HttpError.BadRequest();
     }
 
-    cnpjs.push(
-      prisma.cadastroCnpj.create({
-        data: {
-          cnpjFinal,
-          identificadorMatrizFiliar,
-          nomeFantasia,
-          tipoLogradouro,
-          logradouro,
-          numero: numero.toString(),
-          complemento,
-          bairro,
-          cep,
-          unidadeFederativa,
-          municipio,
-          atribuido,
-          parceriaAceita,
-          responsavel,
-          cnaes: {
-            connectOrCreate: cnaesQuery,
+    const busca = await prisma.cadastroCnpj.count({
+      where: {
+        cnpjFinal,
+      },
+    });
+
+    if (busca === 0) {
+      cnpjs.push(
+        prisma.cadastroCnpj.create({
+          data: {
+            cnpjFinal,
+            identificadorMatrizFiliar,
+            nomeFantasia,
+            tipoLogradouro,
+            logradouro,
+            numero: numero.toString(),
+            complemento,
+            bairro,
+            cep,
+            unidadeFederativa,
+            municipio,
+            atribuido,
+            parceriaAceita,
+            responsavel,
+            cnaes: {
+              connectOrCreate: cnaesQuery,
+            },
+            telefone:
+              telefones !== undefined
+                ? {
+                    connectOrCreate: telefonesQuery,
+                  }
+                : undefined,
+            correioEletronico:
+              emails !== undefined
+                ? {
+                    connectOrCreate: emailsQuery,
+                  }
+                : undefined,
           },
-          telefone:
-            telefones !== undefined
-              ? {
-                  connectOrCreate: telefonesQuery,
-                }
-              : undefined,
-          correioEletronico:
-            emails !== undefined
-              ? {
-                  connectOrCreate: emailsQuery,
-                }
-              : undefined,
-        },
-      })
-    );
+        })
+      );
+    } else {
+      // eslint-disable-next-line no-console
+      console.log("CNPJ já cadastrado:", cnpjFinal);
+    }
   });
 
   return res.json(await prisma.$transaction(cnpjs));
