@@ -1,14 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-
-import ModalLoja from '../../components/modalLoja';
+import { useContext, useState } from "react";
 import editIcon from '../../images/edit-icon.svg'
 import editIconRed from '../../images/edit-icon-red.svg'
-import deleteIcon from '../../images/delete-icon.svg'
-import deleteIconRed from '../../images/delete-icon-red.svg'
 import './index.css'
 import { useNavigate, useParams } from "react-router-dom";
-import { Link } from 'react-router-dom'
-import EditarLoja from "../../pages/editarLoja";
 import { deletarLojaService } from "../../services/lojas.api";
 import AuthContext from "../../contexts/auth";
 
@@ -45,16 +39,8 @@ interface Loja {
 }
 
 const CardLojaAdmin = ({ lojaCard }: any) => {
-    const { token } = useContext(AuthContext);
     const [loja, setLoja] = useState(lojaCard);
     let navigate = useNavigate();
-    /* const [openModal, setOpenModal] = useState(false); */
-
-    async function handleClick(cnpj: string, token: string | null) {
-        if (token) {
-            const response = await deletarLojaService(cnpj, token);
-        }
-    }
 
     return (
         <div className="cardWraper">

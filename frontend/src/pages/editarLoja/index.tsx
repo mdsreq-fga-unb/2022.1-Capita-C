@@ -1,13 +1,10 @@
 import './index.css';
-import React, { useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
-import axios from 'axios';
-import { listarLojaInfo } from '../../services/lojas.api';
+import { editarLojaService, listarLojaInfo } from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
-import Select from 'react-select';
-import { getValue } from '@testing-library/user-event/dist/utils';
 
 interface User {
     cpf: string,
@@ -49,11 +46,11 @@ interface Loja {
 const EditarLoja = () => {
     const { cnpj } = useParams();
     const { token } = useContext(AuthContext)
-    const [loja, setLoja] = useState<Loja | null>(null)
-    const optionsIdentificador = ['Matriz', 'Filial'];
-    const optionsParceria = ['Aceita', 'Processando', 'Recusada'];
-    const optionsAtribuido = ['Verdadeiro', 'Falso'];
+    const [loja, setLoja] = useState<Loja>()
 
+    // opcoes dos campos de select
+    const optionsParceria = ['Aceita', 'Processando', 'Recusada'];
+    const parceriaStatus = loja?.parceriaAceita
 
     useEffect(() => {
         async function getLoja(cnpj: string, token: string) {
@@ -69,6 +66,34 @@ const EditarLoja = () => {
 
     }, [])
 
+    function handleInput(e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+        // ao mudar as informacoes das caixas de texto guarda os valores em user
+        const { value, name } = e.currentTarget
+        if (name === 'atribuido' && loja) {
+            if (value == 'Verdadeiro') {
+                setLoja({ ...loja, [name]: true })
+            } else {
+                setLoja({ ...loja, [name]: false })
+            }
+        } else {
+            if (loja) {
+                setLoja({ ...loja, [name]: value })
+            }
+        }
+    }
+
+    async function handleSubmit(cnpj: string | undefined, token: string | null) {
+        console.log(loja)
+        /* if(cnpj && token){
+            const response = await editarLojaService(cnpj, token)
+            if(response){
+                return(
+                    alert("Atualizado com sucesso!")
+                )
+            }
+        } */
+    }
+
     return (
         <div className="main" >
             <Header />
@@ -79,65 +104,57 @@ const EditarLoja = () => {
                         <text className="title" >Editar Loja</text>
 
                         <text className="inputTitle" >Nome da loja</text>
-                        <input className="inputBox" name="name" defaultValue={loja?.nomeFantasia} ></input>
+                        <input className="inputBox" name="nomeFantasia" disabled defaultValue={loja?.nomeFantasia} ></input>
                         <text className="inputTitle" >CNPJ</text>
-                        <input className="inputBox" name="cnpj" defaultValue={loja?.cnpjFinal} ></input>
+                        <input className="inputBox" name="cnpjFinal" disabled defaultValue={loja?.cnpjFinal} ></input>
                         <text className="inputTitle" >Identificador</text>
-                        <select className="inputBox" defaultValue={loja?.identificadorMatrizFiliar}  >
-                            {
-                                optionsIdentificador.map((item) => (<option>{item}</option>))
-                            }
-                        </select>
+                        <input className="inputBox" name="identificadorMatrizFiliar" disabled defaultValue={loja?.identificadorMatrizFiliar}  ></input>
                         <div className="minorDiv">
                             <text className="inputTitle" >Atribuição</text>
                             <text className="inputTitle" >Status de Parceria</text>
                         </div>
                         <div className="minorDiv" >
-                            <select className="minorInput" defaultValue={loja?.atribuido ? 'Verdadeito' : 'Falso'} >
+                            <input className="minorInput" name="atribuido" defaultValue={loja?.atribuido ? 'Verdadeiro' : 'Falso'} disabled onChange={(e) => handleInput(e)} ></input>
+                            <select className="minorInput" name="parceriaAceita" defaultValue={parceriaStatus} onChange={(e) => handleInput(e)} >
                                 {
-                                    optionsAtribuido.map((item) => (<option>{item}</option>))
-                                }
-                            </select>
-                            <select className="minorInput" defaultValue={loja?.parceriaAceita} >
-                                {
-                                    optionsParceria.map((item) => (<option>{item}</option>))
+                                    optionsParceria.map((item) => {return(<option>{item}</option>)})
                                 }
                             </select>
                         </div>
                         <text className="inputTitle" >Cnaes</text>
-                        <input className="inputBox" name="cnaes" defaultValue={loja?.cnaes.map((item: any) => { return (item.cnae) })} ></input>
+                        <input className="inputBox" name="cnaes" disabled defaultValue={loja?.cnaes.map((item: any) => { return (item.cnae) })} onChange={(e) => handleInput(e)} ></input>
                     </div>
                     <div className="section" >
                         <text style={{ marginTop: 5, marginBottom: 5 }} >Contato</text>
 
                         <text className="inputTitle" >Telefone</text>
-                        <input className="inputBox" name="telefone" defaultValue={loja?.telefone[0].numeroTelefone}></input>
+                        <input className="inputBox" name="telefone[0]" defaultValue={loja?.telefone[0].numeroTelefone} onChange={(e) => handleInput(e)} ></input>
                         <text className="inputTitle" >Telefone Secundário</text>
-                        <input className="inputBox" name="telefoneSec" defaultValue={loja?.telefone[1].numeroTelefone}></input>
+                        <input className="inputBox" name="telefone[1]" defaultValue={loja?.telefone[1].numeroTelefone} onChange={(e) => handleInput(e)} ></input>
                         <text className="inputTitle" >E-mail</text>
-                        <input className="inputBox" name="email" defaultValue={loja?.correioEletronico.map((item: any) => { return (item.email) })} ></input>
+                        <input className="inputBox" name="correioEletronico" disabled defaultValue={loja?.correioEletronico[0].email} onChange={(e) => handleInput(e)} ></input>
                     </div>
                     <div className="section" >
                         <text style={{ marginTop: 5, marginBottom: 5 }} >Endereço</text>
 
                         <text className="inputTitle" >CEP</text>
-                        <input className="inputBox" name="cep" defaultValue={loja?.cep.toString()} ></input>
+                        <input className="inputBox" name="cep" defaultValue={loja?.cep.toString()} onChange={(e) => handleInput(e)} ></input>
                         <text className="inputTitle" >Logradouro</text>
-                        <input className="inputBox" name="logradouro" defaultValue={loja?.logradouro} ></input>
+                        <input className="inputBox" name="logradouro" defaultValue={loja?.logradouro} onChange={(e) => handleInput(e)} ></input>
                         <div className="minorDiv">
                             <text className="inputTitle" >Bairro</text>
                             <text className="inputTitle" >Estado</text>
                         </div>
                         <div className="minorDiv" >
-                            <input className="minorInput" name="complemento" defaultValue={loja?.bairro} ></input>
-                            <input className="minorInput" name="estado" defaultValue={loja?.unidadeFederativa} ></input>
+                            <input className="minorInput" name="bairro" defaultValue={loja?.bairro} onChange={(e) => handleInput(e)} ></input>
+                            <input className="minorInput" name="unidadeFederativa" defaultValue={loja?.unidadeFederativa} onChange={(e) => handleInput(e)} ></input>
                         </div>
                         <text className="inputTitle" >Observação</text>
-                        <input className="inputBox" name="observacao" style={{ height: 50 }} defaultValue={loja?.complemento}></input>
+                        <input className="inputBox" name="complemento" style={{ height: 50 }} defaultValue={loja?.complemento} onChange={(e) => handleInput(e)} ></input>
                     </div>
                     <div className="divBotao">
                         <div className="editBotao" >
-                            <text className="botaoText">
+                            <text className="botaoText" onClick={() => handleSubmit(cnpj, token)}>
                                 Atualizar
                             </text>
                         </div>
