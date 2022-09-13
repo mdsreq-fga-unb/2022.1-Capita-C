@@ -1,4 +1,3 @@
-import { CadastroCnpj } from "@prisma/client";
 import { RequestHandler } from "express";
 import HttpError from "http-errors";
 import prisma from "../databaseClient";
@@ -166,6 +165,124 @@ const createCnpj: RequestHandler = async (req, res) => {
   return res.json(cnpj);
 };
 
+const createMany: RequestHandler = async (req, res) => {
+  const cnpjs: any[] = [];
+
+  // eslint-disable-next-line array-callback-return
+  req.body.map(async (cnpj: any) => {
+    const {
+      cnpjFinal,
+      identificadorMatrizFiliar,
+      nomeFantasia,
+      cnaes,
+      tipoLogradouro,
+      logradouro,
+      numero,
+      complemento,
+      bairro,
+      cep,
+      unidadeFederativa,
+      municipio,
+      atribuido,
+      parceriaAceita,
+      telefones,
+      emails,
+      responsavel,
+    } = cnpj;
+
+    let cnaesQuery = [];
+    let telefonesQuery = [];
+    let emailsQuery = [];
+    try {
+      cnaesQuery = cnaes.map((cnae: number) => ({
+        where: {
+          cnae,
+        },
+        create: {
+          cnae,
+        },
+      }));
+    } catch (error) {
+      throw new HttpError.BadRequest();
+    }
+
+    try {
+      telefonesQuery = telefones?.map((numeroTelefone: number) => ({
+        where: {
+          numeroTelefone: numeroTelefone.toString(),
+        },
+        create: {
+          numeroTelefone: numeroTelefone.toString(),
+        },
+      }));
+    } catch (error) {
+      throw new HttpError.BadRequest();
+    }
+
+    try {
+      emailsQuery = emails?.map((email: string) => ({
+        where: {
+          email: email.toString(),
+        },
+        create: {
+          email: email.toString(),
+        },
+      }));
+    } catch (error) {
+      throw new HttpError.BadRequest();
+    }
+
+    const busca = await prisma.cadastroCnpj.count({
+      where: {
+        cnpjFinal,
+      },
+    });
+
+    if (busca === 0) {
+      cnpjs.push(
+        prisma.cadastroCnpj.create({
+          data: {
+            cnpjFinal,
+            identificadorMatrizFiliar,
+            nomeFantasia,
+            tipoLogradouro,
+            logradouro,
+            numero: numero.toString(),
+            complemento,
+            bairro,
+            cep,
+            unidadeFederativa,
+            municipio,
+            atribuido,
+            parceriaAceita,
+            responsavel,
+            cnaes: {
+              connectOrCreate: cnaesQuery,
+            },
+            telefone:
+              telefones !== undefined
+                ? {
+                    connectOrCreate: telefonesQuery,
+                  }
+                : undefined,
+            correioEletronico:
+              emails !== undefined
+                ? {
+                    connectOrCreate: emailsQuery,
+                  }
+                : undefined,
+          },
+        })
+      );
+    } else {
+      // eslint-disable-next-line no-console
+      console.log("CNPJ já cadastrado:", cnpjFinal);
+    }
+  });
+
+  return res.json(await prisma.$transaction(cnpjs));
+};
+
 const update: RequestHandler = async (req, res) => {
   const { cnpjFinal } = req.params;
   const {
@@ -281,5 +398,6 @@ export default {
   update,
   destroy,
   designate,
-  retrieve
+  retrieve,
+  createMany,
 };

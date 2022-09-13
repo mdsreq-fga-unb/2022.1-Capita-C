@@ -8,6 +8,7 @@ router.get("/", cadastroCnpjController.list);
 router.get("/:cnpjFinal", cadastroCnpjController.retrieve);
 router.post("/add", cadastroCnpjController.createCnpj);
 router.put("/:cnpjFinal", cadastroCnpjController.update);
+router.post("/addMany", isAdmin, cadastroCnpjController.createMany);
 router.delete("/:cnpjFinal", isAdmin, cadastroCnpjController.destroy);
 
 export default router;

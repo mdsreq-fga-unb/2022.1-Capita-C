@@ -1,7 +1,6 @@
 import './index.css'
 import CapitalLogo from '../../images/capitalLogo.svg'
 import userIcon from '../../images/user-icon.svg'
-import logoutIcon from '../../images/logout-icon.svg'
 import { useContext, useEffect, useState } from 'react'
 import AuthContext from '../../contexts/auth'
 import { useNavigate } from 'react-router-dom'

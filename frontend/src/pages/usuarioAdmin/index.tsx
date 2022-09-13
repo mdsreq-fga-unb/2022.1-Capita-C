@@ -1,42 +1,42 @@
-import React, { ChangeEvent, useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
-import './index.css';
-import editIcon from '../../images/edit-icon.svg'
-import deleteIcon from '../../images/delete-icon.svg'
 import { CardUsuario } from "../../components/cardUsuario";
+import { userList } from "../../services/user.api";
+import AuthContext from "../../contexts/auth";
+import './index.css';
+
+interface User {
+  cpf: string,
+  password: string,
+  name: string,
+  email: string,
+  isAdmin: Boolean,
+  isManager: Boolean,
+  isTelemarketing: Boolean,
+  status: Boolean,
+  designatedCnpjs: string[]
+}
 
 function Usuario() {
 
-  const usuarios = [{
-    "nome": "Ian",
-    "cpf": "12345678901",
-    "telefone": "61991324789",
-    "email": "ianzin@gmail.com",
-  }, {
-    "nome": "Iano",
-    "cpf": "12345678908",
-    "telefone": "61991824789",
-    "email": "ianzino@gmail.com",
-  }, {
-    "nome": "Iane",
-    "cpf": "12345678902",
-    "telefone": "61991224789",
-    "email": "ianzine@gmail.com",
-  }, {
-    "nome": "Iani",
-    "cpf": "12345678906",
-    "telefone": "61991624789",
-    "email": "ianzini@gmail.com",
+  const {token}  =  useContext(AuthContext);
+  const [users, setUsers] = useState<User[] | []>([])
+  const [count, setCount] = useState(users.length);
 
-  }, {
-    "nome": "Ianu",
-    "cpf": "12345678701",
-    "telefone": "61971324789",
-    "email": "ianzinu@gmail.com",
-  }]
+  useEffect(() => {
+    async function getUser(token: string) {
+      const response = await userList(token);
+      if (response) {
+        setUsers(response.data)
+        setCount(response.data.length)
+      }
+    }
 
-  const [count, setCount] = useState(5);
+    if (token) {
+      getUser(token)
+    }
+  }, []) // pegar os usuários apenas uma vez atravez do service
 
   return (
     <div className="main">
@@ -54,9 +54,9 @@ function Usuario() {
           </div>
           <text id='titulo' >USUARIOS</text>
           <div className="cards">
-            {usuarios.map((element, i) => {
+            {users.map((element, i) => {
               return (
-                <CardUsuario nome={element.nome} cpf={element.cpf} telefone={element.telefone} email={element.email} />
+                <CardUsuario nome={element.name} cpf={element.cpf} email={element.email} />
               )
             })}
           </div>

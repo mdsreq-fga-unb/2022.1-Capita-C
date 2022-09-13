@@ -1,6 +1,5 @@
 **/.classpath
 **/.dockerignore
-**/.env
 **/.git
 **/.gitignore
 **/.project
@@ -33,6 +32,4 @@ src/
 .github/
 tsconfig.json
 tsconfig.build.json
-env/
-!env/.example.env
 docs/

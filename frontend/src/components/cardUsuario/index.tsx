@@ -10,10 +10,10 @@ interface CardProps {
 
 }
 
-export function CardUsuario({ nome, cpf, telefone, email }: CardProps) {
+export function CardUsuario({ nome, cpf, email }: CardProps) {
     return (
         <div className="cardWraper">
-            <text className='usuario-nome' onClick={() => alert(`cnpj: ${cpf}, telefone: ${telefone}, cep: ${email}`)} >{nome}</text>
+            <text className='usuario-nome' onClick={() => alert(`cnpj: ${cpf}, cep: ${email}`)} >{nome}</text>
             <div className='icons'>
                 <img onClick={() => alert("editar")} src={editIcon} />
             </div>

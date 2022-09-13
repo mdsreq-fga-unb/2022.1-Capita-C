@@ -15,11 +15,11 @@
 
 <li>Ao contrário:
   <p style="text-align: justify">Do uso do sistema Pipefy, que mesmo sendo um sistema de gestão de processos, ele possui diversas críticas sobre a real utilidade dele pelos usuários, devido a atualizações recentes, e da utilização de planilhas compartilhadas pelo google docs.</p>
-  <p style="text-align: justify">Além do uso do sistema SalesForce, esse que possui valores altíssimos para se adiquirir, tornando impossivel para empresas menores utiizarem dele. </p>
+  <p style="text-align: justify">Além do uso do sistema SalesForce, esse que possui valores altíssimos para se adiquirir, tornando impossivel para empresas menores utilizarem dele. </p>
 </li>
 
 <li>Nosso produto:
-  <p style="text-align: justify">Promove um serviço que facilita o trabalho da empresa, podendo tornar a etapa de contato com potenciais clientes mais rápida e fácil, além de aumentar as chances de manter eles ativos.</p>
+  <p style="text-align: justify">Promove um serviço que facilita o trabalho da empresa, podendo tornar a etapa de contato com potenciais clientes mais rápida e fácil, além de aumentar as chances de mantê-los ativos.</p>
 </li>
 
 </ul>
@@ -33,3 +33,4 @@
 | ---------- | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | 30/06/2022 | 0.1    | Versão inicial                      | [Ana Caroline](https://github.com/anaaroch) e [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
 | 19/07/2022 | 0.2    | Atualizações para entrega Unidade 2 | [André Corrêa](https://github.com/dartmol203)                                                               |
+| 13/09/2022 | 0.3    | Atualizações para entrega Unidade 4 | [Gabriel Luiz](https://github.com/ggomesbr)                                                                 |
