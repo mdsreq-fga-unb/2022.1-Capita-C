@@ -24,7 +24,7 @@ const Profile = () => {
 
     const handleClick = async () => {
         try {
-            context.signIn(user).then(() => navigate("/home")) // loga e redireciona para pagina home
+            navigate("/home") //redireciona para pagina home
         } catch (error) {
             alert("Erro")
         }

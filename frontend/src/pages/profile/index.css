@@ -82,19 +82,3 @@
     height: 30px;
     text-align: left;
 }
-
-#semLogin {
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0%;
-}
-
-.otherLogin {
-    cursor: pointer;
-    color: var(--color-primary);
-    font-size: 12px;
-}
-
-.otherLoginText {
-    font-size: 12px;
-}
