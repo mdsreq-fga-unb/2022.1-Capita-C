@@ -71,5 +71,5 @@
 | 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
 | 21/07/2022 | 0.2.1  | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
 | 18/08/2022 | 0.3    | Adição de conteúdo         | [André Corrêa](https://github.com/dartmol203)                                               |
-| 08/09/2022 | 0.3    | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
-| 12/09/2022 | 0.4    | Adição de conteúdo         | [Alexia Naara](https://github.com/alexianaa) e [Davi Pierre](https://github.com/DaviPierre) |
+| 08/09/2022 | 0.4    | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
+| 12/09/2022 | 0.5    | Adição de conteúdo         | [Alexia Naara](https://github.com/alexianaa) e [Davi Pierre](https://github.com/DaviPierre) |
