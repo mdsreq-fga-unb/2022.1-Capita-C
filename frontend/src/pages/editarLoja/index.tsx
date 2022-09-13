@@ -3,7 +3,7 @@ import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
-import { editarLojaService, listarLojaInfo } from '../../services/lojas.api';
+import { editarEmailServise, editarLojaService, listarLojaInfo } from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
 
 interface User {
@@ -123,6 +123,9 @@ const EditarLoja = () => {
             if (name == 'cep') {
                 let valor = Number(value)
                 setLoja({ ...loja, [name]: valor })
+            } if(name == 'correioEletronico') {
+                loja.correioEletronico[0].email = value
+                setLoja(loja)
             } else {
                 setLoja({ ...loja, [name]: value })
             }
@@ -138,7 +141,13 @@ const EditarLoja = () => {
                 const response = await editarLojaService(cnpj, token, loja)
 
                 // se tiver mudanca de email
-                //const emailResponse = await editarLojaService(loja?.correioEletronico[0].email, token, loja?.correioEletronico[0])
+                let email = alteracoes.find(element => element.campo == 'correioEletronico')
+                if(email){
+                    const emailResponse = await editarEmailServise(email.valor.toString(), token, loja?.correioEletronico[0])
+                    if(emailResponse){
+                        console.log(emailResponse.data)
+                    }
+                }
                 
                 // se tiver mudanca de telefone
 

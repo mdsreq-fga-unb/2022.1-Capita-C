@@ -54,13 +54,20 @@ export const editarLojaService = async (cnpj: string, token: string, loja: any) 
     }
 }
 
-export const editarEmailServise = async (email: string, token: string, newEmail: string) => {
+export const editarEmailServise = async (newEmail: string, token: string, correioEletronico: {email: string, origemEmail: string}) => {
     try {
+        const email = correioEletronico.email
+        const origemEmail = correioEletronico.origemEmail
+        const objectEmail = {
+            newEmail: newEmail,
+            origemEmail: origemEmail
+        }
+        console.log(objectEmail)
         const config = {
             headers: { Authorization: `Bearer ${token}` }
         };
         const url = `http://localhost:3000/api/email/${email}`
-        const response = await axios.put(url, newEmail, config)
+        const response = await axios.put(url, objectEmail, config)
         return response;
     } catch (error) {
 
