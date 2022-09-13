@@ -5,9 +5,9 @@ import UserRoutes from "./UserRoutes";
 import AdminRoutes from "./AdminRoutes";
 
 export const Routes = () => {
-    const { signed, admin } = useContext(AuthContext);
+    const { signed, gerente } = useContext(AuthContext);
     if (signed){
-        return admin ? <AdminRoutes/> : <UserRoutes/>
+        return gerente ? <AdminRoutes/> : <UserRoutes/>
     }else{
         return <SignRoutes/>
     }

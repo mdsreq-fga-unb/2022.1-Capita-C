@@ -22,6 +22,10 @@
     
 }
 
+#textDiv{
+    position: relative;
+}
+
 #ver{
     position:relative;
     left: 450px;
