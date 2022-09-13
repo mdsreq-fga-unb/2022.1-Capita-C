@@ -8,9 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 interface User {
     name: string,
-    email: string,
-    password: string,
-    id: Number
+    email: string
 }
 
 export function Header() {
@@ -24,15 +22,6 @@ export function Header() {
             setUser(JSON.parse(storagedUser));
         }
     }, []);
-
-    function handleClick() {
-        try {
-            context.logOut();
-            navigate('/')
-        } catch (error) {
-            alert("Não foi possivel realizar a açao")
-        }
-    }
 
     return (
         <div className="header">
@@ -48,12 +37,6 @@ export function Header() {
                             <img className="user-icon" src={userIcon} style={{height: 15}} />
                             <text className='header-text'> {user.name}</text>
                         </div>
-
-                        <div className="button-logout" onClick={() => handleClick()}>
-                            <img className='logout-icon' src={logoutIcon} />
-                            <text className='header-text'> sign out</text>
-                        </div>
-
                     </div>
                     : <div></div>}
             </div>

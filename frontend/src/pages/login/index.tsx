@@ -8,6 +8,7 @@ import CapitalLogo from '../../images/capitalLogo.svg'
 const Login = () => {
     const [user, setUser] = useState({ cpf: '', password: '' });
     const context = useContext(AuthContext);
+    let navigate = useNavigate;
 
     function handleInput(e: ChangeEvent<HTMLInputElement>) {
         // ao mudar as informacoes das caixas de texto guarda os valores em user
@@ -60,3 +61,4 @@ const Login = () => {
 }
 
 export default Login;
+

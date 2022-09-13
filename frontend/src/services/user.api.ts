@@ -18,3 +18,16 @@ export const criarUsuarioService = async (User: any) => {
 
     }
 }
+
+export const userList = async (token: string) => {
+    try {
+        const config = {
+            headers: { Authorization: `Bearer ${token}`}
+        };
+        const url = `http://localhost:3000/api/user`
+        const response = await axios.get(url, config)
+        return response;
+    } catch (err) {
+        console.log(err);
+    }
+}
