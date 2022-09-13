@@ -170,6 +170,7 @@ const update: RequestHandler = async (req, res) => {
   const { cnpjFinal } = req.params;
   const {
     tipoLogradouro,
+    nomeFantasia,
     logradouro,
     numero,
     complemento,
@@ -178,6 +179,8 @@ const update: RequestHandler = async (req, res) => {
     atribuido,
     parceriaAceita,
     responsavel,
+    unidadeFederativa,
+    identificadorMatrizFiliar
   } = req.body;
   const cnpj = await prisma.cadastroCnpj.update({
     where: {
@@ -185,6 +188,7 @@ const update: RequestHandler = async (req, res) => {
     },
     data: {
       tipoLogradouro,
+      nomeFantasia,
       logradouro,
       numero,
       complemento,
@@ -193,6 +197,8 @@ const update: RequestHandler = async (req, res) => {
       atribuido,
       parceriaAceita,
       responsavel,
+      unidadeFederativa,
+      identificadorMatrizFiliar
     },
     select: {
       cnpjFinal: true,

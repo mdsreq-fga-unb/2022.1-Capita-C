@@ -43,56 +43,113 @@ interface Loja {
     responsavelCpf: string,
     responsavel: User
 }
+interface Alteracoes {
+    campo: string,
+    valor: string | boolean | string[] | {}[] | Number
+}
+
 const EditarLoja = () => {
-    const { cnpj } = useParams();
-    const { token } = useContext(AuthContext)
-    const [loja, setLoja] = useState<Loja>()
-    const [parceriaStatus, setParceriaStatus] = useState()
-    const logEdicao = []
+    const { cnpj } = useParams(); // cnpj vem da url
+    const [user, setUser] = useState<User>();
+    const { token } = useContext(AuthContext) // token esta armazenado no localStorage
+    const [loja, setLoja] = useState<Loja>()  // state para guardar informacoes da loja
+
+    // informacoes para log de edicao
+    const date = new Date();
+    const camposLoja = ['nomeFantasia', 'identificadorMatrizFiliar', 'parceriaAceita', 'telefone[0]', 'telefone[1]',
+        'correioEletronico', 'telefone', 'cep', 'logradouro', 'bairro', 'unidadeFederativa', 'municipio', 'numero']
+    const [alteracoes, setAlteracoes] = useState<Alteracoes[]>([{ campo: 'numero', valor: 1700 }])
 
     // opcoes dos campos de select
     const optionsParceria = ['Aceita', 'Processando', 'Recusada'];
+    const optionsEstado = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MS', 'MT', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO',]
+    const optionsIdentificador = ['Matriz', 'Filial']
 
-    async function getLoja(cnpj: string, token: string) {
-        const response = await listarLojaInfo(cnpj, token);
-        if (response) {
-            setLoja(response.data)
-            setParceriaStatus(response.data.parceriaAceita)
-        }
-    }
+    const [parceriaStatus, setParceriaStatus] = useState()
+    const [uf, setUf] = useState()
+    const [identificador, setIdentificador] = useState()
 
     useEffect(() => {
+
+        // armazenar informacoes da loja atual localmente a partir do banco
+        async function getLoja(cnpj: string, token: string) {
+            const response = await listarLojaInfo(cnpj, token);
+            if (response) {
+                setLoja(response.data)
+                setParceriaStatus(response.data.parceriaAceita)
+                setUf(response.data.unidadeFederativa)
+                setIdentificador(response.data.identificadorMatrizFiliar)
+            }
+        }
 
         if (cnpj && token) {
             getLoja(cnpj, token)
         }
 
+        const storagedUser = localStorage.getItem('@App:user');
+        if (storagedUser) {
+            setUser(JSON.parse(storagedUser));
+        }
+
     }, [])
 
-    function handleInput(e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
-        // ao mudar as informacoes das caixas de texto guarda os valores em user
+    function handleInput(e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
+        // name = campo alterado, value = novo valor alocado no campo (muda a cada caractere alterada)
         const { value, name } = e.currentTarget
-        if (name === 'atribuido' && loja) {
-            if (value == 'Verdadeiro') {
-                setLoja({ ...loja, [name]: true })
-            } else {
-                setLoja({ ...loja, [name]: false })
+
+        // armazenar campos alterados
+        let achou = false
+        if (alteracoes) {
+            // busca se o campo ja esta nas alteracoes
+            alteracoes.map((item, index) => {
+                // se achou significa que o valor deve ser alterado
+                if (item.campo == name) {
+                    achou = true
+                    alteracoes[index].valor = value
+                    setAlteracoes(alteracoes)
+                }
+            })
+
+            if (achou == false) {
+                setAlteracoes([...alteracoes, { campo: name, valor: value }])
             }
         } else {
-            if (loja) {
+            // caso seja o primeiro campo
+            setAlteracoes([{ campo: name, valor: value }])
+        }
+
+        // alterar os valores da loja localmente
+        if (loja) {
+            if (name == 'cep') {
+                let valor = Number(value)
+                setLoja({ ...loja, [name]: valor })
+            } else {
                 setLoja({ ...loja, [name]: value })
             }
         }
+
     }
 
     async function handleSubmit(cnpj: string | undefined, token: string | null, loja: Loja | undefined) {
         if (cnpj && token && loja) {
-            const response = await editarLojaService(cnpj, token, loja)
-            if (response) {
-                getLoja(cnpj, token)
-                return (
-                    alert("Atualizado com sucesso!")
-                )
+
+            try {
+                // altera as informacoes da loja menos email e telefone
+                const response = await editarLojaService(cnpj, token, loja)
+
+                // se tiver mudanca de email
+                //const emailResponse = await editarLojaService(loja?.correioEletronico[0].email, token, loja?.correioEletronico[0])
+                
+                // se tiver mudanca de telefone
+
+                if (response?.data) {
+                    return (
+                        alert("Atualizado com sucesso!")
+                    )
+                }
+
+            } catch (error) {
+                console.log(error)
             }
         }
     }
@@ -107,11 +164,18 @@ const EditarLoja = () => {
                         <text className="title" >Editar Loja</text>
 
                         <text className="inputTitle" >Nome da loja</text>
-                        <input className="inputBox" name="nomeFantasia" disabled defaultValue={loja?.nomeFantasia} ></input>
+                        <input className="inputBox" name="nomeFantasia" defaultValue={loja?.nomeFantasia} onChange={(e) => handleInput(e)} ></input>
                         <text className="inputTitle" >CNPJ</text>
                         <input className="inputBox" name="cnpjFinal" disabled defaultValue={loja?.cnpjFinal} ></input>
                         <text className="inputTitle" >Identificador</text>
-                        <input className="inputBox" name="identificadorMatrizFiliar" disabled defaultValue={loja?.identificadorMatrizFiliar}  ></input>
+                        {
+                            identificador &&
+                            <select className="inputBox" name="identificadorMatrizFiliar" defaultValue={identificador} onChange={(e) => handleInput(e)} >
+                                {
+                                    optionsIdentificador.map((item) => { return (<option >{item}</option>) })
+                                }
+                            </select>
+                        }
                         <div className="minorDiv">
                             <text className="inputTitle" >Atribuição</text>
                             <text className="inputTitle" >Status de Parceria</text>
@@ -138,7 +202,7 @@ const EditarLoja = () => {
                         <text className="inputTitle" >Telefone Secundário</text>
                         <input className="inputBox" name="telefone[1]" defaultValue={loja?.telefone[1].numeroTelefone} onChange={(e) => handleInput(e)} ></input>
                         <text className="inputTitle" >E-mail</text>
-                        <input className="inputBox" name="correioEletronico" disabled defaultValue={loja?.correioEletronico[0].email} onChange={(e) => handleInput(e)} ></input>
+                        <input className="inputBox" name="correioEletronico" defaultValue={loja?.correioEletronico[0].email} onChange={(e) => handleInput(e)} ></input>
                     </div>
                     <div className="section" >
                         <text style={{ marginTop: 5, marginBottom: 5 }} >Endereço</text>
@@ -153,10 +217,17 @@ const EditarLoja = () => {
                         </div>
                         <div className="minorDiv" >
                             <input className="minorInput" name="bairro" defaultValue={loja?.bairro} onChange={(e) => handleInput(e)} ></input>
-                            <input className="minorInput" name="unidadeFederativa" defaultValue={loja?.unidadeFederativa} onChange={(e) => handleInput(e)} ></input>
+                            {
+                                uf &&
+                                <select className="minorInput" name="unidadeFederativa" defaultValue={uf} onChange={(e) => handleInput(e)} >
+                                    {
+                                        optionsEstado.map((item) => { return (<option >{item}</option>) })
+                                    }
+                                </select>
+                            }
                         </div>
                         <text className="inputTitle" >Observação</text>
-                        <input className="inputBox" name="complemento" style={{ height: 50 }} defaultValue={loja?.complemento} onChange={(e) => handleInput(e)} ></input>
+                        <textarea className="inputBox" name="complemento" disabled style={{ height: 100 }} defaultValue={loja?.complemento} onChange={(e) => handleInput(e)} ></textarea>
                     </div>
                     <div className="divBotao">
                         <div className="editBotao" >

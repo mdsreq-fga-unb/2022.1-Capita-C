@@ -19,7 +19,7 @@ export function Sidebar() {
                     </div>
                     <div className='notSelected'>   
                         <img className='menu-hamburguer' src={MenuHamburguer}/>   
-                        <span >USUŚRIOS</span>
+                        <span >USUÁRIOS</span>
                     </div>
                 </ul>
             </div>

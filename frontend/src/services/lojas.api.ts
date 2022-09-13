@@ -39,7 +39,7 @@ export const deletarLojaService = async (cnpj: string, token: string) => {
     } catch (error) {
         console.log(error)
     }
-}  
+}
 
 export const editarLojaService = async (cnpj: string, token: string, loja: any) => {
     try {
@@ -47,9 +47,22 @@ export const editarLojaService = async (cnpj: string, token: string, loja: any) 
             headers: { Authorization: `Bearer ${token}` }
         };
         const url = `http://localhost:3000/api/cnpj/${cnpj}`
-        const response = await axios.patch(url, loja, config)
+        const response = await axios.put(url, loja, config)
         return response;
     } catch (error) {
         console.log(error)
+    }
+}
+
+export const editarEmailServise = async (email: string, token: string, newEmail: string) => {
+    try {
+        const config = {
+            headers: { Authorization: `Bearer ${token}` }
+        };
+        const url = `http://localhost:3000/api/email/${email}`
+        const response = await axios.put(url, newEmail, config)
+        return response;
+    } catch (error) {
+
     }
 }

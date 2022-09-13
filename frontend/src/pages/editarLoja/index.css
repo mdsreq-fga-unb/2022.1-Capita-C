@@ -44,6 +44,8 @@
     background-color: var(--background);
     width: 100%;
     padding: 5px;
+    font-family: var(--font-family);
+    overflow: hidden;
 }
 
 .minorDiv {
