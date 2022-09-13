@@ -9,3 +9,4 @@
 | ---------- | ------ | --------------- | ------------------------------------------------------------------------------------------- |
 | 06/09/2022 | 0.1    | Versão inicial  | [André Corrêa](https://github.com/dartmol203) e [Gabriel Luiz](https://github.com/ggomesbr) |
 | 08/09/2022 | 0.2    | correção rapida | [André Corrêa](https://github.com/dartmol203)                                               |
+| 13/09/2022 | 0.3    | Versão final    | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
