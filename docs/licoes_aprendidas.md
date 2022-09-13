@@ -66,10 +66,12 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                  | Autor                                             |
-| ---------- | ------ | -------------------------- | ------------------------------------------------- |
-| 30/06/2022 | 0.1    | Versão inicial             | [Augusto Camargo](https://github.com/augustocrmg) |
-| 01/07/2022 | 0.1.1  | Pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)     |
-| 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)       |
-| 21/07/2022 | 0.2.1  | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)       |
-| 18/08/2022 | 0.3    | Adição de conteúdo         | [André Corrêa](https://github.com/dartmol203)     |
+| Data       | Versão | Descrição                  | Autor                                                                                       |
+| ---------- | ------ | -------------------------- | ------------------------------------------------------------------------------------------- |
+| 30/06/2022 | 0.1    | Versão inicial             | [Augusto Camargo](https://github.com/augustocrmg)                                           |
+| 01/07/2022 | 0.1.1  | Pequena correção na tabela | [André Corrêa](https://github.com/dartmol203)                                               |
+| 21/07/2022 | 0.2    | Atualização para Unidade 2 | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
+| 21/07/2022 | 0.2.1  | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
+| 18/08/2022 | 0.3    | Adição de conteúdo         | [André Corrêa](https://github.com/dartmol203)                                               |
+| 08/09/2022 | 0.4    | Adição de conteúdo         | [Gabriel Luiz](https://github.com/ggomesbr)                                                 |
+| 12/09/2022 | 0.5    | Adição de conteúdo         | [Alexia Naara](https://github.com/alexianaa) e [Davi Pierre](https://github.com/DaviPierre) |
