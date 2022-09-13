@@ -45,7 +45,7 @@ function Usuario(){
         <Sidebar />
         <div className="index">
           <div className="header-usuarios">
-            <span id='totalLojas' >Total de usuarios: {count}</span>
+            <span id='totalUsuarios' >Total de usuarios: {count}</span>
             <span id='adicionarUsuario'>
               <div id='addUsuarioText'>
                 + Adicionar Usuario
