@@ -48,6 +48,11 @@ interface Alteracoes {
     valor: string | boolean | string[] | {}[] | Number
 }
 
+interface Telefone {
+    numeroTelefone: string,
+    origemTelefone: string
+}
+
 const EditarLoja = () => {
     const { cnpj } = useParams(); // cnpj vem da url
     const [user, setUser] = useState<User>();
@@ -58,7 +63,7 @@ const EditarLoja = () => {
     const date = new Date();
     const camposLoja = ['nomeFantasia', 'identificadorMatrizFiliar', 'parceriaAceita', 'telefone[0]', 'telefone[1]',
         'correioEletronico', 'telefone', 'cep', 'logradouro', 'bairro', 'unidadeFederativa', 'municipio', 'numero']
-    const [alteracoes, setAlteracoes] = useState<Alteracoes[]>([{ campo: 'numero', valor: 1700 }])
+    const [alteracoes, setAlteracoes] = useState<Alteracoes[]>([])
 
     // opcoes dos campos de select
     const optionsParceria = ['Aceita', 'Processando', 'Recusada'];
@@ -97,6 +102,24 @@ const EditarLoja = () => {
         // name = campo alterado, value = novo valor alocado no campo (muda a cada caractere alterada)
         const { value, name } = e.currentTarget
 
+        // alterar os valores da loja localmente
+        if (loja) {
+            if (name === 'cep') {
+                let valor = Number(value)
+                setLoja({ ...loja, [name]: valor })
+            } if (name === 'correioEletronico') {
+                loja.correioEletronico[0].email = value
+                setLoja(loja)
+            } if (name === 'telefone[0]') {
+                loja.telefone.push(loja.telefone[0])
+            } if (name === 'telefone[1]') {
+                loja.telefone.push(loja.telefone[1])
+            }
+            else {
+                setLoja({ ...loja, [name]: value })
+            }
+        }
+
         // armazenar campos alterados
         let achou = false
         if (alteracoes) {
@@ -118,27 +141,7 @@ const EditarLoja = () => {
             setAlteracoes([{ campo: name, valor: value }])
         }
 
-        // alterar os valores da loja localmente
-        if (loja) {
-            if (name == 'cep') {
-                let valor = Number(value)
-                setLoja({ ...loja, [name]: valor })
-            } if (name == 'correioEletronico') {
-                loja.correioEletronico[0].email = value
-                setLoja(loja)
-            } if (name == 'telefone[0]') {
-                loja.telefone.push(loja.telefone[0]) // adiciona o telefone antigo na proxima posicao disponivel
-                loja.telefone[0].numeroTelefone = value // troca valor do telefone pelo do usuario
-                setLoja(loja) // atualiza loja
-            } if (name == 'telefone[1]') {
-                loja.telefone.push(loja.telefone[1])
-                loja.telefone[1].numeroTelefone = value
-                setLoja(loja)
-            }
-            else {
-                setLoja({ ...loja, [name]: value })
-            }
-        }
+        console.log(name, value)
 
     }
 
@@ -153,21 +156,27 @@ const EditarLoja = () => {
                 let email = alteracoes.find(element => element.campo == 'correioEletronico')
                 if (email) {
                     const emailResponse = await editarEmailServise(email.valor.toString(), token, loja?.correioEletronico[0])
-                    emailResponse? '' : alert("Não foi possível editar o email")
+                    if (!emailResponse) alert("Não foi possível editar o email")
                 }
 
                 // se tiver mudanca de telefone
                 let telefone0 = alteracoes.find(element => element.campo == 'telefone[0]')
                 let telefone1 = alteracoes.find(element => element.campo == 'telefone[1]')
+                console.log(telefone0,telefone1)
                 if (telefone0) {
-                    const telefoneResponse = await editarTelefoneServise(token, telefone0.valor.toString(), loja?.telefone[0])
-                    telefoneResponse? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone")
+                    const telefoneResponse = await editarTelefoneServise(token, telefone0.valor.toString(), loja.telefone[0])
+                    telefoneResponse ? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone")
+                    loja.telefone[0].numeroTelefone = telefone0.valor.toString()
+                    setLoja(loja)
                 }
                 if (telefone1) {
-                    const telefoneResponse = await editarTelefoneServise(token, telefone1.valor.toString(), loja?.telefone[1])
-                    telefoneResponse? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone secundário")
+                    const telefoneResponse = await editarTelefoneServise(token, telefone1.valor.toString(), loja.telefone[1])
+                    telefoneResponse ? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone secundário")
+                    loja.telefone[1].numeroTelefone = telefone1.valor.toString()
+                    setLoja(loja)
                 }
-            
+
+
                 if (response?.data) {
                     return (
                         alert("Atualizado com sucesso!")

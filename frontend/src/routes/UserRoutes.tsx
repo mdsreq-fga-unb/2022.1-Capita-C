@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import EditarLoja from '../pages/editarLoja';
-import { ErrorPage } from '../pages/erropage';
+import { ErrorPage } from '../pages/erro';
 import HomePageUser from '../pages/homeUser';
 
 const UserRoutes: React.FC = () => {
@@ -9,7 +9,8 @@ const UserRoutes: React.FC = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<HomePageUser />} />
-                <Route path="/edit/:id" element={<EditarLoja />} />
+                <Route path="/loja-edit/:cnpj" element={<EditarLoja />} />
+                <Route path='/perfil' element={<HomePageUser />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter>

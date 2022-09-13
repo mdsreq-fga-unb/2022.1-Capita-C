@@ -16,14 +16,13 @@
 
 .menu{
     display: flex;
-    background-color: rgba(217,217,217,0.5);
 }
 
 .notSelected {
     display: flex;
 }
 
-span{
+.names{
     padding: 0.5rem;
     font-size: 14px;
     align-self: center;
