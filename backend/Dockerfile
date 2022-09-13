@@ -6,6 +6,7 @@ WORKDIR /app
 # Copy the dependencies file
 COPY package*.json ./
 COPY prisma ./prisma/
+COPY ./insertData/final.json ./ 
 
 # Install dependencies
 RUN npm install --silent --only=production
