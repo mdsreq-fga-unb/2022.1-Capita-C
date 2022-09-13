@@ -14,6 +14,10 @@
     <p style="text-align: justify">Durante a <b>Unidade 3</b>, houve um avanço interessante na compreensão de todo o processo de desenvonvimento, desde a construção de um, até a manutenção do mesmo, o workshop ocorrido durante a SBPC foi de grande valor para esse entendimento. Entretanto, ainda há muito o que melhorar no trabalho em equipe para que seja possível atingir o objetivo final da disciplina.</p>
 </div>
 
+<div>
+    <p style="text-align: justify">Ao decorrer da matéria conseguimos aprender mais sobre métodos de desenvolvimento de software e a importância do planejamento em um projeto e como cada passo antes, durante e depois do desenvolvimento é afetado a partir de decisões no começo. Na <b>Unidade 4</b>, especificamente, pudemos aprender mais sobre GCS e como elas são aplicadas no dia a dia, além de ter um contato maior com a tecnologia utilizada no projeto e lógica de programação. Não conseguimos produzir o tanto quanto queríamos, nos empolgamos com a ideia do projeto e não levamos em consideração o tempo e a capacitação do time, mas foi uma ótima experiência e tivemos vários aprendizados para futuras matérias.</p>
+</div>
+
 ### Requisitos
 
 <div>

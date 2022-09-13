@@ -23,15 +23,11 @@
 </li>
 
 <li>
-  <p style="text-align: justify">RF3 - Deletar Usuário;</p>
+  <p style="text-align: justify">RF3 - Editar Usuário;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF4 - Editar Usuário;</p>
-</li>
-
-<li>
-  <p style="text-align: justify">RF5 - Ver Usuário;</p>
+  <p style="text-align: justify">RF4 - Ver Usuário;</p>
 </li>
 </ul>
 
@@ -39,23 +35,19 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF6 - Cadastrar Lojas;</p>
+  <p style="text-align: justify">RF5 - Cadastrar Lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF7 - Editar Lojas;</p>
+  <p style="text-align: justify">RF6 - Editar Lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF8 - Ver Lojas;</p>
+  <p style="text-align: justify">RF7 - Ver Lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF9 - Deletar Lojas;</p>
-</li>
-
-<li>
-  <p style="text-align: justify">RF10 - Atribuir lojas a atendente de telemarketing;</p>
+  <p style="text-align: justify">RF8 - Atribuir lojas a atendente de telemarketing;</p>
 </li>
 
 </ul>
@@ -64,23 +56,19 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF11 - Gerar relatório de lojas cadastradas;</p>
+  <p style="text-align: justify">RF9 - Gerar relatório de lojas cadastradas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF12 - Exportar dados de lojas cadastradas;</p>
+  <p style="text-align: justify">RF10 - Gerar relatórios de usuários;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF13 - Gerar relatórios de usuários;</p>
+  <p style="text-align: justify">RF11 - Importar dados de bases externas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF14 - Importar dados de bases externas;</p>
-</li>
-
-<li>
-  <p style="text-align: justify">RF15 - Visualizar log de alterações realizadas no cadastro de uma loja;</p>
+  <p style="text-align: justify">RF12 - Visualizar log de alterações realizadas no cadastro de uma loja;</p>
 </li>
 </ul>
 
@@ -88,11 +76,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF16 - Visualizar lista de lojas para entrar em contato no dia;</p>
+  <p style="text-align: justify">RF13 - Visualizar lista de lojas para entrar em contato no dia;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF17 - Visualizar taxas de efetivação;</p>
+  <p style="text-align: justify">RF14 - Visualizar taxas de efetivação;</p>
 </li>
 </ul>
 
@@ -102,19 +90,19 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF18 - Enviar emails para lojas;</p>
+  <p style="text-align: justify">RF15 - Enviar emails para lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF19 - Visualizar emails recebidos;</p>
+  <p style="text-align: justify">RF16 - Visualizar emails recebidos;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF20 - Enviar mensagens via whatsapp para lojas;</p>
+  <p style="text-align: justify">RF17 - Enviar mensagens via whatsapp para lojas;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF21 - Visualizar mensagens whatsapp recebidas;</p>
+  <p style="text-align: justify">RF18 - Visualizar mensagens whatsapp recebidas;</p>
 </li>
 </ul>
 
@@ -122,11 +110,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF22 - Receber indicação de lojas para dar maior atenção;</p>
+  <p style="text-align: justify">RF19 - Receber indicação de lojas para dar maior atenção;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF23 - Acompanhar balanço de vendas;</p>
+  <p style="text-align: justify">RF20 - Acompanhar balanço de vendas;</p>
 </li>
 </ul>
 
@@ -134,11 +122,11 @@
 
 <ul>
 <li>
-  <p style="text-align: justify">RF24 - Receber dados de regiões com pouca efetivação;</p>
+  <p style="text-align: justify">RF21 - Receber dados de regiões com pouca efetivação;</p>
 </li>
 
 <li>
-  <p style="text-align: justify">RF25 - Receber previsões de crescimento de clientes;</p>
+  <p style="text-align: justify">RF22 - Receber previsões de crescimento de clientes;</p>
 </li>
 
 </ul>
