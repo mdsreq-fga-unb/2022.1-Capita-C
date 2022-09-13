@@ -6,9 +6,9 @@ import LogoImage from '../../images/LogoBackground.svg'
 import CapitalLogo from '../../images/capitalLogo.svg'
 
 const Login = () => {
-    const [user, setUser] = useState({ cpf: '', senha: '' });
+    const [user, setUser] = useState({ cpf: '', password: '' });
     const context = useContext(AuthContext);
-    let navigate = useNavigate();
+    let navigate = useNavigate;
 
     function handleInput(e: ChangeEvent<HTMLInputElement>) {
         // ao mudar as informacoes das caixas de texto guarda os valores em user
@@ -18,7 +18,7 @@ const Login = () => {
 
     const handleClick = async () => {
         try {
-            context.signIn(user).then(() => navigate("/home")) // loga e redireciona para pagina home
+            context.signIn(user)// loga e redireciona para pagina home
         } catch (error) {
             alert("Erro ao logar")
         }
@@ -41,18 +41,13 @@ const Login = () => {
                     <div id="formDiv">
                         <div className="inputDiv" >
                             <text className="inputText" >CPF: </text>
-                            <input className="input" name="cpf" value={user.cpf} onChange={e => handleInput(e)} />
+                            <input className="input" name="cpf" defaultValue={user.cpf} onChange={e => handleInput(e)} />
                         </div>
                         <div className="inputDiv" >
                             <text className="inputText" >Senha: </text>
-                            <input className="input" type="password" name="senha" value={user.senha} onChange={e => handleInput(e)} />
+                            <input className="input" type="password" name="password" defaultValue={user.password} onChange={e => handleInput(e)} />
                         </div>
                         <button id="btn" onClick={() => { handleClick() }} >LOGIN</button>
-                    </div>
-                    <div id="semLogin" >
-                        <p className="otherLogin" onClick={() => alert("Recuperar Senha")} >Recuperar senha</p>
-                        <text className="otherLoginText" >Não possui conta? </text>
-                        <text className="otherLogin" onClick={() => alert("Cadastre-se")} >Cadastre-se</text>
                     </div>
                 </div>
                 <img
@@ -66,3 +61,4 @@ const Login = () => {
 }
 
 export default Login;
+

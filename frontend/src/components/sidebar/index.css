@@ -1,5 +1,4 @@
 .sidebar{
-   height: calc(100vh - 5rem);
    width: 12rem;
    background-image: linear-gradient(var(--color-primary), var(--color-secondary));
    display: flex;
@@ -17,17 +16,18 @@
 
 .menu{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: rgba(217,217,217,0.5);
 }
 
-.menu>span{
+.notSelected {
+    display: flex;
+}
+
+.names{
     padding: 0.5rem;
-    width: 100%;
     font-size: 14px;
     align-self: center;
     height: 2rem;
+    color: #fff;
 }
 
 .imagem{

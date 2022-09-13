@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  font-family: var(--font-family);
+}
+
+.sidebar-index {
+  display: flex;
+}
+
+.index {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#totalUsuarios {
+  color: #969696;
+}
+
+.header-usuarios {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  /* border-bottom: 1px solid rgba(217, 217, 217, 0.5); */
+}
+
+
+.botao {
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  width: 140px;
+  height: 40px;
+  line-height: 35px;
+  box-sizing: border-box;
+  color: var(--color-primary);
+}
+
+.botao:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+.botaoText {
+  display: block
+}
+
+#titulo {
+  width: 35px;
+  height: 18px;
+  /* margin-left: 41%; */
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.header-usuarios>span {
+  color: black;
+}
+
+.cards {
+  height: calc(100vh - 16rem);
+  overflow-y: scroll;
+  /* display: grid; */
+  gap: 1rem;
+  margin-top: 30px;
+}

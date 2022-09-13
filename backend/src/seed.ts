@@ -68,7 +68,7 @@ prisma.user
             /* atribuido: true, */
             parceriaAceita: "Aceita",
             telefone: {
-              connectOrCreate: ["123123", "111"].map((numeroTelefone) => ({
+              connectOrCreate: ["615858585845", "61452485257"].map((numeroTelefone) => ({
                 where: { numeroTelefone },
                 create: { numeroTelefone },
               })),
