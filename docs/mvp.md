@@ -14,9 +14,10 @@
 
 **Histórico de Versões**
 
-| Data       | Versão | Descrição                     | Autor                                                         |
-| ---------- | ------ | ----------------------------- | ------------------------------------------------------------- |
-| 20/07/2022 | 0.1    | Versão inicial                | [André Corrêa](https://github.com/dartmol203)                 |
-| 22/07/2022 | 0.1.1  | Adicionando link para Imagem  | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 25/07/2022 | 0.1.2  | Adicionando link para o Mural | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
-| 18/08/2022 | 0.2    | att MVP1 e adição MVP2        | [André Corrêa](https://github.com/dartmol203)                 |
+| Data       | Versão | Descrição                       | Autor                                                         |
+| ---------- | ------ | ------------------------------- | ------------------------------------------------------------- |
+| 20/07/2022 | 0.1    | Versão inicial                  | [André Corrêa](https://github.com/dartmol203)                 |
+| 22/07/2022 | 0.1.1  | Adicionando link para Imagem    | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 25/07/2022 | 0.1.2  | Adicionando link para o Mural   | [Arthur Ferreira](https://github.com/ArthurFerreiraRodrigues) |
+| 18/08/2022 | 0.2    | att MVP1 e adição MVP2          | [André Corrêa](https://github.com/dartmol203)                 |
+| 12/09/2022 | 0.3    | Atualização das funcionalidades | [Gabriel Luiz](https://github.com/ggomesbr)                   |
