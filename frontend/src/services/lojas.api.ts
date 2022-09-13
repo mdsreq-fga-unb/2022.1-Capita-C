@@ -65,6 +65,7 @@ export const editarEmailServise = async (newEmail: string, token: string, correi
             headers: { Authorization: `Bearer ${token}` }
         };
         const url = `http://localhost:3000/api/email/${email}`
+        console.log(url)
         const response = await axios.put(url, objectEmail, config)
         return response;
     } catch (error) {

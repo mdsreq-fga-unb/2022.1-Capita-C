@@ -42,7 +42,7 @@ model CadastroCnpj {
   numero                    String?
   complemento               String?
   bairro                    String?
-  cep                       Int
+  cep                       String
   unidadeFederativa         String
   municipio                 String
   telefone                  Telefone[]
