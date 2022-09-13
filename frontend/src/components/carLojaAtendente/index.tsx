@@ -33,16 +33,3 @@ export function CardLojaUser({ nome, cnpj, telefone, cep, bairro }: CardProps) {
         </div>
     );
 } */
-
-// export function CardLoja(nome: String, cnpj:String, telefone: String, telefone2: String, cep: String, endereco: String){
-//     return(
-//         <div className="cardWraper">
-//                 <span>Nome: {nome}</span>
-//                 <span>CNPJ: {cnpj}</span>
-//                 <span>Telefone: {telefone}</span>
-//                 <span>Telefode Secundário: {telefone2}</span>
-//                 <span>CEP: {nome}</span>
-//                 <span>ENDERECO: {nome}</span>
-//         </div>
-//     );
-// }

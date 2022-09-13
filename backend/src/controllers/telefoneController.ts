@@ -52,13 +52,13 @@ const create: RequestHandler = async (req, res) => {
 
 const update: RequestHandler = async (req, res) => {
   const { numeroTelefone } = req.params;
-  const { origemTelefone } = req.body;
+  const { origemTelefone, newTelefone } = req.body;
   const telefone = await prisma.telefone.update({
     where: {
       numeroTelefone,
     },
     data: {
-      numeroTelefone,
+      numeroTelefone: newTelefone,
       origemTelefone,
     },
     select: {

@@ -52,13 +52,13 @@ const create: RequestHandler = async (req, res) => {
 
 const update: RequestHandler = async (req, res) => {
   const { email } = req.params;
-  const { origemEmail } = req.body;
+  const { newEmail, origemEmail } = req.body;
   const emailReq = await prisma.email.update({
     where: {
       email,
     },
     data: {
-      email,
+      email: newEmail,
       origemEmail,
     },
     select: {

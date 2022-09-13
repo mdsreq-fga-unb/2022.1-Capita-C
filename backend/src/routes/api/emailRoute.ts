@@ -5,7 +5,7 @@ const router = Router();
 
 router.get("/", emailController.list);
 router.post("/add", emailController.create);
-router.patch("/:email", emailController.update);
+router.put("/:email", emailController.update);
 router.delete("/:email", emailController.destroy);
 
 export default router;

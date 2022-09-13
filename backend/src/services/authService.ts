@@ -49,10 +49,12 @@ async function getUserByToken(token: string) {
     select: {
       cpf: true,
       name: true,
+      email: true,
       isAdmin: true,
       isManager: true,
       isTelemarketing: true,
       status: true,
+      designatedCnpjs: true
     },
   });
 

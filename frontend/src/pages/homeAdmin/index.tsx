@@ -1,46 +1,66 @@
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
 import './index.css';
-import { useState } from 'react'
-import { CardLoja } from '../../components/cardLoja';
+import React, { useContext, useEffect, useState } from 'react'
+import { listarLojasService } from '../../services/lojas.api';
+import AuthContext from '../../contexts/auth';
+import CardLojaAdmin from '../../components/cardLojaAdmin';
+import { useNavigate } from 'react-router-dom';
+
+interface User {
+    cpf: string,
+    password: string,
+    name: string,
+    email: string,
+    isAdmin: Boolean,
+    isManager: Boolean,
+    isTelemarketing: Boolean,
+    status: Boolean,
+    designatedCnpjs: string[]
+}
+interface Loja {
+    cnpjFinal: string,
+    identificadorMatrizFiliar: string,
+    nomeFantasia: string,
+    cnaes: string[],
+    tipoLogradouro: string,
+    logradouro: string,
+    numero: string,
+    complemento: string,
+    bairro: string,
+    cep: Number,
+    unidadeFederativa: string,
+    municipio: string,
+    telefone: string[],
+    correioEletronico: string[],
+    atribuido: Boolean,
+    parceriaAceita: string,
+    responsavelCpf: string,
+    responsavel: User
+}
 
 const HomePageAdmin = () => {
+    const [lojas, setLojas] = useState([])
+    const [count, setCount] = useState(lojas.length);
+    const { token } = useContext(AuthContext)
+    let navigate = useNavigate()
 
-    const lojas = [{
-        "cnpj": "01671634000210",
-        "nome_fantasia": "Polar Tintas",
-        "bairro": "Asa Sul",
-        "cep": "70360515",
-        "ddd_telefone_1": "61  33840552",
-    }, {
-        "cnpj": "02107803002119",
-        "nome_fantasia": "Unitintas Comercio De Tintas Ltda",
-        "bairro": "Taguatinga Norte (Taguatinga)",
-        "cep": "72125260",
-        "ddd_telefone_1": "61  34035000",
-    }, {
-        "cnpj": "02107803001732",
-        "nome_fantasia": "Unitintas",
-        "bairro": "Asa Norte",
-        "cep": "70761610",
-        "ddd_telefone_1": "61  33482800",
-    }, {
-        "cnpj": "02107803001651",
-        "nome_fantasia": "Unitintas",
-        "bairro": "Areal (Aguas Claras)",
-        "cep": "71953000",
-        "ddd_telefone_1": "61  32520505",
+    useEffect(() => {
+        if (token) {
+            getLojas(token)
+        }
+    }, [token]) // pegar as lojas apenas uma vez atravez do service
 
-    }, {
-        "cnpj": "03564417000256",
-        "nome_fantasia": "Madeiras Novo Planalto",
-        "bairro": "Ponte Alta Norte (Gama)",
-        "cep": "72427010",
-        "ddd_telefone_1": "61  35257919",
-    }]
+    useEffect(() => {
+        setCount(lojas.length)
+    }, [lojas])
 
-    const [count, setCount] = useState(5);
-
+    async function getLojas(token: string) {
+        const response = await listarLojasService(token);
+        if (response) {
+            setLojas(response.data)
+        }
+    }
 
     return (
 
@@ -48,24 +68,21 @@ const HomePageAdmin = () => {
             <Header />
             <div className="sidebar-index">
                 <Sidebar />
-                <div className='index'>
+                <div className="index">
                     <div className="header-lojas">
-                        <span id='totalLojas' >Total de lojas: {count}</span>
-                        <span id='adicionarLojas'>
-                            <div id='addLojasText'>
-                                + Adicionar Loja
-                            </div>
-                        </span>
+                        <span id='totalLojas' >Total de lojas: {count}</span> 
+                        <div className='botao' >
+                            <div className='botaoText'>Atribuir Loja</div>
+                        </div>
                     </div>
                     <text id='titulo' >LOJAS</text>
-                    <div className="cards">
-                        {lojas.map((element, i) => {
+                    { // passa por todas as lojas gerando um card com o nome
+                        lojas?.map(function (item: Loja) {
                             return (
-                                <CardLoja nome={element.nome_fantasia} cnpj={element.cnpj} telefone={element.ddd_telefone_1} cep={element.cep} bairro={element.bairro} />
+                                <CardLojaAdmin lojaCard={item}/>
                             )
-                        })}
-                    </div>
-
+                        })
+                    }
                 </div>
             </div>
         </div>
@@ -74,5 +91,3 @@ const HomePageAdmin = () => {
 }
 
 export default HomePageAdmin;
-
-// <CardLoja nome={lojas[0].nome_fantasia} cnpj={lojas[0].cnpj} telefone={lojas[0].ddd_telefone_1} telefone2={lojas[0].ddd_telefone_2} cep={lojas[0].cep} endereco={lojas[0].descricao_tipo_logradouro}/>

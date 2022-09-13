@@ -1,0 +1,25 @@
+.cardWraper {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #969696;
+  align-items: center;
+  height: 55px;
+  text-align: start;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.usuario-nome:hover {
+  cursor: pointer;
+}
+
+.cardWraper:hover {
+  border: 1px solid #969696;
+  color: var(--color-secondary);
+}
+
+.icons {
+  padding: 3px;
+  margin-inline: 2px;
+  cursor: pointer;
+}

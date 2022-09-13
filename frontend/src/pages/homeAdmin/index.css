@@ -22,6 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 12px;
     /* border-bottom: 1px solid rgba(217, 217, 217, 0.5); */
 }
 
@@ -29,18 +30,24 @@
     color: #969696;
 }
 
-#adicionarLojas {
-    border: 1px solid #FF834F;
+.botao {
+    border: 1px solid var(--color-primary);
     border-radius: 4px;
     width: 140px;
     height: 40px;
+    line-height: 35px;
     box-sizing: border-box;
     color: var(--color-primary);
-    text-align: center;
 }
 
-#addLojasText {
-    margin-top: 11px;
+.botao:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.botaoText {
+    display: block
 }
 
 #titulo {
@@ -58,11 +65,30 @@
 }
 
 .cards {
-    height: calc(100vh - 16rem);
-    overflow-y: scroll;
     /* display: grid; */
-    gap: 1rem;
-    width: 80%;
-    margin-top: 30px;
-    margin-left: 10%;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.atribuirLoja {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-secondary);
 }
