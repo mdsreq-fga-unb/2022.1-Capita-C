@@ -197,55 +197,44 @@ const createMany: RequestHandler = async (req, res) => {
       throw new HttpError.BadRequest();
     }
 
-    const busca = await prisma.cadastroCnpj.count({
-      where: {
-        cnpjFinal,
-      },
-    });
-
-    if (busca === 0) {
-      cnpjs.push(
-        prisma.cadastroCnpj.create({
-          data: {
-            cnpjFinal,
-            identificadorMatrizFiliar,
-            nomeFantasia,
-            tipoLogradouro,
-            logradouro,
-            numero: numero.toString(),
-            complemento,
-            bairro,
-            cep,
-            unidadeFederativa,
-            municipio,
-            atribuido,
-            parceriaAceita,
-            responsavel,
-            cnaes: {
-              connectOrCreate: cnaesQuery,
-            },
-            telefone:
-              telefones !== undefined
-                ? {
-                    connectOrCreate: telefonesQuery,
-                  }
-                : undefined,
-            correioEletronico:
-              emails !== undefined
-                ? {
-                    connectOrCreate: emailsQuery,
-                  }
-                : undefined,
+    cnpjs.push(
+      prisma.cadastroCnpj.create({
+        data: {
+          cnpjFinal,
+          identificadorMatrizFiliar,
+          nomeFantasia,
+          tipoLogradouro,
+          logradouro,
+          numero: numero.toString(),
+          complemento,
+          bairro,
+          cep,
+          unidadeFederativa,
+          municipio,
+          atribuido,
+          parceriaAceita,
+          responsavel,
+          cnaes: {
+            connectOrCreate: cnaesQuery,
           },
-        })
-      );
-    } else {
-      // eslint-disable-next-line no-console
-      console.log("CNPJ já cadastrado:", cnpjFinal);
-    }
+          telefone:
+            telefones !== undefined
+              ? {
+                  connectOrCreate: telefonesQuery,
+                }
+              : undefined,
+          correioEletronico:
+            emails !== undefined
+              ? {
+                  connectOrCreate: emailsQuery,
+                }
+              : undefined,
+        },
+      })
+    );
   });
-
-  return res.json(await prisma.$transaction(cnpjs));
+  await prisma.$transaction(cnpjs);
+  return res.json(cnpjs);
 };
 
 const update: RequestHandler = async (req, res) => {

@@ -18,6 +18,7 @@
     "lint:tests": "eslint \"tests/**\"",
     "seed":"npm run migrate_reset_dev && dotenv -e env/.dev.env npx ts-node src/seed.ts",
     "seed:build":"node build/seed.js",
+    "populate":"npm run migrate_reset_dev && dotenv -e env/.dev.env npx ts-node src/populate.ts",
     "migrate_dev": "dotenv -e env/.dev.env prisma migrate dev",
     "migrate_test": "dotenv -e env/.test.env prisma migrate deploy",
     "migrate_ci": "dotenv -e env/.ci.env prisma migrate deploy",

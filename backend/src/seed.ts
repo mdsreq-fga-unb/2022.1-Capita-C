@@ -62,7 +62,7 @@ prisma.user
             numero: "22",
             complemento: "complemento",
             bairro: "bairo",
-            cep: 7777777,
+            cep: "7777777",
             unidadeFederativa: "DF",
             municipio: "Brasilia",
             /* atribuido: true, */
