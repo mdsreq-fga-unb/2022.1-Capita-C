@@ -3,11 +3,16 @@ import HttpError from "http-errors";
 import prisma from "../databaseClient";
 
 const list: RequestHandler = async (req, res) => {
+  let { take } = req.body;
+  if (!take) {
+    take = 45;
+  }
   const cnpj = await prisma.cadastroCnpj.findMany({
     include: {
       cnaes: true,
       correioEletronico: true,
     },
+    take,
   });
 
   return res.json(cnpj);
@@ -132,14 +137,14 @@ const createCnpj: RequestHandler = async (req, res) => {
       telefone:
         telefones !== undefined
           ? {
-            connectOrCreate: telefonesQuery,
-          }
+              connectOrCreate: telefonesQuery,
+            }
           : undefined,
       correioEletronico:
         emails !== undefined
           ? {
-            connectOrCreate: emailsQuery,
-          }
+              connectOrCreate: emailsQuery,
+            }
           : undefined,
     },
     select: {
@@ -286,7 +291,7 @@ const update: RequestHandler = async (req, res) => {
     parceriaAceita,
     responsavel,
     unidadeFederativa,
-    identificadorMatrizFiliar
+    identificadorMatrizFiliar,
   } = req.body;
   const cnpj = await prisma.cadastroCnpj.update({
     where: {
@@ -304,7 +309,7 @@ const update: RequestHandler = async (req, res) => {
       parceriaAceita,
       responsavel,
       unidadeFederativa,
-      identificadorMatrizFiliar
+      identificadorMatrizFiliar,
     },
     select: {
       cnpjFinal: true,
