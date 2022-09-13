@@ -1,5 +1,13 @@
 # Registro das reuniões
 
+## Feedback do cliente
+
+Na reunião de finalização do projeto, pedimos um feedback para o cliente, que foi gravado a parte da reunião tradicional.
+
+No feedback, o cliente elogiou a equipe mas se demonstrou um pouco decepcionado quanto a não entrega do sistema. Ele está disposto a continuar apoiando o projeto, tendo em vista que ainda vê um grande potencial na utilização do projeto.
+
+Recomendo assistir a gravação do feedback disponivel no [sharepoint](https://unbbr-my.sharepoint.com/:v:/g/personal/200014447_aluno_unb_br/EeGDe62GTgxPoyeYcAr0q6ABpIbWZS3w7eAmQ2IM873kwQ)
+
 ## Reunião Requisitos - Cliente
 
 | Data                | Lista de participantes                                                                                                | Link da gravação                                                                                                                       | Tópicos importantes                                                                                                                                                                                            | Relato do Cliente                                                                                                                                                                                                           |
@@ -27,13 +35,6 @@
 | 24 de agosto 2022 | Todos presentes        | [Teams](https://unbbr-my.sharepoint.com/:f:/g/personal/200014447_aluno_unb_br/EnlV9aALxOdLg52rGZh7oQMBfodlsL8x4qqjlm8FjiZ0MA?e=dRMmVO) | planing, review e e verificação dos riscos, atualização nas capacidades de cada membro                                   |
 | 31 de agosto 2022 | Todos presentes        | [Teams](https://unbbr-my.sharepoint.com/:f:/g/personal/200014447_aluno_unb_br/EnlV9aALxOdLg52rGZh7oQMBfodlsL8x4qqjlm8FjiZ0MA?e=dRMmVO) | planing, review e e verificação dos riscos, preparações para a reunião presencial                                        |
 
-## Feedback do cliente
-
-Na reunião de finalização do projeto, pedimos um feedback para o cliente, que foi gravado a parte da reunião tradicional.
-
-No feedback, o cliente elogiou a equipe mas se demonstrou um pouco decepcionado quanto a não entrega do sistema. Ele está disposto a continuar apoiando o projeto, tendo em vista que ainda vê um grande potencial na utilização do projeto.
-
-Recomendo assistir a gravação do feedback disponivel no [sharepoint](https://unbbr-my.sharepoint.com/:v:/g/personal/200014447_aluno_unb_br/EeGDe62GTgxPoyeYcAr0q6ABpIbWZS3w7eAmQ2IM873kwQ)
 
 **Histórico de Versões**
 
