@@ -3,7 +3,7 @@ import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
-import { editarEmailServise, editarLojaService, listarLojaInfo } from '../../services/lojas.api';
+import { editarEmailServise, editarLojaService, editarTelefoneServise, listarLojaInfo } from '../../services/lojas.api';
 import AuthContext from '../../contexts/auth';
 
 interface User {
@@ -123,10 +123,19 @@ const EditarLoja = () => {
             if (name == 'cep') {
                 let valor = Number(value)
                 setLoja({ ...loja, [name]: valor })
-            } if(name == 'correioEletronico') {
+            } if (name == 'correioEletronico') {
                 loja.correioEletronico[0].email = value
                 setLoja(loja)
-            } else {
+            } if (name == 'telefone[0]') {
+                loja.telefone.push(loja.telefone[0]) // adiciona o telefone antigo na proxima posicao disponivel
+                loja.telefone[0].numeroTelefone = value // troca valor do telefone pelo do usuario
+                setLoja(loja) // atualiza loja
+            } if (name == 'telefone[1]') {
+                loja.telefone.push(loja.telefone[1])
+                loja.telefone[1].numeroTelefone = value
+                setLoja(loja)
+            }
+            else {
                 setLoja({ ...loja, [name]: value })
             }
         }
@@ -142,18 +151,30 @@ const EditarLoja = () => {
 
                 // se tiver mudanca de email
                 let email = alteracoes.find(element => element.campo == 'correioEletronico')
-                if(email){
+                if (email) {
                     const emailResponse = await editarEmailServise(email.valor.toString(), token, loja?.correioEletronico[0])
-                    if(emailResponse){
-                        console.log(emailResponse.data)
-                    }
+                    emailResponse? '' : alert("Não foi possível editar o email")
                 }
-                
-                // se tiver mudanca de telefone
 
+                // se tiver mudanca de telefone
+                let telefone0 = alteracoes.find(element => element.campo == 'telefone[0]')
+                let telefone1 = alteracoes.find(element => element.campo == 'telefone[1]')
+                if (telefone0) {
+                    const telefoneResponse = await editarTelefoneServise(token, telefone0.valor.toString(), loja?.telefone[0])
+                    telefoneResponse? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone")
+                }
+                if (telefone1) {
+                    const telefoneResponse = await editarTelefoneServise(token, telefone1.valor.toString(), loja?.telefone[1])
+                    telefoneResponse? console.log(telefoneResponse.data) : alert("Não foi possível editar o telefone secundário")
+                }
+            
                 if (response?.data) {
                     return (
                         alert("Atualizado com sucesso!")
+                    )
+                } else {
+                    return (
+                        alert("Não foi possível editar as informações")
                     )
                 }
 
